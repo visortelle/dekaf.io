@@ -1,15 +1,13 @@
 /* Infima style overrides for Navbar */
 :root {
-  --ifm-navbar-height: 7rem;
+  --ifm-navbar-height: 5rem;
   --ifm-navbar-shadow: none;
   --ifm-navbar-link-color: var(--primary-color);
-  --ifm-navbar-background-color: #f0f0f4;
   --ifm-navbar-item-padding-horizontal: 2rem;
 }
 
 /* Containers---------------------------------------------------------------- */
 .navbar {
-  border-bottom: 1px solid #dddddd;
   justify-content: center;
 }
 
@@ -32,7 +30,7 @@
 
 .navbar__logo {
   width: auto;
-  height: 89px;
+  height: 60px;
   margin: 0;
 
   transition: 0.2s ease-in-out;
@@ -47,8 +45,11 @@
 
 /* Link---------------------------------------------------------------------- */
 .navbar__link {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: var(--ifm-font-weight-bold);
+}
+.navbar__link--active {
+  color: #6e79d6;
 }
 
 /* Responsive---------------------------------------------------------------- */

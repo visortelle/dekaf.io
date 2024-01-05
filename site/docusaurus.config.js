@@ -6,7 +6,7 @@
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Pulsocat',
+  title: 'Dekaf',
   tagline:
     'Equip your team with a top-notch UI tool and unleash the full power of Pulsar',
   favicon: 'img/favicon.ico',
@@ -34,6 +34,9 @@ const config = {
         blog: {
           showReadingTime: true,
           // editUrl: '',
+          blogTitle: 'Docusaurus blog!',
+          blogDescription: 'A Docusaurus powered blog!',
+          postsPerPage: 'ALL',
         },
         theme: {
           customCss: [
@@ -67,6 +70,7 @@ const config = {
           { to: '/product', label: 'Product', position: 'left' },
           { to: '/pricing', label: 'Pricing', position: 'left' },
           { to: '/docs', label: 'Docs', position: 'left' },
+          { to: '/blog', label: 'Blog', position: 'left' },
           { to: '/community', label: 'Community', position: 'left' },
           { to: '/company', label: 'Company', position: 'left' },
 

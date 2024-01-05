@@ -1,18 +1,23 @@
 .featureTableContainer {
+  margin-top: 4rem;
   width: 100%;
-  padding: 2rem;
-  border-radius: 1rem;
-  background-color: #f5f5f5;
+  /* padding: 2rem; */
+  border-radius: 0.5rem;
+  /* background-color: #f5f5f5; */
+  border: 1px solid #aaaaaa;
+  overflow: hidden;
 }
 
 /* Header-------------------------------------------------------------------- */
 .tableHeader {
   display: flex;
   width: 100%;
+  padding: 1.5rem 2rem;
 
   color: #333333;
   font-size: 1.5rem;
   font-weight: var(--ifm-font-weight-bold);
+  background-color: #f5f5f5;
 }
 
 .headerPadCell {
@@ -21,22 +26,31 @@
 
 .headerCell {
   display: flex;
-  align-items: center;
   flex-direction: column;
   justify-content: space-between;
   flex-basis: 20%;
+  padding: 0 1rem;
+  gap: 0.5rem;
+}
+.headerCellWide {
+  flex-basis: 30%;
+}
+.headerCell button {
+  width: 100%;
 }
 
 /* Group--------------------------------------------------------------------- */
 .groupContainer {
   margin-bottom: 2rem;
+  padding: 2rem;
 }
 
 .groupNameRow {
-  width: 100%;
+  margin-bottom: 1rem;
+  max-width: 40%;
 
-  color: grey;
-  font-size: 3rem;
+  /* color: grey; */
+  font-size: 1.75rem;
   font-weight: var(--ifm-font-weight-bold);
 }
 
@@ -46,19 +60,41 @@
   flex-wrap: nowrap;
   align-items: center;
   min-height: 3rem;
-  border-bottom: 1px solid #aaaaaa;
+  /* border-bottom: 1px solid #aaaaaa; */
 
-  font-size: 2rem;
-  font-weight: var(--ifm-font-weight-bold);
+  font-size: 1.25rem;
+  font-weight: 500;
+  /* font-weight: var(--ifm-font-weight-bold); */
 }
 
 /* Cell---------------------------------------------------------------------- */
 .cellName {
   flex-basis: 40%;
 }
+.cellName p {
+  margin: 0;
+  width: max-content;
+  max-width: 30rem;
+  border-bottom: 1px dashed #aaaaaa;
+  opacity: 0.7;
+}
+.cellName:hover {
+  cursor: pointer;
+}
+.cellName:hover p {
+  opacity: 1;
+}
+/* .cellNameBig p {
+  font-size: 1.75rem;
+  font-weight: 700;
+  opacity: 1;
+} */
 
 .cellValue {
   flex-basis: 20%;
+}
+.cellValueWide {
+  flex-basis: 30%;
 }
 
 /* Responsive---------------------------------------------------------------- */

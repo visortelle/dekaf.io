@@ -4,10 +4,14 @@ import { featuresList } from '../FeaturesTable/FeaturesList';
 
 import style from './FeaturesSection.module.css';
 
-const FeaturesSection: React.FC = () => {
+export type FeatureSectionProps = {
+  selectedType: string;
+};
+
+const FeaturesSection: React.FC<FeatureSectionProps> = ({ selectedType }) => {
   return (
     <section className={style.featuresSection}>
-      <FeaturesTable groups={featuresList} />
+      <FeaturesTable groups={featuresList} selectedType={selectedType} />
     </section>
   );
 };

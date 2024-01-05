@@ -1,12 +1,12 @@
 .featureBoolValue {
   display: flex;
   align-items: center;
-  justify-content: center;
+  padding: 0 1rem;
 }
 
 .featureBoolValue svg {
-  width: 3rem;
-  height: 3rem;
+  width: 1.75rem;
+  height: 1.75rem;
 }
 
 .iconChecked {
