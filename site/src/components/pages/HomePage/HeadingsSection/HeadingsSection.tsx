@@ -7,20 +7,20 @@ const HeadingsSection: React.FC = () => {
   return (
     <section className={s.HeadingsSection}>
       <div className={s.HeadingsContainer}>
-        <div className={s.logo}>
+        <div className={s.Logo}>
           <Logo />
         </div>
       </div>
 
       <div className={s.Content}>
         <h1 className={s.Header}>
-          Essential tool for Apache Pulsar users
+          UI for Apache Pulsar
         </h1>
 
         <p>
-          Our interface makes it easy for anybody to work with Apache Pulsar.
+          Our interface makes it easy for anybody to work with Pulsar.
           <br />
-          Standard Pulsar operations at your fingertips with only a few clicks.
+          Advanced messaging and streaming platform at your fingertips.
         </p>
 
         <div className={s.Links}>

@@ -4,6 +4,7 @@
   --ifm-navbar-shadow: none;
   --ifm-navbar-link-color: var(--primary-color);
   --ifm-navbar-item-padding-horizontal: 2rem;
+  --ifm-navbar-search-input-icon: url('/img/account-white.svg');
 }
 
 /* Containers---------------------------------------------------------------- */
@@ -70,7 +71,7 @@
 }
 
 .navbar__link--active {
-  color: #6e79d6;
+  color: var(--primary-color);
 }
 
 @keyframes gradient {

@@ -42,7 +42,6 @@ const HomePage: React.FC = () => {
       <main className={s.homePage}>
         <div className={s.content}>
           <HeadingsSection />
-          <VideoSection />
           {features.map((feature) => (
             <FeatureBlock feature={feature} key={feature.title} />
           ))}

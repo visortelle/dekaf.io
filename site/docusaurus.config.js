@@ -86,10 +86,6 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Product',
-            items: [],
-          },
-          {
             title: 'Pricing',
             items: [],
           },
@@ -111,17 +107,17 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Teal Tools, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Teal Tools, Inc.`,
       },
       /* prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       }, */
       /* algolia: {
-        appId: '',
-        apiKey: '',
-        indexName: '',
-      }, */
+        appId: 'abc',
+        apiKey: 'xyz',
+        indexName: 'abc',
+      } */
     }),
 };
 
