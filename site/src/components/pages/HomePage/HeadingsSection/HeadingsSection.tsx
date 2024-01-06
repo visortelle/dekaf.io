@@ -1,25 +1,33 @@
 import React from 'react';
 import Links from '../LinksBlock/LinksBlock';
-import Heading from '@site/src/components/ui/Heading/Heading';
-
-import style from './HeadingsSection.module.css';
+import s from './HeadingsSection.module.css';
+import Logo from '@site/src/components/ui/Logo/Logo';
 
 const HeadingsSection: React.FC = () => {
   return (
-    <section className={style.headingsSection}>
-      <div className={style.headingsContainer}>
-        <Heading level={1} align="center">
-          <span className={style.headingColored}>Apache Pulsar</span>
-          <br className={style.headingBreak} /> made simple
-        </Heading>
-
-        <Heading level={3} align="center">
-          Equip your team with a top-notch UI tool and unleash the full power of
-          Pulsar
-        </Heading>
+    <section className={s.HeadingsSection}>
+      <div className={s.HeadingsContainer}>
+        <div className={s.logo}>
+          <Logo />
+        </div>
       </div>
 
-      <Links />
+      <div className={s.Content}>
+        <h1 className={s.Header}>
+          Essential tool for Apache Pulsar users
+        </h1>
+
+        <p>
+          Our interface makes it easy for anybody to work with Apache Pulsar.
+          <br />
+          Standard Pulsar operations at your fingertips with only a few clicks.
+        </p>
+
+        <div className={s.Links}>
+          <Links />
+        </div>
+      </div>
+
     </section>
   );
 };

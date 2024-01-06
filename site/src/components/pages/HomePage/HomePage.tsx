@@ -3,11 +3,9 @@ import Layout from '@theme/Layout';
 import LinksBlock from './LinksBlock/LinksBlock';
 import VideoSection from './VideoSection/VideoSection';
 import HeadingsSection from './HeadingsSection/HeadingsSection';
-import ThesisInfoSection from './ThesisInfoSection/ThesisInfoSection';
-import StructInfoSection from './StructInfoSection/StructInfoSection';
 import FeatureBlock from './FeatureBlock/FeatureBlock';
 
-import style from './HomePage.module.css';
+import s from './HomePage.module.css';
 
 const features = [
   {
@@ -41,15 +39,15 @@ const features = [
 const HomePage: React.FC = () => {
   return (
     <Layout>
-      <main className={style.homePage}>
-        <HeadingsSection />
-        <VideoSection />
-        {features.map((feature) => (
-          <FeatureBlock feature={feature} key={feature.title} />
-        ))}
-        {/* <ThesisInfoSection />
-        <StructInfoSection /> */}
-        <LinksBlock />
+      <main className={s.homePage}>
+        <div className={s.content}>
+          <HeadingsSection />
+          <VideoSection />
+          {features.map((feature) => (
+            <FeatureBlock feature={feature} key={feature.title} />
+          ))}
+          <LinksBlock />
+        </div>
       </main>
     </Layout>
   );

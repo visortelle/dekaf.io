@@ -1,137 +1,112 @@
-.button {
-  appearance: none;
-  cursor: pointer;
-
+.Button {
+  position: relative;
+  padding: 1rem 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 10rem;
-  min-height: 3rem;
-  padding: 0 1.5rem;
-  outline: none;
-  border: none;
-  border-radius: 0.5rem;
-
-  font-size: 1.25rem !important;
-  font-weight: var(--ifm-font-weight-bold);
-  text-decoration: none !important;
-
-  transition: 0.2s ease-in-out;
+  border-radius: 1.25rem;
+  font-size: 1rem;
+  font-weight: var(--font-weight-bold);
+  user-select: none;
+  transition: var(--transition-short);
+  border: 1px solid var(--border-color);
+  border-bottom-color: rgba(0, 0, 0, 0.27);
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.27);
+  margin: 1rem;
+  appearance: none;
+  font-family: inherit;
 }
 
-.buttonPrimary {
-  border-bottom: 2px solid;
-  border-bottom-color: #26318c;
-  background-color: #6e79d6;
-
-  color: #ffffff;
-}
-.buttonSecondary {
-  border: 2px solid;
-  border-color: #6e79d6;
-  background-color: initial;
-
-  color: #6e79d6;
+.Button:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  user-select: none;
+  transition: var(--transition-short);
 }
 
-.sizeSmall {
-  min-width: 7rem;
-  min-height: 2.75rem;
-  padding: 0 1rem;
-
-  font-size: 1rem !important;
+.Button svg {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 0.5rem;
+  fill: #fff;
+  position: absolute;
+  left: 1rem;
 }
 
-/* Hover--------------------------------------------------------------------- */
-.buttonPrimary:hover {
-  border-bottom-color: #18248f;
-  background-color: #5662d1;
-
-  color: #ffffff;
-
-  transition: 0.2s ease-in-out;
-}
-.buttonSecondary:hover {
-  border-color: #26318c;
-
-  color: #26318c;
-
-  transition: 0.2s ease-in-out;
+.ButtonWithoutText {
+  padding: 0.125rem 0.1875rem;
 }
 
-/* Click--------------------------------------------------------------------- */
-.buttonPrimary:active {
-  border-bottom-color: #41488a;
-  background-color: #8f96d8;
-
-  transition: none;
-}
-.buttonSecondary:active {
-  border-color: #9ea4da;
-
-  color: #9ea4da;
-
-  transition: none;
+.ButtonWithIcon:not(.ButtonWithoutText) {
+  padding-left: 4rem;
 }
 
-/* Responsive---------------------------------------------------------------- */
-@media (max-width: 1600px) {
+.ButtonWithoutText svg {
+  margin-right: 0;
 }
 
-@media (max-width: 1200px) {
-  .button {
-    min-width: 7rem;
-    min-height: 2.5rem;
-    padding: 0 1rem;
-
-    font-size: 1rem !important;
-  }
-
-  .sizeSmall {
-    min-width: 5rem;
-    min-height: 2rem;
-    padding: 0 0.83rem;
-
-    font-size: 0.83rem !important;
-  }
+.Regular {
+  background-color: #fff;
+  color: var(--text-color);
 }
 
-@media (max-width: 1024px) {
+.Regular svg {
+  fill: var(--text-color);
 }
 
-@media (max-width: 768px) {
-  .button {
-    min-width: 6rem;
-    min-height: 2rem;
-    padding: 0 1rem;
-    border-radius: 0.25rem;
-
-    font-size: 0.83rem !important;
-  }
-
-  .sizeSmall {
-    min-width: 4rem;
-    min-height: 1.75rem;
-    padding: 0 0.67rem;
-  }
+.Primary {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  border-bottom-color: rgba(0, 0, 0, 0.27);
+  color: #fff;
 }
 
-@media (max-width: 480px) {
-  .button {
-    min-width: 5rem;
-    min-height: 2rem;
-    border-radius: 0.25rem;
-  }
+.Danger {
+  background-color: var(--color-red);
+  border-color: var(--color-red);
+  border-bottom-color: rgba(0, 0, 0, 0.27);
+  color: #fff;
+}
 
-  .buttonPrimary {
-    border-bottom-width: 1px;
-  }
+.DisabledButton {
+  opacity: 1;
+  background-color: var(--surface-color) !important;
+  border-color: var(--border-color) !important;
+  border-bottom-color: rgba(0, 0, 0, 0.27);
+  color: #999 !important;
+}
 
-  .sizeSmall {
-    min-width: 3.5rem;
-    min-height: 1.5rem;
-    padding: 0 0.67rem;
+.DisabledButton svg {
+  fill: #aaa;
+}
 
-    font-size: 0.54rem !important;
-  }
+.DisabledButton:hover {
+  cursor: default;
+  opacity: 1;
+}
+
+.ActiveButton::after {
+  content: '';
+  width: 100%;
+  height: 0.1875rem;
+  background: var(--color-primary);
+  position: absolute;
+  border-bottom-color: transparent;
+  left: 0;
+  right: 0;
+  bottom: -0.125rem;
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.SmallSize {
+  padding: 0.125rem 0.75rem;
+  height: 1.625rem;
+  font-size: 0.75rem;
+}
+
+.SmallSize svg {
+  margin-right: 0.625rem;
+  width: 1rem;
+  height: 1rem;
 }

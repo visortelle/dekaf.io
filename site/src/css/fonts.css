@@ -1,14 +1,14 @@
 /* Infima style overrides for fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&family=Monomaniac+One&display=swap');
 
 :root {
   /* --ifm-h2-font-size: ; */
   /* --ifm-h3-font-size: ; */
   /* --ifm-code-font-size: ; */
   /* --ifm-font-size-base: ; */
-  /* --ifm-font-weight-bold: ; */
-  --ifm-font-family-base: 'Inter', sans-serif;
+  --ifm-font-weight: 300;
+  --ifm-font-weight-bold: 700;
+  --ifm-font-family-base: 'Comfortaa', sans-serif;
   /* --ifm-font-family-monospace: ; */
 }

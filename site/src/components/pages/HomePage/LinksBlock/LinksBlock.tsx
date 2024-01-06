@@ -1,20 +1,15 @@
 import React from 'react';
-import Link from '../../../ui/Link/Link';
 import Button from '../../../ui/Button/Button';
-
-import style from './LinksBlock.module.css';
+import s from './LinksBlock.module.css';
+import playIcon from '!!raw-loader!./play.svg';
 
 const LinksBlock: React.FC = () => {
   return (
-    <div className={style.linksBlock}>
-      <div className={style.linksButtonContainer}>
-        <Button variant="primary" href="as" title="Get started - free" />
-        <Button variant="secondary" href="asd" title="Try online" />
+    <div className={s.linksBlock}>
+      <div className={s.linksButtonContainer}>
+        <Button type="regular" text="Watch Demo" svgIcon={playIcon} onClick={() => { }} />
+        <Button type="primary" text='Start Free' onClick={() => { }} />
       </div>
-
-      <Link href="" align="center">
-        {'Get free Docker image for educational and non-commercial use ->'}
-      </Link>
     </div>
   );
 };

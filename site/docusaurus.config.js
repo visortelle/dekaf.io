@@ -9,7 +9,7 @@ const config = {
   title: 'Dekaf',
   tagline:
     'Equip your team with a top-notch UI tool and unleash the full power of Pulsar',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon/favicon.ico',
 
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
@@ -62,17 +62,15 @@ const config = {
       navbar: {
         title: '',
         logo: {
-          alt: 'Pulsocat Logo',
-          src: 'img/img_logo.svg',
+          alt: 'Dekaf Logo',
+          src: 'img/logo.png',
         },
         items: [
           /* Left------------------------------------------------------------ */
-          { to: '/product', label: 'Product', position: 'left' },
-          { to: '/pricing', label: 'Pricing', position: 'left' },
           { to: '/docs', label: 'Docs', position: 'left' },
           { to: '/blog', label: 'Blog', position: 'left' },
-          { to: '/community', label: 'Community', position: 'left' },
-          { to: '/company', label: 'Company', position: 'left' },
+          { to: '/pricing', label: 'Pricing', position: 'left' },
+          { to: '/support', label: 'Support', position: 'left' },
 
           /* Right----------------------------------------------------------- */
           { type: 'search', position: 'right' },
@@ -104,7 +102,7 @@ const config = {
             items: [],
           },
           {
-            title: 'Company',
+            title: 'Support',
             items: [
               {
                 label: 'Teal Tools Inc. on GitHub',

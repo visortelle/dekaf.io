@@ -6,7 +6,15 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #6e79d6;
+  --color-primary: #3d91d6;
+  --text-color: #111;
+  --color-black: #111;
+  --font-weight-normal: 300;
+  --font-weight-bold: 700;
+  --content-width: 1200px;
+  font-weight: 300;
+
+  --ifm-color-primary: var(--color-primary);
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
   --ifm-color-primary-darkest: #205d3b;
@@ -15,6 +23,7 @@
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -32,4 +41,8 @@
 /* Docusaurus wrapper customization. */
 .main-wrapper {
   align-items: center;
+}
+
+#__docusaurus {
+  background: #111;
 }

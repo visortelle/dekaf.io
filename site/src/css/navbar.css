@@ -1,6 +1,6 @@
 /* Infima style overrides for Navbar */
 :root {
-  --ifm-navbar-height: 5rem;
+  --ifm-navbar-height: 4rem;
   --ifm-navbar-shadow: none;
   --ifm-navbar-link-color: var(--primary-color);
   --ifm-navbar-item-padding-horizontal: 2rem;
@@ -9,15 +9,17 @@
 /* Containers---------------------------------------------------------------- */
 .navbar {
   justify-content: center;
+  backdrop-filter: blur(23px);
+  background: rgba(16, 16, 16, 0.8);
+  color: #fff;
 }
 
 .navbar__inner {
-  max-width: 100rem;
+  max-width: 75rem;
   padding: 0 4rem;
 }
 
-.navbar__items {
-}
+.navbar__items {}
 
 .navbar__items--right {
   gap: 1rem;
@@ -25,18 +27,36 @@
 
 /* Logo---------------------------------------------------------------------- */
 .navbar__brand {
-  margin-right: 10%;
+  align-items: center;
+  display: flex;
+  margin-right: auto;
+  min-width: 0;
 }
+
 
 .navbar__logo {
   width: auto;
-  height: 60px;
+  height: 42px;
   margin: 0;
+  position: relative;
 
-  transition: 0.2s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
-.navbar__logo:hover {
-  filter: drop-shadow(0 0 10px #6e79d65f);
+
+.navbar__logo img {
+  box-shadow: 0 0 1px #fff;
+  border-radius: 0.2rem;
+  animation: gradient 20s ease infinite;
+}
+
+.navbar__logo:after {
+  content: 'dekaf';
+  margin-left: 0.7rem;
+  font-weight: var(--font-weight-bold);
+  font-size: 1.4rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .navbar__title {
@@ -48,8 +68,31 @@
   font-size: 1rem;
   font-weight: var(--ifm-font-weight-bold);
 }
+
 .navbar__link--active {
   color: #6e79d6;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+    box-shadow: 0px 0px 7px #4eafff;
+  }
+
+  25% {
+    background-position: 100% 50%;
+    box-shadow: 0 0px 5px #91b8f9;
+  }
+
+  75% {
+    background-position: 0% 50%;
+    box-shadow: 0px 0px 10px #48b2b4;
+  }
+
+  100% {
+    background-position: 0% 50%;
+    box-shadow: 0px 0px 10px #4eafff;
+  }
 }
 
 /* Responsive---------------------------------------------------------------- */
@@ -92,8 +135,6 @@
   }
 }
 
-@media (max-width: 768px) {
-}
+@media (max-width: 768px) {}
 
-@media (max-width: 480px) {
-}
+@media (max-width: 480px) {}

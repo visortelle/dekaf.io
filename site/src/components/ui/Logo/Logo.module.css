@@ -1,0 +1,48 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logoImage {
+  animation: gradient 20s ease infinite;
+  border-radius: 10%;
+  width: 10rem;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+}
+
+.textDekaf {
+  font-size: 4rem;
+  font-weight: var(--font-weight-bold);
+}
+
+.textForPulsar {
+  font-size: 1rem;
+  text-align: right;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+    box-shadow: 0px 0px 15px #4eafff;
+  }
+
+  25% {
+    background-position: 100% 50%;
+    box-shadow: 0 0px 10px #91b8f9;
+  }
+
+  75% {
+    background-position: 0% 50%;
+    box-shadow: 0px 0px 20px #48b2b4;
+  }
+
+  100% {
+    background-position: 0% 50%;
+    box-shadow: 0px 0px 20px #4eafff;
+  }
+}
