@@ -1,4 +1,4 @@
-.HeadingsSection {
+.GreetingScreen {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -7,19 +7,17 @@
   width: 100%;
   min-height: 100vh;
   position: relative;
+  color: #fff;
 }
 
-.HeadingsContainer {
-  display: flex;
-  gap: 3rem;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1;
+.Content {
+  max-width: var(--content-width);
+  margin: 0 auto;
 }
 
 .Header {
   font-weight: 300;
+  margin-top: 2rem;
 }
 
 .Logo {

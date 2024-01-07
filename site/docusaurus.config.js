@@ -6,12 +6,12 @@
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Dekaf',
+  title: 'Dekaf | UI for Apache Pulsar',
   tagline:
     'Equip your team with a top-notch UI tool and unleash the full power of Pulsar',
   favicon: 'img/favicon/favicon.ico',
 
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://dekaf.io',
   baseUrl: '/',
   trailingSlash: true,
   onBrokenLinks: 'warn',
@@ -34,8 +34,8 @@ const config = {
         blog: {
           showReadingTime: true,
           // editUrl: '',
-          blogTitle: 'Docusaurus blog!',
-          blogDescription: 'A Docusaurus powered blog!',
+          blogTitle: 'Dekaf Blog',
+          blogDescription: 'Blog about messaging, streaming, and Apache Pulsar',
           postsPerPage: 'ALL',
         },
         theme: {
@@ -67,6 +67,21 @@ const config = {
         },
         items: [
           /* Left------------------------------------------------------------ */
+          {
+            to: '/product',
+            label: 'Product',
+            position: 'left',
+            items: [
+              {
+                to: '/product',
+                label: 'Roadmap',
+              },
+              {
+                to: '/changelog',
+                label: 'Changelog',
+              }
+            ]
+          },
           { to: '/docs', label: 'Docs', position: 'left' },
           { to: '/blog', label: 'Blog', position: 'left' },
           { to: '/pricing', label: 'Pricing', position: 'left' },

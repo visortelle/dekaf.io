@@ -1,11 +1,12 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import LinksBlock from './LinksBlock/LinksBlock';
-import VideoSection from './VideoSection/VideoSection';
-import HeadingsSection from './HeadingsSection/HeadingsSection';
+import GreetingScreen from './GreetingScreen/GreetingScreen';
 import FeatureBlock from './FeatureBlock/FeatureBlock';
 
 import s from './HomePage.module.css';
+import WhyPulsarScreen from './WhyPulsarScreen/WhyPulsarScreen';
+import WhyDekafScreen from './WhyDekafScreen/WhyDekafScreen';
 
 const features = [
   {
@@ -41,7 +42,9 @@ const HomePage: React.FC = () => {
     <Layout>
       <main className={s.homePage}>
         <div className={s.content}>
-          <HeadingsSection />
+          <GreetingScreen />
+          <WhyPulsarScreen />
+          <WhyDekafScreen />
           {features.map((feature) => (
             <FeatureBlock feature={feature} key={feature.title} />
           ))}

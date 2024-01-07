@@ -11,7 +11,7 @@
 .navbar {
   justify-content: center;
   backdrop-filter: blur(23px);
-  background: rgba(16, 16, 16, 0.8);
+  background: rgba(16, 16, 16, 0.85);
   color: #fff;
 }
 

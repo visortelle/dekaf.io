@@ -4,8 +4,3 @@
   color: #fff;
   width: 100%;
 }
-
-.content {
-  max-width: var(--content-width);
-  margin: 0 auto;
-}
