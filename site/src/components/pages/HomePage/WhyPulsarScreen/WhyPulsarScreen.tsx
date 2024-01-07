@@ -15,7 +15,7 @@ const WhyPulsarScreen: React.FC = () => {
               If you don't know what does it mean, see our <a href="">blog post</a> about the topic.
             </p>
             <p>
-              Pulsar is used by Discord, Tencent, Yahoo, Cisco, Huawei, Verizon, Intuit, and many other companies across the world.
+              Pulsar is used by <strong>Discord</strong>, <strong>Tencent</strong>, <strong>Yahoo</strong>, <strong>Cisco</strong>, <strong>Huawei</strong>, <strong>Verizon</strong>, <strong>Intuit</strong>, and many other companies across the world.
             </p>
             <p>
               In some aspects Pulsar is similar to Apache Kafka, but it implements more flexible messaging model, better horizontal scaling, and provides more features out of the box.

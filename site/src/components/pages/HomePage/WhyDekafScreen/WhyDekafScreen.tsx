@@ -14,8 +14,9 @@ const WhyScreen: React.FC = () => {
             <h2>What is Dekaf?</h2>
             <p>
               Dekaf is a top-notch UI for Apache Pulsar.
-              <br />
-              Our mission is to evolve it into a comprehensive solution that goes beyond merely being a visual user interface.
+            </p>
+            <p>
+              Our mission is to evolve it into a comprehensive platform that goes beyond merely being a convenient visual user interface.
             </p>
           </div>
 
@@ -25,7 +26,7 @@ const WhyScreen: React.FC = () => {
           <h2>Why Dekaf?</h2>
           <div className={s.Questions}>
             <div className={s.Question}>
-              <h3>Gains developer productivity</h3>
+              <h3>Optimizes developer productivity</h3>
               <p>
                 Produce positive business impact instead of losing time and mental load in the command line interface.
               </p>
@@ -46,9 +47,9 @@ const WhyScreen: React.FC = () => {
             </div>
 
             <div className={s.Question}>
-              <h3>Makes feature owners a bit happier</h3>
+              <h3>Makes support team much happier</h3>
               <p>
-                With Dekaf, it's easy to filter and visualize data across multiple topics. Inspect how a sequence of events lead to an important business event.
+                With Dekaf, it's easy to find and visualize data across multiple topics. Inspect how a sequence of events lead to an important business event.
               </p>
             </div>
 
