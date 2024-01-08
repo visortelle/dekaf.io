@@ -1,27 +1,10 @@
 import React from 'react';
 import s from './WhyDekafScreen.module.css'
-import whyDekafImageUrl from '@site/static/img/homepage/why-dekaf.png';
 
 const WhyScreen: React.FC = () => {
   return (
     <section className={s.Screen}>
       <div className={s.Content}>
-        <div className={s.WhatIsDekaf}>
-          <div>
-            <img className={s.WhatIsDekafScreenshot} src={whyDekafImageUrl} alt="Dekaf Screenshot" />
-          </div>
-          <div className={s.Question}>
-            <h2>What is Dekaf?</h2>
-            <p>
-              Dekaf is a top-notch UI for Apache Pulsar.
-            </p>
-            <p>
-              Our mission is to evolve it into a comprehensive platform that goes beyond merely being a convenient visual user interface.
-            </p>
-          </div>
-
-        </div>
-
         <div>
           <h2>Why Dekaf?</h2>
           <div className={s.Questions}>
@@ -49,7 +32,7 @@ const WhyScreen: React.FC = () => {
             <div className={s.Question}>
               <h3>Makes support team much happier</h3>
               <p>
-                With Dekaf, it's easy to find and visualize data across multiple topics. Inspect how a sequence of events lead to an important business event.
+                With Dekaf, it's easy to find and visualize data across multiple topics. Inspect how a sequence of events lead to an some problematic business event.
               </p>
             </div>
 
@@ -63,7 +46,7 @@ const WhyScreen: React.FC = () => {
             <div className={s.Question}>
               <h3>Reduces onboarding time</h3>
               <p>
-                For new team members who are already familiar with Pulsar, it may be much easier to grasp how your system works by having the ability to quickly experiment with it.
+                For new team members who are already familiar with Pulsar, it may be much easier to grasp how your system works by having the ability to easily experiment with it.
               </p>
             </div>
           </div>

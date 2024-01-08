@@ -1,4 +1,4 @@
-.GreetingScreen {
+.Screen {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -11,8 +11,14 @@
 }
 
 .Content {
+  width: 100%;
   max-width: var(--content-width);
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
 }
 
 .Header {
@@ -25,14 +31,25 @@
   left: 5rem;
 }
 
-.Content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
 .Links {
   margin-bottom: 4rem;
   position: relative;
+}
+
+.DemoPreview {
+  display: grid;
+  gap: 2rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  transform: translateY(100%);
+  color: var(--text-color);
+}
+
+.DemoPreviewImage {
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.27);
 }

@@ -1,13 +1,13 @@
 /* Infima style overrides for fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&family=Monomaniac+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Monomaniac+One&display=swap');
 
 :root {
   /* --ifm-h2-font-size: ; */
   /* --ifm-h3-font-size: ; */
   /* --ifm-code-font-size: ; */
   /* --ifm-font-size-base: ; */
-  --ifm-font-weight: 300;
+  --ifm-font-weight: 400;
   --ifm-font-weight-bold: 700;
   --ifm-font-family-base: 'Comfortaa', sans-serif;
   /* --ifm-font-family-monospace: ; */

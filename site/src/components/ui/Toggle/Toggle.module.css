@@ -1,25 +1,30 @@
-.toggle {
-  display: flex;
+.Toggle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   padding: 0.25rem;
   width: max-content;
-  height: 3rem;
   border-radius: 1rem;
-  background: #EFEFEF;
+  background: var(--surface-color);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
 }
 
-.option {
+.Option {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 1rem;
-  width: 10rem;
+  padding: 0.75rem 2rem;
   border-radius: 13px;
-  font-weight: 500;
-  transition: 0.3s ease all;
-  cursor: pointer;
+  line-height: 1;
 }
 
-.optionActive {
-  color: #000;
-  background-color: #fff;
+.Option:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 180ms ease-in-out;
+}
+
+.OptionActive {
+  color: #fff;
+  background-color: var(--color-black);
 }

@@ -12,13 +12,13 @@
 .iconChecked {
   fill: green;
 }
+
 .iconCross {
   fill: red;
 }
 
 /* Responsive---------------------------------------------------------------- */
-@media (max-width: 1600px) {
-}
+@media (max-width: 1600px) {}
 
 @media (max-width: 1200px) {
   .featureBoolValue svg {
@@ -27,8 +27,7 @@
   }
 }
 
-@media (max-width: 1024px) {
-}
+@media (max-width: 1024px) {}
 
 @media (max-width: 768px) {
   .featureBoolValue svg {
@@ -37,5 +36,4 @@
   }
 }
 
-@media (max-width: 480px) {
-}
+@media (max-width: 480px) {}

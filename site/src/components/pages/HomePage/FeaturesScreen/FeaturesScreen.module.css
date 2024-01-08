@@ -1,16 +1,13 @@
 .Screen {
-  background: #fff;
   color: var(--text-color);
+  background-color: #fff;
 }
 
 .Content {
   max-width: var(--content-width);
   margin: 0 auto;
-}
-
-.Questions {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
   padding: 4rem 0;
 }

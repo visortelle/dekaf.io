@@ -4,7 +4,12 @@ import FeatureBoolValue from './FeatureBoolValue/FeatureBoolValue';
 
 import style from './FeaturesTable.module.css';
 
-export type ProductTier = 'free' | 'se' | 'ee' | 'df' | 'dp';
+export type ProductTier = 'dekaf-free' | 'dekaf-for-teams' | 'dekaf-enterprise' | 'dekaf-desktop-free' | 'dekaf-desktop';
+
+export type SubscriptionPlan = {
+  tier: ProductTier,
+
+}
 
 export type FeatureSupport =
   | { type: 'boolean'; value: boolean }
@@ -24,14 +29,12 @@ export type FeatureGroup = {
   isGroupFeature?: boolean;
 };
 
-// -----------------------------------------------------------------------------
 type FeatureRowProps = {
   feature: Feature;
   isGroupFeature?: Boolean;
   selectedType: string;
 };
 
-// -----------------------------------------------------------------------------
 const FeatureRow: React.FC<FeatureRowProps> = ({ feature, isGroupFeature, selectedType }) => {
   const { name, tiers, href, description } = feature;
 
@@ -60,7 +63,6 @@ const FeatureRow: React.FC<FeatureRowProps> = ({ feature, isGroupFeature, select
   );
 };
 
-// -----------------------------------------------------------------------------
 export type FeatureTableProps = {
   groups: FeatureGroup[];
   selectedType: string;
@@ -68,8 +70,8 @@ export type FeatureTableProps = {
 
 const FeaturesTable: React.FC<FeatureTableProps> = ({ groups, selectedType }) => {
 
-  const plans = [
-    { name: "Free", tiers: ["free", "se", "ee"], action: { label: "Get started", href: "" } },
+  const plans: SubscriptionPlan[] = [
+    { name: "Free", tier: ["free", "se", "ee"], action: { label: "Get started", href: "" } },
     { name: "For Teams", tiers: ["free", "se", "ee"], action: { label: "Get started", href: "" } },
     { name: "Enterprise", tiers: ["free", "se", "ee"], action: { label: "Contact us", href: "" } },
     { name: "Desktop Free", tiers: ["df", "dp"], action: { label: "Get started", href: "" } },
@@ -85,7 +87,7 @@ const FeaturesTable: React.FC<FeatureTableProps> = ({ groups, selectedType }) =>
         {currentPlans.map((plan) => (
           <div className={selectedType === 'desktop' ? `${style.headerCell} ${style.headerCellWide}` : style.headerCell}>
             <span>{plan.name}</span>
-            <Button size="small" title={plan.action.label} />
+            <Button type="primary" text={plan.action.label} />
           </div>
         ))}
       </div>
