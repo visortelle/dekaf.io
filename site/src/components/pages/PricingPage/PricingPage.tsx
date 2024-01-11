@@ -89,7 +89,6 @@ export const productTiers: Record<ProductId, Partial<Record<ProductTierId, Produ
           <div style={{ color: '#fff', background: 'var(--color-black)', padding: '0.5rem 1rem', marginTop: '0.5rem', borderRadius: '0.5rem' }}>
             <strong>2480$</strong> during beta!
             <br />
-            <strong style={{ fontSize: '0.75rem' }}>per Pulsar instance</strong>
           </div>
         </div>,
         href: ''

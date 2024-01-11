@@ -17,10 +17,10 @@
 }
 
 .ProductSelectionControls {
-  margin-top: 4rem;
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  margin-top: 2rem;
   margin-bottom: 4rem;
 }
 
