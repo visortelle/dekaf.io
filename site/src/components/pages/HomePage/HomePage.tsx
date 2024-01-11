@@ -1,5 +1,5 @@
 import React from 'react';
-import Layout from '@theme/Layout';
+import Layout from '@site/src/components/ui/Layout/Layout';
 import LinksBlock from './LinksBlock/LinksBlock';
 import GreetingScreen from './GreetingScreen/GreetingScreen';
 

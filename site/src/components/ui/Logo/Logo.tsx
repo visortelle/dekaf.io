@@ -13,7 +13,7 @@ const Logo: React.FC<LogoProps> = (props) => {
           <Beta />
         </div>
         <span className={s.TextDekaf}>dekaf</span>
-        <span className={s.TextForPulsar}>for Apache Pulsar</span>
+        <span className={s.TextForPulsar}>for Apache Pulsar™</span>
       </div>
     </div>
   );

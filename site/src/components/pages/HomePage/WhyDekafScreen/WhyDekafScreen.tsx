@@ -25,7 +25,8 @@ const WhyScreen: React.FC = () => {
             <div className={s.Question}>
               <h3>Simplifies learning Pulsar</h3>
               <p>
-                The ability to easily navigate Pulsar resources and experiment with its features in a point-and-click manner is a great addition to taking a course or reading the extensive documentation.
+                <a href="/pricing/?productId=dekaf-desktop&buyerType=individual&billingPeriod=yearly">Dekaf Desktop</a> provides an easy way to start a local Pulsar instance in a few clicks.
+                The ability to experiment with Pulsar in a point-and-click manner is a great addition to taking a course.
               </p>
             </div>
 

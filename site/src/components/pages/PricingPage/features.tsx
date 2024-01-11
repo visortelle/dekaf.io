@@ -129,20 +129,14 @@ export const features: FeatureSet = [
         name: 'View topic messages',
         availableAt: {
           'dekaf-desktop-free': {
-            extraLabel: <>Max 100 consumed messages per session</>
+            extraLabel: <>Session pauses each 100 consumed messages</>
           },
-          'dekaf-desktop': {
-            extraLabel: <>Unlimited consumed messages per session</>
-          },
+          'dekaf-desktop': {},
           'dekaf-free': {
-            extraLabel: <>Max 100 consumed messages per consumer session</>
+            extraLabel: <>Session pauses each 100 consumed messages</>
           },
-          'dekaf-for-teams': {
-            extraLabel: <>Unlimited consumed messages per session</>
-          },
-          'dekaf-enterprise': {
-            extraLabel: <>Unlimited consumed messages per session</>
-          },
+          'dekaf-for-teams': {},
+          'dekaf-enterprise': {},
         }
       },
       {
@@ -250,7 +244,7 @@ export const features: FeatureSet = [
       },
       {
         id: 'reprocess-message',
-        name: 'Reprocess message',
+        name: 'Reprocess a message',
         description: <>Re-send a message to any topic.</>,
         availableAt: {
           'dekaf-desktop': {},

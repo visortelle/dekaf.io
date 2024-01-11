@@ -1,7 +1,8 @@
 import React, { ReactElement, useState } from 'react';
-import Layout from '@theme/Layout';
+import Layout from '@site/src/components/ui/Layout/Layout';
 import Heading from '../../ui/Heading/Heading';
 import Toggle from '../../ui/Toggle/Toggle';
+import { useQueryParam, withDefault, StringParam } from 'use-query-params';
 
 import s from './PricingPage.module.css';
 import FeatureTable from './FeatureTable/FeatureTable';
@@ -190,72 +191,70 @@ export type PricingPeriod = 'monthly' | 'yearly';
 export type BuyerType = 'organization' | 'individual';
 
 const PricingPage: React.FC = () => {
-  const [productId, setProductId] = useState<ProductId>('dekaf');
-  const [pricingPeriod, setPricingPeriod] = useState<PricingPeriod>('yearly');
-  const [buyerType, setBuyerType] = useState<BuyerType>('organization');
+  const [productId, setProductId] = useQueryParam<ProductId>('productId', withDefault(StringParam as any, 'dekaf'), { updateType: 'replaceIn' });
+  const [billingPeriod, setBillingPeriod] = useQueryParam<PricingPeriod>('billingPeriod', withDefault(StringParam as any, 'yearly'), { updateType: 'replaceIn' });
+  const [buyerType, setBuyerType] = useQueryParam<BuyerType>('buyerType', withDefault(StringParam as any, 'organization'), { updateType: 'replaceIn' });
 
   return (
-    <Layout>
-      <main className={s.PricingPage}>
-        <div className={s.Content}>
-          <Heading level={2}>Subscription Options and Pricing</Heading>
-          <div className={s.ProductSelectionControls}>
-            <Toggle<ProductId>
-              options={[
-                {
-                  value: 'dekaf',
-                  label: (
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
-                      Dekaf
-                      <div style={{ fontSize: '0.75rem', opacity: '0.6', marginTop: '0.4rem' }}>
-                        For organizations of any size
-                      </div>
+    <main className={s.PricingPage}>
+      <div className={s.Content}>
+        <Heading level={2}>Subscription Options and Pricing</Heading>
+        <div className={s.ProductSelectionControls}>
+          <Toggle<ProductId>
+            options={[
+              {
+                value: 'dekaf',
+                label: (
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
+                    Dekaf
+                    <div style={{ fontSize: '0.75rem', opacity: '0.6', marginTop: '0.4rem' }}>
+                      For organizations of any size
                     </div>
-                  )
-                },
-                {
-                  value: 'dekaf-desktop',
-                  label: (
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
-                      Dekaf Desktop
-                      <div style={{ fontSize: '0.75rem', opacity: '0.6', marginTop: '0.4rem' }}>
-                        Ideal for small projects and learning
-                      </div>
+                  </div>
+                )
+              },
+              {
+                value: 'dekaf-desktop',
+                label: (
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
+                    Dekaf Desktop
+                    <div style={{ fontSize: '0.75rem', opacity: '0.6', marginTop: '0.4rem' }}>
+                      Ideal for small projects and learning
                     </div>
-                  )
-                },
-              ]}
-              value={productId}
-              onChange={setProductId}
-            />
-            {productId === 'dekaf-desktop' && <Toggle<BuyerType>
-              options={[
-                { value: 'organization', label: <>For Organizations</> },
-                { value: 'individual', label: <>For Individual Use</> },
-              ]}
-              value={buyerType}
-              onChange={setBuyerType}
-            />}
-            <Toggle<PricingPeriod>
-              options={[
-                { value: 'yearly', label: <>Yearly billing&nbsp;&nbsp;<span style={{ opacity: '0.6' }}>save 2 months</span></> },
-                { value: 'monthly', label: <>Monthly billing</> },
-              ]}
-              value={pricingPeriod}
-              onChange={setPricingPeriod}
-            />
-          </div>
-
-          <FeatureTable
-            productId={productId}
-            features={features}
-            pricingPeriod={pricingPeriod}
-            buyerType={buyerType}
+                  </div>
+                )
+              },
+            ]}
+            value={productId}
+            onChange={setProductId}
+          />
+          {productId === 'dekaf-desktop' && <Toggle<BuyerType>
+            options={[
+              { value: 'organization', label: <>For Organizations</> },
+              { value: 'individual', label: <>For Individual Use</> },
+            ]}
+            value={buyerType}
+            onChange={setBuyerType}
+          />}
+          <Toggle<PricingPeriod>
+            options={[
+              { value: 'yearly', label: <>Yearly billing&nbsp;&nbsp;<span style={{ opacity: '0.6' }}>save 2 months</span></> },
+              { value: 'monthly', label: <>Monthly billing</> },
+            ]}
+            value={billingPeriod}
+            onChange={setBillingPeriod}
           />
         </div>
-      </main>
-    </Layout>
+
+        <FeatureTable
+          productId={productId}
+          features={features}
+          pricingPeriod={billingPeriod}
+          buyerType={buyerType}
+        />
+      </div>
+    </main>
   );
 };
 
-export default PricingPage;
+export default () => <Layout><PricingPage /></Layout>;
