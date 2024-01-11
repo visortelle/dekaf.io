@@ -9,12 +9,11 @@
   font-weight: var(--font-weight-bold);
   user-select: none;
   transition: var(--transition-short);
+  border: none;
   border: 1px solid var(--border-color);
-  border-bottom-color: rgba(0, 0, 0, 0.27);
-  box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.27);
-  margin: 1rem;
   appearance: none;
   font-family: inherit;
+  white-space: nowrap;
 }
 
 .Button:hover {

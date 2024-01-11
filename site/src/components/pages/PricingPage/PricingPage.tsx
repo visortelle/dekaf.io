@@ -74,13 +74,24 @@ export const productTiers: Record<ProductId, Partial<Record<ProductTierId, Produ
       monthlyPrice: {
         id: 'dekaf-for-teams-monthly',
         type: 'fixed',
-        value: <><strong>190$</strong> per instance per month</>,
+        value: <><strong>349$</strong> per Pulsar instance per month</>,
         href: ''
       },
       yearlyPrice: {
         id: 'dekaf-for-teams-yearly',
         type: 'fixed',
-        value: <><strong>1900$</strong> per instance per year</>,
+        value: <div style={{ lineHeight: '1' }}>
+          <div>
+            <strong>3490$</strong> per year
+            <br />
+            <strong style={{ fontSize: '0.75rem' }}>per Pulsar instance</strong>
+          </div>
+          <div style={{ color: '#fff', background: 'var(--color-black)', padding: '0.5rem 1rem', marginTop: '0.5rem', borderRadius: '0.5rem' }}>
+            <strong>2480$</strong> during beta!
+            <br />
+            <strong style={{ fontSize: '0.75rem' }}>per Pulsar instance</strong>
+          </div>
+        </div>,
         href: ''
       },
     },
@@ -121,11 +132,11 @@ export const productTiers: Record<ProductId, Partial<Record<ProductTierId, Produ
         id: 'dekaf-desktop-monthly',
         type: 'fixed-by-buyer-type',
         individual: {
-          value: <><strong>9.90$</strong> per month</>,
+          value: <><strong>16.90$</strong> per month</>,
           href: ''
         },
         organization: {
-          value: <><strong>34.90$</strong> per month</>,
+          value: <><strong>59.90$</strong> per month</>,
           href: ''
         },
       },
@@ -133,11 +144,11 @@ export const productTiers: Record<ProductId, Partial<Record<ProductTierId, Produ
         id: 'dekaf-desktop-yearly',
         type: 'fixed-by-buyer-type',
         individual: {
-          value: <><strong>99$</strong> per year</>,
+          value: <><strong>169$</strong> per year</>,
           href: ''
         },
         organization: {
-          value: <><strong>349$</strong> per year</>,
+          value: <><strong>599$</strong> per year</>,
           href: ''
         },
       },

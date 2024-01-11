@@ -1,8 +1,10 @@
 import React from 'react';
 
+import { useHistory } from '@docusaurus/router';
 import s from './FeatureTable.module.css';
 import { FeatureSet } from '../features';
 import { BuyerType, Price, PricingPeriod, ProductId, ProductTier, ProductTierId, productTiers } from '../PricingPage';
+import Button from '@site/src/components/ui/Button/Button';
 
 export type FeatureTableProps = {
   productId: ProductId,
@@ -27,31 +29,27 @@ export function formatPrice(price: Price, buyerType: BuyerType): React.ReactElem
   }
 }
 
-export function renderPriceHref(price: Price, buyerType: BuyerType): React.ReactElement {
-  const labels = {
-    'free': <span>Get Free</span>,
-    'fixed': <span>Buy Now</span>,
-    'custom': <span>Request Quote</span>
-  };
+export function renderPriceHref(price: Price, buyerType: BuyerType, historyPush: (href: string) => void): React.ReactElement {
+  let href = '';
+  switch (price.type) {
+    case 'free': href = price.href; break;
+    case 'fixed': href = price.href; break;
+    case 'custom': href = price.href; break;
+    case 'fixed-by-buyer-type': href = buyerType === 'individual' ? price.individual.href : price.organization.href; break;
+  }
 
   switch (price.type) {
-    case "free": return <a href={price.href}>{labels.free}</a>;
-    case "fixed": return <a href={price.href}>{labels.fixed}</a>;
-    case "fixed-by-buyer-type": {
-      if (buyerType === 'individual') {
-        return <a href={price.individual.href}>{labels.fixed}</a>
-      } else if (buyerType === 'organization') {
-        return <a href={price.organization.href}>{labels.fixed}</a>
-      }
-      throw new Error('Unknown buyer type');
-    };
-    case "custom": return <a href={price.href}>{labels.custom}</a>
+    case "free": return <Button type="regular" text="Get Free" onClick={() => historyPush(href)} />;
+    case "fixed": return <Button type="primary" text="Buy Now" onClick={() => historyPush(href)} />;
+    case "fixed-by-buyer-type": return <Button type="primary" text="Buy Now" onClick={() => historyPush(href)} />;
+    case "custom": return <Button type="primary" text="Request Quote" onClick={() => historyPush(href)} />;
     default: throw new Error('Unknown price');
   }
 }
 
 const FeaturesTable: React.FC<FeatureTableProps> = (props) => {
   let currentProductTiers: ProductTier[] = [];
+  const history = useHistory();
 
   switch (props.productId) {
     case 'dekaf': {
@@ -71,7 +69,7 @@ const FeaturesTable: React.FC<FeatureTableProps> = (props) => {
 
   return (
     <div className={s.FeatureTable} style={{ textAlign: 'center' }}>
-      <div style={{ display: 'grid', gridTemplateColumns: '1.5fr 1fr 1fr 1fr' }}>
+      <div className={s.Row}>
         <div>
 
         </div>
@@ -79,13 +77,13 @@ const FeaturesTable: React.FC<FeatureTableProps> = (props) => {
         {currentProductTiers.map(tier => {
           return (
             <div key={tier.id}>
-              <strong>{tier.name}</strong>
+              <h3 style={{ marginBottom: '0.5rem' }}>{tier.name}</h3>
             </div>
           );
         })}
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: '1.5fr 1fr 1fr 1fr' }}>
+      <div className={s.Row} style={{ gap: '1rem' }}>
         <div>
 
         </div>
@@ -98,13 +96,13 @@ const FeaturesTable: React.FC<FeatureTableProps> = (props) => {
 
           return (
             <div key={tier.id}>
-              <strong>{formatPrice(price, props.buyerType)}</strong>
+              {formatPrice(price, props.buyerType)}
             </div>
           );
         })}
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: '1.5fr 1fr 1fr 1fr' }}>
+      <div className={s.Row} style={{ marginTop: '1rem', gap: '1rem' }}>
         <div>
 
         </div>
@@ -116,8 +114,8 @@ const FeaturesTable: React.FC<FeatureTableProps> = (props) => {
           }
 
           return (
-            <div key={tier.id}>
-              <strong>{renderPriceHref(price, props.buyerType)}</strong>
+            <div key={tier.id} style={{ display: 'grid', gridTemplateColumns: '1fr' }}>
+              {renderPriceHref(price, props.buyerType, history.push)}
             </div>
           );
         })}
@@ -125,16 +123,32 @@ const FeaturesTable: React.FC<FeatureTableProps> = (props) => {
 
       {props.features.map(featureGroup => {
         return (
-          <div key={featureGroup.id}>
-            <div style={{ display: 'grid', gridTemplateColumns: '1.5fr 1fr 1fr 1fr', textAlign: 'left', marginBottom: '1rem' }}>
+          <div key={featureGroup.id} style={{ marginBottom: '3rem' }} className={s.FeatureGroup}>
+            <div className={s.Row} style={{ textAlign: 'left' }}>
               <h3 style={{ marginBottom: '0' }}>{featureGroup.name}</h3>
             </div>
+
             <div>
               {featureGroup.features.map(feature => {
                 return (
                   <div key={feature.id}>
-                    <div style={{ display: 'grid', gridTemplateColumns: '1.5fr 1fr 1fr 1fr' }}>
-                      <div style={{ textAlign: 'left' }}>{feature.name}</div>
+
+                    <div
+                      className={s.Row}
+                      style={{
+                        borderBottom: '1px solid var(--border-color)',
+                        padding: '0.5rem 0'
+                      }}>
+                      <div
+                        style={{
+                          display: 'flex',
+                          alignItems: 'center',
+                          textAlign: 'left'
+                        }}
+                      >
+                        {feature.name}
+                      </div>
+
                       {currentProductTiers.map(tier => {
                         const availability = feature.availableAt[tier.id as ProductTierId]
                         return (
@@ -145,10 +159,13 @@ const FeaturesTable: React.FC<FeatureTableProps> = (props) => {
                               </div>
                             ) : (
                               <>
-                                <div style={{ color: 'var(--color-green)' }}>
-                                  ⏺
-                                </div>
-                                <div style={{ fontSize: '0.75rem' }}>{availability.extraLabel}</div>
+                                {!availability.extraLabel ? (
+                                  <div style={{ color: 'var(--color-green)' }}>
+                                    ⏺
+                                  </div>
+                                ) : (
+                                  <div style={{ fontSize: '0.75rem' }}>{availability.extraLabel}</div>
+                                )}
                               </>
                             )}
                           </div>

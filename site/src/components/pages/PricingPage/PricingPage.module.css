@@ -1,8 +1,4 @@
-/* Pricing page-------------------------------------------------------------- */
-.PricingPage {
-  display: flex;
-  width: 100%;
-}
+.PricingPage {}
 
 .Content {
   width: 100%;
@@ -26,4 +22,10 @@
   flex-direction: column;
   gap: 0.75rem;
   margin-bottom: 4rem;
+}
+
+@media (max-width: 1000px) {
+  .PricingPage {
+    padding: 0 1rem;
+  }
 }

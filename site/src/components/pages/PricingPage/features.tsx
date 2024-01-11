@@ -97,19 +97,19 @@ export const features: FeatureSet = [
         name: 'View topic messages',
         availableAt: {
           'dekaf-desktop-free': {
-            extraLabel: <>Max 10,000 processed messages per consumer session</>
+            extraLabel: <>Max 100 consumed messages per session</>
           },
           'dekaf-desktop': {
-            extraLabel: <>Unlimited processed messages per consumer session</>
+            extraLabel: <>Unlimited consumed messages per session</>
           },
           'dekaf-free': {
-            extraLabel: <>Max 10,000 processed messages per consumer session</>
+            extraLabel: <>Max 100 consumed messages per consumer session</>
           },
           'dekaf-for-teams': {
-            extraLabel: <>Unlimited processed messages per consumer session</>
+            extraLabel: <>Unlimited consumed messages per session</>
           },
           'dekaf-enterprise': {
-            extraLabel: <>Unlimited processed messages per consumer session</>
+            extraLabel: <>Unlimited consumed messages per session</>
           },
         }
       },
@@ -184,20 +184,8 @@ export const features: FeatureSet = [
     name: 'Produce Data',
     features: [
       {
-        id: 'produce-single-message',
-        name: 'Produce a single message',
-        availableAt: {
-          'dekaf-desktop-free': {},
-          'dekaf-desktop': {},
-          'dekaf-free': {},
-          'dekaf-for-teams': {},
-          'dekaf-enterprise': {},
-        }
-      },
-      {
-        id: 'reprocess-message',
-        name: 'Reprocess message',
-        description: <>Re-send a message to any topic.</>,
+        id: 'produce-message',
+        name: 'Produce messages to a topic',
         availableAt: {
           'dekaf-desktop-free': {},
           'dekaf-desktop': {},
@@ -218,8 +206,18 @@ export const features: FeatureSet = [
         }
       },
       {
+        id: 'reprocess-message',
+        name: 'Reprocess message',
+        description: <>Re-send a message to any topic.</>,
+        availableAt: {
+          'dekaf-desktop': {},
+          'dekaf-for-teams': {},
+          'dekaf-enterprise': {},
+        }
+      },
+      {
         id: 'complex-producer-scenarios',
-        name: 'Programmable producer scenarios',
+        name: 'Producer scenarios',
         description: <>Ability to set up scenarios like: produce a message to a topic, then produce another message to another topic; repeat 10 times.</>,
         availableAt: {
           'dekaf-desktop': {},
@@ -269,7 +267,7 @@ export const features: FeatureSet = [
       },
       {
         id: 'share-library-items',
-        name: 'Share library items',
+        name: 'Shared library items',
         description: (
           <>
             <p>
@@ -278,7 +276,7 @@ export const features: FeatureSet = [
           </>
         ),
         availableAt: {
-          'dekaf-desktop': {},
+          'dekaf-free': {},
           'dekaf-for-teams': {},
           'dekaf-enterprise': {},
         }

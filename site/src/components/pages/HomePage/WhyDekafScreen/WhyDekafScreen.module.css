@@ -18,3 +18,10 @@
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
 }
+
+@media (max-width: 1000px) {
+  .Screen {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

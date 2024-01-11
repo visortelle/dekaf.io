@@ -1,0 +1,11 @@
+.Row {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+}
+
+@media (max-width: 1000px) {
+  .FeatureGroup {
+    display: flex;
+    flex-direction: column;
+  }
+}

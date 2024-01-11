@@ -10,6 +10,6 @@
 
 .linksButtonContainer {
   display: grid;
-  gap: 1rem;
+  gap: 4rem;
   grid-template-columns: 1fr 1fr;
 }
