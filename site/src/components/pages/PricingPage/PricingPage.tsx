@@ -90,7 +90,6 @@ export const productTiers: Record<ProductId, Partial<Record<ProductTierId, Produ
           </div>
           <div style={{ color: '#fff', background: 'var(--color-black)', padding: '0.5rem 1rem', marginTop: '0.5rem', borderRadius: '0.5rem', fontSize: '0.75rem' }}>
             <strong>2480$</strong> during <Beta size='small' />
-            <br />
           </div>
         </div>,
         href: ''
@@ -145,11 +144,25 @@ export const productTiers: Record<ProductId, Partial<Record<ProductTierId, Produ
         id: 'dekaf-desktop-yearly',
         type: 'fixed-by-buyer-type',
         individual: {
-          value: <><strong>169$</strong> per year</>,
+          value: (
+            <div>
+              <strong>169$</strong> per year
+              <div style={{ color: '#fff', background: 'var(--color-black)', padding: '0.5rem 1rem', marginTop: '0.5rem', borderRadius: '0.5rem', fontSize: '0.75rem' }}>
+                <strong>110$</strong> during <Beta size='small' />
+              </div>
+            </div>
+          ),
           href: ''
         },
         organization: {
-          value: <><strong>599$</strong> per year</>,
+          value: (
+            <div>
+              <strong>599$</strong> per year
+              <div style={{ color: '#fff', background: 'var(--color-black)', padding: '0.5rem 1rem', marginTop: '0.5rem', borderRadius: '0.5rem', fontSize: '0.75rem' }}>
+                <strong>420$</strong> during <Beta size='small' />
+              </div>
+            </div>
+          ),
           href: ''
         },
       },
