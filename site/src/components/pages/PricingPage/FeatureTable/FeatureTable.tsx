@@ -2,7 +2,7 @@ import React from 'react';
 
 import s from './FeatureTable.module.css';
 import { FeatureSet } from '../features';
-import { BuyerType, Price, PricingPeriod, ProductId, ProductTier, productTiers } from '../PricingPage';
+import { BuyerType, Price, PricingPeriod, ProductId, ProductTier, ProductTierId, productTiers } from '../PricingPage';
 
 export type FeatureTableProps = {
   productId: ProductId,
@@ -22,7 +22,30 @@ export function formatPrice(price: Price, buyerType: BuyerType): React.ReactElem
         return <span>{price.organization.value}</span>
       }
     };
-    case "custom": return <span>Custom</span>;
+    case "custom": return <span>Custom Pricing</span>;
+    default: throw new Error('Unknown price');
+  }
+}
+
+export function renderPriceHref(price: Price, buyerType: BuyerType): React.ReactElement {
+  const labels = {
+    'free': <span>Get Free</span>,
+    'fixed': <span>Buy Now</span>,
+    'custom': <span>Request Quote</span>
+  };
+
+  switch (price.type) {
+    case "free": return <a href={price.href}>{labels.free}</a>;
+    case "fixed": return <a href={price.href}>{labels.fixed}</a>;
+    case "fixed-by-buyer-type": {
+      if (buyerType === 'individual') {
+        return <a href={price.individual.href}>{labels.fixed}</a>
+      } else if (buyerType === 'organization') {
+        return <a href={price.organization.href}>{labels.fixed}</a>
+      }
+      throw new Error('Unknown buyer type');
+    };
+    case "custom": return <a href={price.href}>{labels.custom}</a>
     default: throw new Error('Unknown price');
   }
 }
@@ -47,8 +70,8 @@ const FeaturesTable: React.FC<FeatureTableProps> = (props) => {
   }
 
   return (
-    <div className={s.FeatureTable}>
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr' }}>
+    <div className={s.FeatureTable} style={{ textAlign: 'center' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: '1.5fr 1fr 1fr 1fr' }}>
         <div>
 
         </div>
@@ -62,7 +85,7 @@ const FeaturesTable: React.FC<FeatureTableProps> = (props) => {
         })}
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: '1.5fr 1fr 1fr 1fr' }}>
         <div>
 
         </div>
@@ -81,21 +104,57 @@ const FeaturesTable: React.FC<FeatureTableProps> = (props) => {
         })}
       </div>
 
+      <div style={{ display: 'grid', gridTemplateColumns: '1.5fr 1fr 1fr 1fr' }}>
+        <div>
+
+        </div>
+        {currentProductTiers.map(tier => {
+          let price: Price;
+          switch (props.pricingPeriod) {
+            case 'monthly': price = tier.monthlyPrice; break;
+            case 'yearly': price = tier.yearlyPrice; break;
+          }
+
+          return (
+            <div key={tier.id}>
+              <strong>{renderPriceHref(price, props.buyerType)}</strong>
+            </div>
+          );
+        })}
+      </div>
+
       {props.features.map(featureGroup => {
         return (
-          <div key={featureGroup.id} style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr' }}>
-            <h3>{featureGroup.name}</h3>
+          <div key={featureGroup.id}>
+            <div style={{ display: 'grid', gridTemplateColumns: '1.5fr 1fr 1fr 1fr', textAlign: 'left', marginBottom: '1rem' }}>
+              <h3 style={{ marginBottom: '0' }}>{featureGroup.name}</h3>
+            </div>
             <div>
               {featureGroup.features.map(feature => {
                 return (
                   <div key={feature.id}>
-                    {currentProductTiers.map(tier => {
-                      return (
-                        <div key={tier.id}>
-                          { }
-                        </div>
-                      );
-                    })}
+                    <div style={{ display: 'grid', gridTemplateColumns: '1.5fr 1fr 1fr 1fr' }}>
+                      <div style={{ textAlign: 'left' }}>{feature.name}</div>
+                      {currentProductTiers.map(tier => {
+                        const availability = feature.availableAt[tier.id as ProductTierId]
+                        return (
+                          <div key={tier.id}>
+                            {availability === undefined ? (
+                              <div style={{ color: 'var(--color-red)' }}>
+                                ⏺
+                              </div>
+                            ) : (
+                              <>
+                                <div style={{ color: 'var(--color-green)' }}>
+                                  ⏺
+                                </div>
+                                <div style={{ fontSize: '0.75rem' }}>{availability.extraLabel}</div>
+                              </>
+                            )}
+                          </div>
+                        );
+                      })}
+                    </div>
                   </div>
                 );
               })}

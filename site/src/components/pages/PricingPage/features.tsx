@@ -14,12 +14,12 @@ export type FeatureSet = FeatureGroup[];
 
 export const features: FeatureSet = [
   {
-    id: 'manage-pulsar',
-    name: 'Manage Pulsar Resources',
+    id: 'core',
+    name: 'Core',
     features: [
       {
         id: 'browse-pulsar-resources',
-        name: 'Browse and Managed Pulsar Resources',
+        name: 'Manage Pulsar resources',
         description: (
           <>
             <p>
@@ -32,11 +32,11 @@ export const features: FeatureSet = [
         ),
         availableAt: {
           'dekaf-desktop-free': {
-            extraLabel: <>Max 10 tenants, 10 namespaces per tenant</>
+            extraLabel: <>Max 10 namespaces per tenant,<br /> max 10 tenants</>
           },
           'dekaf-desktop': {},
           'dekaf-free': {
-            extraLabel: <>Max 10 tenants, 10 namespaces per tenant</>
+            extraLabel: <>Max 10 namespaces per tenant,<br /> max 10 tenants</>
           },
           'dekaf-for-teams': {},
           'dekaf-enterprise': {},
@@ -44,7 +44,7 @@ export const features: FeatureSet = [
       },
       {
         id: 'view-topic-subscriptions-and-producers',
-        name: 'View topic subscriptions and producers',
+        name: 'View subscriptions and producers',
         availableAt: {
           'dekaf-desktop-free': {},
           'dekaf-desktop': {},
@@ -114,18 +114,8 @@ export const features: FeatureSet = [
         }
       },
       {
-        id: 'consume-multiple-targets',
-        name: 'Consume Multiple Targets',
-        description: <>Each consumer session target may have it's own topic selector, filters, coloring rules, and projections.</>,
-        availableAt: {
-          'dekaf-desktop': {},
-          'dekaf-for-teams': {},
-          'dekaf-enterprise': {},
-        }
-      },
-      {
         id: 'basic-message-filters',
-        name: 'Basic message filters',
+        name: 'Basic filters',
         availableAt: {
           'dekaf-desktop-free': {},
           'dekaf-desktop': {},
@@ -136,7 +126,7 @@ export const features: FeatureSet = [
       },
       {
         id: 'js-message-filters',
-        name: 'JavaScript message filters',
+        name: 'JavaScript filters',
         availableAt: {
           'dekaf-desktop-free': {},
           'dekaf-desktop': {},
@@ -158,7 +148,7 @@ export const features: FeatureSet = [
       },
       {
         id: 'field-projections',
-        name: 'Message field projections',
+        name: 'Field projections',
         description: <>Map any message field to an extra table column.</>,
         availableAt: {
           'dekaf-desktop-free': {},
@@ -171,6 +161,16 @@ export const features: FeatureSet = [
       {
         id: 'export-consumed-data',
         name: 'Export consumed data to CSV or JSON',
+        availableAt: {
+          'dekaf-desktop': {},
+          'dekaf-for-teams': {},
+          'dekaf-enterprise': {},
+        }
+      },
+      {
+        id: 'consume-multiple-targets',
+        name: 'Consume multiple targets',
+        description: <>Each consumer session target may have it's own topic selector, filters, coloring rules, and projections.</>,
         availableAt: {
           'dekaf-desktop': {},
           'dekaf-for-teams': {},
