@@ -1,29 +1,37 @@
-.logo {
+.Logo {
   display: flex;
   align-items: center;
   gap: 1rem;
   line-height: 1;
 }
 
-.logoImage {
+.LogoImage {
   animation: gradient 20s ease infinite;
   border-radius: 10%;
   width: 10rem;
 }
 
-.text {
+.Text {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
-.textDekaf {
+.TextDekaf {
   font-size: 4rem;
   font-weight: var(--font-weight-bold);
 }
 
-.textForPulsar {
+.TextForPulsar {
   font-size: 1rem;
   text-align: right;
+}
+
+.Beta {
+  position: absolute;
+  bottom: -0.5rem;
+  right: 0;
+  transform: translateY(100%);
 }
 
 @keyframes gradient {

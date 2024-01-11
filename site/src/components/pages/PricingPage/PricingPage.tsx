@@ -6,6 +6,7 @@ import Toggle from '../../ui/Toggle/Toggle';
 import s from './PricingPage.module.css';
 import FeatureTable from './FeatureTable/FeatureTable';
 import { features } from './features';
+import Beta from '../../ui/Beta/Beta';
 
 export type Price = { id: string } & ({
   type: 'free',
@@ -87,8 +88,8 @@ export const productTiers: Record<ProductId, Partial<Record<ProductTierId, Produ
             <br />
             <strong style={{ fontSize: '0.75rem' }}>per Pulsar instance</strong>
           </div>
-          <div style={{ color: '#fff', background: 'var(--color-black)', padding: '0.5rem 1rem', marginTop: '0.5rem', borderRadius: '0.5rem' }}>
-            <strong>2480$</strong> during beta!
+          <div style={{ color: '#fff', background: 'var(--color-black)', padding: '0.5rem 1rem', marginTop: '0.5rem', borderRadius: '0.5rem', fontSize: '0.75rem' }}>
+            <strong>2480$</strong> during <Beta size='small' />
             <br />
           </div>
         </div>,
