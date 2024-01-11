@@ -3,6 +3,27 @@
   grid-template-columns: 1.5fr 1fr 1fr 1fr;
 }
 
+.FeatureRow {
+  position: relative;
+}
+
+.FeatureCell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.PlannedFeatureBadge {
+  white-space: nowrap;
+  margin-left: auto;
+  padding: 0.25rem 1rem;
+  color: var(--color-primary);
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-bold);
+  border-radius: 1rem;
+  z-index: 1;
+}
+
 @media (max-width: 1000px) {
   .FeatureGroup {
     display: flex;

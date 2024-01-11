@@ -85,6 +85,38 @@ export const features: FeatureSet = [
           'dekaf-for-teams': {},
           'dekaf-enterprise': {},
         }
+      },
+      {
+        id: 'one-click-local-pulsar',
+        name: 'Local Pulsar instance in a few clicks',
+        availableAt: {
+          'dekaf-desktop-free': {
+            extraLabel: <>For MacOS and Linux</>
+          },
+          'dekaf-desktop': {
+            extraLabel: <>For MacOS and Linux</>
+          },
+        }
+      },
+      {
+        id: 'manage-io',
+        name: 'Manage Sinks and Sources',
+        availableAt: {
+          'dekaf-desktop': {},
+          'dekaf-for-teams': {},
+          'dekaf-enterprise': {}
+        },
+        isPlanned: true
+      },
+      {
+        id: 'manage-pulsar-functions',
+        name: 'Manage Functions',
+        availableAt: {
+          'dekaf-desktop': {},
+          'dekaf-for-teams': {},
+          'dekaf-enterprise': {}
+        },
+        isPlanned: true
       }
     ]
   },
@@ -160,7 +192,7 @@ export const features: FeatureSet = [
       },
       {
         id: 'export-consumed-data',
-        name: 'Export consumed data to CSV or JSON',
+        name: 'Export messages to CSV or JSON',
         availableAt: {
           'dekaf-desktop': {},
           'dekaf-for-teams': {},
@@ -176,6 +208,17 @@ export const features: FeatureSet = [
           'dekaf-for-teams': {},
           'dekaf-enterprise': {},
         }
+      },
+      {
+        id: 'data-visualization',
+        name: 'Data visualization widgets',
+        availableAt: {
+          'dekaf-free': {},
+          'dekaf-desktop': {},
+          'dekaf-for-teams': {},
+          'dekaf-enterprise': {},
+        },
+        isPlanned: true
       },
     ]
   },
@@ -223,7 +266,8 @@ export const features: FeatureSet = [
           'dekaf-desktop': {},
           'dekaf-for-teams': {},
           'dekaf-enterprise': {},
-        }
+        },
+        isPlanned: true,
       },
     ]
   },
@@ -233,7 +277,7 @@ export const features: FeatureSet = [
     features: [
       {
         id: 'manage-library-items',
-        name: 'Create and save items for further reuse',
+        name: 'Save items for further reuse',
         description: <>Save and reuse items like Consumer Sessions, Message Filters, Producer Scenarios.</>,
         availableAt: {
           'dekaf-desktop-free': {
@@ -243,8 +287,12 @@ export const features: FeatureSet = [
           'dekaf-free': {
             extraLabel: <>Max 50 items</>
           },
-          'dekaf-for-teams': {},
-          'dekaf-enterprise': {},
+          'dekaf-for-teams': {
+            extraLabel: <>Max 300 items</>
+          },
+          'dekaf-enterprise': {
+            extraLabel: <>Unlimited items</>
+          },
         }
       },
       {
@@ -267,7 +315,7 @@ export const features: FeatureSet = [
       },
       {
         id: 'share-library-items',
-        name: 'Shared library items',
+        name: 'Share library items with others',
         description: (
           <>
             <p>
@@ -281,6 +329,140 @@ export const features: FeatureSet = [
           'dekaf-enterprise': {},
         }
       },
+    ]
+  },
+  {
+    id: 'security',
+    name: 'Security',
+    features: [
+      {
+        id: 'pulsar-instance-authentication',
+        name: 'Pulsar Instance authentication',
+        availableAt: {
+          'dekaf-desktop-free': {},
+          'dekaf-desktop': {},
+          'dekaf-free': {},
+          'dekaf-for-teams': {},
+          'dekaf-enterprise': {},
+        },
+      },
+      {
+        id: 'manage-pulsar-acls',
+        name: 'Manage Pulsar ACLs',
+        availableAt: {
+          'dekaf-desktop': {},
+          'dekaf-for-teams': {},
+          'dekaf-enterprise': {},
+        },
+      },
+      {
+        id: 'access-control',
+        name: 'Fine-grained access control',
+        availableAt: {
+          'dekaf-free': {
+            extraLabel: <>Max 5 users</>
+          },
+          'dekaf-for-teams': {
+            extraLabel: <>Max 15 users</>
+          },
+          'dekaf-enterprise': {
+            extraLabel: <>Unlimited users</>
+          },
+        },
+        isPlanned: true
+      },
+      {
+        id: 'data-masking-rules',
+        name: 'Data masking',
+        availableAt: {
+          'dekaf-enterprise': {},
+        },
+        isPlanned: true
+      },
+      {
+        id: 'audit-log',
+        name: 'Audit log',
+        availableAt: {
+          'dekaf-enterprise': {},
+        },
+        isPlanned: true
+      }
+    ]
+  },
+  {
+    id: 'monitoring',
+    name: 'Monitoring',
+    features: [
+      {
+        id: 'metrics',
+        name: 'Pulsar metrics charts',
+        availableAt: {
+          'dekaf-for-teams': {},
+          'dekaf-enterprise': {},
+        },
+        isPlanned: true
+      },
+      {
+        id: 'alerting',
+        name: 'Pulsar metrics alerts',
+        availableAt: {
+          'dekaf-for-teams': {},
+          'dekaf-enterprise': {},
+        },
+        isPlanned: true
+      },
+      {
+        id: 'proactive-monitoring',
+        name: 'Proactive data monitoring',
+        availableAt: {
+          'dekaf-for-teams': {},
+          'dekaf-enterprise': {},
+        },
+        isPlanned: true
+      },
+    ]
+  },
+  {
+    id: 'support-and-licensing',
+    name: 'Support',
+    features: [
+      {
+        id: 'community-support',
+        name: 'Community support',
+        availableAt: {
+          'dekaf-desktop': {},
+          'dekaf-desktop-free': {},
+          'dekaf-free': {},
+          'dekaf-for-teams': {},
+          'dekaf-enterprise': {},
+        }
+      },
+      {
+        id: '24-7-support',
+        name: '24/7 dedicated support',
+        availableAt: {
+          'dekaf-for-teams': {
+            extraLabel: <>2 hours response time</>
+          },
+          'dekaf-enterprise': {
+            extraLabel: <>15 minutes response time</>
+          },
+        }
+      },
+      {
+        id: 'bug-fixes-prioritization',
+        name: 'Bug-fixes prioritization',
+        availableAt: {
+          'dekaf-enterprise': {},
+        }
+      },
+      {
+        id: 'offline-license',
+        name: 'Offline license',
+        availableAt: {
+          'dekaf-enterprise': {},
+        }
+      }
     ]
   }
 ];

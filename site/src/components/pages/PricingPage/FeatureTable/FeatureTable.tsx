@@ -131,14 +131,15 @@ const FeaturesTable: React.FC<FeatureTableProps> = (props) => {
             <div>
               {featureGroup.features.map(feature => {
                 return (
-                  <div key={feature.id}>
+                  <div key={feature.id} className={s.FeatureRow}>
 
                     <div
-                      className={s.Row}
+                      className={`${s.Row}`}
                       style={{
                         borderBottom: '1px solid var(--border-color)',
-                        padding: '0.5rem 0'
-                      }}>
+                        padding: '0.5rem 0',
+                      }}
+                    >
                       <div
                         style={{
                           display: 'flex',
@@ -147,12 +148,13 @@ const FeaturesTable: React.FC<FeatureTableProps> = (props) => {
                         }}
                       >
                         {feature.name}
+                        &nbsp;&nbsp;{feature.isPlanned && <div className={s.PlannedFeatureBadge}>In development</div>}
                       </div>
 
                       {currentProductTiers.map(tier => {
                         const availability = feature.availableAt[tier.id as ProductTierId]
                         return (
-                          <div key={tier.id}>
+                          <div key={tier.id} className={s.FeatureCell}>
                             {availability === undefined ? (
                               <div style={{ color: 'var(--color-red)' }}>
                                 ⏺
@@ -179,7 +181,7 @@ const FeaturesTable: React.FC<FeatureTableProps> = (props) => {
           </div>
         );
       })}
-    </div>
+    </div >
   );
 };
 

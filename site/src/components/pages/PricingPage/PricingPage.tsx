@@ -35,7 +35,8 @@ export type Feature = {
   availableAt: Partial<Record<ProductTierId, {
     extraLabel?: ReactElement
   }>>,
-  description?: ReactElement
+  description?: ReactElement,
+  isPlanned?: boolean
 };
 
 export type ProductTier = {
