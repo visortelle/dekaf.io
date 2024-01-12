@@ -439,7 +439,7 @@ export const features: FeatureSet = [
             extraLabel: <>2 hours response time</>
           },
           'dekaf-enterprise': {
-            extraLabel: <>15 minutes response time</>
+            extraLabel: <>30 minutes response time</>
           },
         }
       },
