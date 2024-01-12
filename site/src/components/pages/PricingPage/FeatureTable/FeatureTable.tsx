@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { useHistory } from '@docusaurus/router';
 import s from './FeatureTable.module.css';
 import { FeatureSet } from '../features';
 import { BuyerType, Price, PricingPeriod, ProductId, ProductTier, ProductTierId, productTiers } from '../PricingPage';
@@ -29,7 +28,7 @@ export function formatPrice(price: Price, buyerType: BuyerType): React.ReactElem
   }
 }
 
-export function renderPriceHref(price: Price, buyerType: BuyerType, historyPush: (href: string) => void): React.ReactElement {
+export function renderPriceHref(price: Price, buyerType: BuyerType): React.ReactElement {
   let href = '';
   switch (price.type) {
     case 'free': href = price.href; break;
@@ -39,17 +38,16 @@ export function renderPriceHref(price: Price, buyerType: BuyerType, historyPush:
   }
 
   switch (price.type) {
-    case "free": return <Button type="regular" text="Get Free" onClick={() => historyPush(href)} />;
-    case "fixed": return <Button type="primary" text="Buy Now" onClick={() => historyPush(href)} />;
-    case "fixed-by-buyer-type": return <Button type="primary" text="Buy Now" onClick={() => historyPush(href)} />;
-    case "custom": return <Button type="primary" text="Request Quote" onClick={() => historyPush(href)} />;
+    case "free": return <Button type="regular" text="Get Free" href={href} target='_blank' />;
+    case "fixed": return <Button type="primary" text="Buy Now" href={href} target='_blank' />;
+    case "fixed-by-buyer-type": return <Button type="primary" text="Buy Now" href={href} target='_blank' />;
+    case "custom": return <Button type="primary" text="Request Quote" href={href} target='_blank' />;
     default: throw new Error('Unknown price');
   }
 }
 
 const FeaturesTable: React.FC<FeatureTableProps> = (props) => {
   let currentProductTiers: ProductTier[] = [];
-  const history = useHistory();
 
   switch (props.productId) {
     case 'dekaf': {
@@ -115,7 +113,7 @@ const FeaturesTable: React.FC<FeatureTableProps> = (props) => {
 
           return (
             <div key={tier.id} style={{ display: 'grid', gridTemplateColumns: '1fr' }}>
-              {renderPriceHref(price, props.buyerType, history.push)}
+              {renderPriceHref(price, props.buyerType)}
             </div>
           );
         })}

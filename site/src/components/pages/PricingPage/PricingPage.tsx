@@ -63,6 +63,14 @@ export type DekafDesktopProductTierId = 'dekaf-desktop-free' | 'dekaf-desktop';
 
 export type ProductTierId = DekafProductTierId | DekafDesktopProductTierId;
 
+const discount = (
+  <div style={{ color: '#fff', background: 'var(--color-black)', padding: '0.5rem 1rem', marginTop: '0.5rem', borderRadius: '0.5rem', fontSize: '0.75rem', lineHeight: '1.2' }}>
+    <strong>Get 32% discount</strong> using the coupon <strong>DEKAFBETA32</strong>
+    <br />
+    Valid until March 1, 2024.
+  </div>
+);
+
 export const productTiers: Record<ProductId, Partial<Record<ProductTierId, ProductTier>>> = {
   'dekaf': {
     'dekaf-free': {
@@ -78,7 +86,7 @@ export const productTiers: Record<ProductId, Partial<Record<ProductTierId, Produ
         id: 'dekaf-for-teams-monthly',
         type: 'fixed',
         value: <><strong>349$</strong> per Pulsar instance per month</>,
-        href: ''
+        href: 'https://buy.stripe.com/cN2eYDd935H3f9m5kl'
       },
       yearlyPrice: {
         id: 'dekaf-for-teams-yearly',
@@ -89,11 +97,9 @@ export const productTiers: Record<ProductId, Partial<Record<ProductTierId, Produ
             <br />
             <strong style={{ fontSize: '0.75rem' }}>per Pulsar instance</strong>
           </div>
-          <div style={{ color: '#fff', background: 'var(--color-black)', padding: '0.5rem 1rem', marginTop: '0.5rem', borderRadius: '0.5rem', fontSize: '0.75rem' }}>
-            <strong>2480$</strong> during <Beta size='small' />
-          </div>
+          {discount}
         </div>,
-        href: ''
+        href: 'https://buy.stripe.com/bIYg2H0mh8Tfe5ifYY'
       },
     },
     'dekaf-enterprise': {
@@ -134,11 +140,11 @@ export const productTiers: Record<ProductId, Partial<Record<ProductTierId, Produ
         type: 'fixed-by-buyer-type',
         individual: {
           value: <><strong>16.90$</strong> per month</>,
-          href: ''
+          href: 'https://buy.stripe.com/7sI2bR6KFb1n9P2aEJ'
         },
         organization: {
           value: <><strong>59.90$</strong> per month</>,
-          href: ''
+          href: 'https://buy.stripe.com/00gg2H5GB9Xj4uIcMP'
         },
       },
       yearlyPrice: {
@@ -148,23 +154,19 @@ export const productTiers: Record<ProductId, Partial<Record<ProductTierId, Produ
           value: (
             <div>
               <strong>169$</strong> per year
-              <div style={{ color: '#fff', background: 'var(--color-black)', padding: '0.5rem 1rem', marginTop: '0.5rem', borderRadius: '0.5rem', fontSize: '0.75rem' }}>
-                <strong>110$</strong> during <Beta size='small' />
-              </div>
+              {discount}
             </div>
           ),
-          href: ''
+          href: 'https://buy.stripe.com/28o2bR4Cx8Tf6CQ9AE'
         },
         organization: {
           value: (
             <div>
               <strong>599$</strong> per year
-              <div style={{ color: '#fff', background: 'var(--color-black)', padding: '0.5rem 1rem', marginTop: '0.5rem', borderRadius: '0.5rem', fontSize: '0.75rem' }}>
-                <strong>420$</strong> during <Beta size='small' />
-              </div>
+              {discount}
             </div>
           ),
-          href: ''
+          href: 'https://buy.stripe.com/4gw6s7fhb4CZgdqdQS'
         },
       },
     }
@@ -219,7 +221,7 @@ const PricingPage: React.FC = () => {
                   <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
                     Dekaf Desktop
                     <div style={{ fontSize: '0.75rem', opacity: '0.6', marginTop: '0.4rem' }}>
-                      Easy to install, ideal for learning Pulsar
+                      Ideal for learning Pulsar and small projects
                     </div>
                   </div>
                 )

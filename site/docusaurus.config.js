@@ -75,8 +75,8 @@ const config = {
           /* Right----------------------------------------------------------- */
           { type: 'search', position: 'right' },
           {
-            to: 'https://account.teal.tools',
-            label: 'Account',
+            to: 'https://billing.stripe.com/p/login/aEU15N5g42A64GQ9AA',
+            label: 'Billing Portal',
             position: 'right',
             className: 'accountLink',
           },

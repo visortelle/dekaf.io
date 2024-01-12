@@ -3,7 +3,7 @@ import SvgIcon from '../SvgIcon/SvgIcon';
 import s from './Button.module.css';
 
 export type ButtonProps = {
-  onClick: () => void,
+  onClick?: () => void,
   text?: string
   svgIcon?: string,
   title?: string,
@@ -12,6 +12,8 @@ export type ButtonProps = {
   size?: 'regular' | 'small',
   disabled?: boolean,
   active?: boolean,
+  href?: string,
+  target?: string,
   buttonProps?: React.ButtonHTMLAttributes<HTMLButtonElement>,
 }
 const Button: React.FC<ButtonProps> = (props) => {
@@ -22,26 +24,49 @@ const Button: React.FC<ButtonProps> = (props) => {
     case 'danger': typeClassName = s.Danger; break;
   }
 
+  const className = `
+    ${s.Button}
+    ${props.disabled ? s.DisabledButton : ''}
+    ${props.active ? s.ActiveButton : ''}
+    ${props.text ? '' : s.ButtonWithoutText}
+    ${props.svgIcon ? s.ButtonWithIcon : ''}
+    ${props.size === 'small' ? s.SmallSize : ''}
+    ${typeClassName}
+  `;
+
+  const children = (
+    <>
+      {props.svgIcon && <SvgIcon svg={props.svgIcon} />}
+      {props.text}
+    </>
+  );
+
+  if (props.href !== undefined) {
+    return (
+      <a
+        className={className}
+        href={props.href}
+        target={props.target}
+        onClick={props.onClick}
+        title={props.title}
+        data-testid={props.testId}
+      >
+        {children}
+      </a>
+    );
+  }
+
   return (
     <button
       type="button"
-      className={`
-        ${s.Button}
-        ${props.disabled ? s.DisabledButton : ''}
-        ${props.active ? s.ActiveButton : ''}
-        ${props.text ? '' : s.ButtonWithoutText}
-        ${props.svgIcon ? s.ButtonWithIcon : ''}
-        ${props.size === 'small' ? s.SmallSize : ''}
-        ${typeClassName}
-      `}
+      className={className}
       onClick={props.onClick}
       disabled={props.disabled}
       title={props.title}
       data-testid={props.testId}
       {...props.buttonProps}
     >
-      {props.svgIcon && <SvgIcon svg={props.svgIcon} />}
-      {props.text}
+      {children}
     </button>
   );
 }

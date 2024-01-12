@@ -129,11 +129,11 @@ export const features: FeatureSet = [
         name: 'View topic messages',
         availableAt: {
           'dekaf-desktop-free': {
-            extraLabel: <>Session pauses each 100 consumed messages</>
+            extraLabel: <>Session pauses each 500 consumed messages</>
           },
           'dekaf-desktop': {},
           'dekaf-free': {
-            extraLabel: <>Session pauses each 100 consumed messages</>
+            extraLabel: <>Session pauses each 500 consumed messages</>
           },
           'dekaf-for-teams': {},
           'dekaf-enterprise': {},
