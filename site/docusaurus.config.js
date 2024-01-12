@@ -67,21 +67,6 @@ const config = {
         },
         items: [
           /* Left------------------------------------------------------------ */
-          {
-            to: '/product',
-            label: 'Product',
-            position: 'left',
-            items: [
-              {
-                to: '/product',
-                label: 'Roadmap',
-              },
-              {
-                to: '/changelog',
-                label: 'Changelog',
-              }
-            ]
-          },
           { to: '/docs', label: 'Docs', position: 'left' },
           { to: '/blog', label: 'Blog', position: 'left' },
           { to: '/pricing', label: 'Pricing', position: 'left' },
