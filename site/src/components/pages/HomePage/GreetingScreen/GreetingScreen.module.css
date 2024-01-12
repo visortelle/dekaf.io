@@ -28,7 +28,7 @@
 
 .Logo {
   position: relative;
-  left: 5rem;
+  left: 6rem;
 }
 
 .Links {
@@ -55,6 +55,10 @@
 }
 
 @media (max-width: 1000px) {
+  .Logo {
+    left: 0;
+  }
+
   .Screen {
     padding-left: 1rem;
     padding-right: 1rem;

@@ -18,9 +18,9 @@ const HeadingsSection: React.FC = () => {
           </h1>
 
           <p>
-            Our interface makes it easy for anybody to work with Pulsar.
+            Our interface makes it easy for anybody to work&nbsp;with&nbsp;Pulsar.
             <br />
-            Advanced messaging and streaming platform at your fingertips.
+            Advanced messaging and streaming platform at&nbsp;your&nbsp;fingertips.
           </p>
 
           <div className={s.Links}>

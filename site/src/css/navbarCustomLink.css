@@ -1,4 +1,4 @@
-.navbar__link.loginLink {
+.navbar__link.accountLink {
   width: 2rem;
   height: 2rem;
   background-image: url('/img/account-white.svg');
@@ -12,6 +12,6 @@
   margin-left: 1rem;
 }
 
-.navbar__link.loginLink:hover {
+.navbar__link.accountLink:hover {
   filter: drop-shadow(0 0 10px #6e79d6);
 }

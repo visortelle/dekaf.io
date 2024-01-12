@@ -75,10 +75,10 @@ const config = {
           /* Right----------------------------------------------------------- */
           { type: 'search', position: 'right' },
           {
-            to: '/login',
-            label: 'Login',
+            to: 'https://account.teal.tools',
+            label: 'Account',
             position: 'right',
-            className: 'loginLink',
+            className: 'accountLink',
           },
         ],
       },

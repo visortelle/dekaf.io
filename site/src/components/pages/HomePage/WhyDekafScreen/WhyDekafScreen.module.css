@@ -24,4 +24,12 @@
     padding-left: 1rem;
     padding-right: 1rem;
   }
+
+  .Content {
+    padding-top: 30vw;
+  }
+
+  .Questions {
+    grid-template-columns: 1fr;
+  }
 }
