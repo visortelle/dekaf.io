@@ -1,0 +1,16 @@
+.SupportPage {
+  width: 100%;
+}
+
+.Content {
+  margin: auto;
+  padding: 4rem 0;
+  max-width: var(--content-width);
+  width: 100%;
+}
+
+.Links {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+}
