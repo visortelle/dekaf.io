@@ -186,6 +186,18 @@ export const features: FeatureSet = [
         }
       },
       {
+        id: 'consume-multiple-targets',
+        name: 'Consume multiple targets',
+        description: <>Each consumer session target may have it's own topic selector, filters, coloring rules, and projections.</>,
+        availableAt: {
+          'dekaf-desktop-free': {},
+          'dekaf-desktop': {},
+          'dekaf-free': {},
+          'dekaf-for-teams': {},
+          'dekaf-enterprise': {},
+        }
+      },
+      {
         id: 'basic-message-filters',
         name: 'Basic filters',
         availableAt: {
@@ -233,16 +245,6 @@ export const features: FeatureSet = [
       {
         id: 'export-consumed-data',
         name: 'Export messages to CSV or JSON',
-        availableAt: {
-          'dekaf-desktop': {},
-          'dekaf-for-teams': {},
-          'dekaf-enterprise': {},
-        }
-      },
-      {
-        id: 'consume-multiple-targets',
-        name: 'Consume multiple targets',
-        description: <>Each consumer session target may have it's own topic selector, filters, coloring rules, and projections.</>,
         availableAt: {
           'dekaf-desktop': {},
           'dekaf-for-teams': {},
