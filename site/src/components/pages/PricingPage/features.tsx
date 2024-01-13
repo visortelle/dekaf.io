@@ -44,7 +44,18 @@ export const features: FeatureSet = [
       },
       {
         id: 'view-topic-subscriptions-and-producers',
-        name: 'View subscriptions and producers',
+        name: 'Subscriptions and producers stats',
+        availableAt: {
+          'dekaf-desktop-free': {},
+          'dekaf-desktop': {},
+          'dekaf-free': {},
+          'dekaf-for-teams': {},
+          'dekaf-enterprise': {},
+        }
+      },
+      {
+        id: 'manage-topic-schema',
+        name: 'Manage schema',
         availableAt: {
           'dekaf-desktop-free': {},
           'dekaf-desktop': {},
@@ -68,22 +79,40 @@ export const features: FeatureSet = [
         id: 'manage-topic-policies',
         name: 'Manage topic policies',
         availableAt: {
-          'dekaf-desktop-free': {},
           'dekaf-desktop': {},
-          'dekaf-free': {},
           'dekaf-for-teams': {},
           'dekaf-enterprise': {},
         }
       },
       {
-        id: 'manage-topic-schema',
-        name: 'Manage topic schema',
+        id: 'num-brokers-per-pulsar-instance',
+        name: 'Brokers per cluster',
+        description: (
+          <>
+            <p>
+              Navigate Pulsar resources like tenants, namespaces and topics using tree view, breadcrumbs and tables.
+            </p>
+            <p>
+              Create or delete tenants, namespaces, and topics.
+            </p>
+          </>
+        ),
         availableAt: {
-          'dekaf-desktop-free': {},
-          'dekaf-desktop': {},
-          'dekaf-free': {},
-          'dekaf-for-teams': {},
-          'dekaf-enterprise': {},
+          'dekaf-desktop-free': {
+            extraLabel: <>3</>
+          },
+          'dekaf-desktop': {
+            extraLabel: <>Unlimited</>
+          },
+          'dekaf-free': {
+            extraLabel: <>3</>
+          },
+          'dekaf-for-teams': {
+            extraLabel: <>Unlimited</>
+          },
+          'dekaf-enterprise': {
+            extraLabel: <>Unlimited</>
+          },
         }
       },
       {
@@ -109,7 +138,7 @@ export const features: FeatureSet = [
       },
       {
         id: 'manage-io',
-        name: 'Manage Sinks and Sources',
+        name: 'Manage sinks and sources',
         availableAt: {
           'dekaf-desktop': {},
           'dekaf-for-teams': {},
@@ -119,14 +148,22 @@ export const features: FeatureSet = [
       },
       {
         id: 'manage-pulsar-functions',
-        name: 'Manage Functions',
+        name: 'Manage Pulsar functions',
         availableAt: {
           'dekaf-desktop': {},
           'dekaf-for-teams': {},
           'dekaf-enterprise': {}
         },
         isPlanned: true
-      }
+      },
+      {
+        id: 'geo-replication',
+        name: 'Geo replication support',
+        availableAt: {
+          'dekaf-enterprise': {}
+        },
+        isPlanned: true
+      },
     ]
   },
   {
@@ -138,11 +175,11 @@ export const features: FeatureSet = [
         name: 'View topic messages',
         availableAt: {
           'dekaf-desktop-free': {
-            extraLabel: <>Max 50 messages<br />Unlimited for local instances</>
+            extraLabel: <>Max 100 messages</>
           },
           'dekaf-desktop': {},
           'dekaf-free': {
-            extraLabel: <>Max 50 messages</>
+            extraLabel: <>Max 100 messages</>
           },
           'dekaf-for-teams': {},
           'dekaf-enterprise': {},
@@ -207,9 +244,7 @@ export const features: FeatureSet = [
         name: 'Consume multiple targets',
         description: <>Each consumer session target may have it's own topic selector, filters, coloring rules, and projections.</>,
         availableAt: {
-          'dekaf-desktop-free': {},
           'dekaf-desktop': {},
-          'dekaf-free': {},
           'dekaf-for-teams': {},
           'dekaf-enterprise': {},
         }
@@ -341,8 +376,8 @@ export const features: FeatureSet = [
     name: 'Security',
     features: [
       {
-        id: 'pulsar-instance-authentication',
-        name: 'Pulsar Instance authentication',
+        id: 'manage-pulsar-acls',
+        name: 'Manage Pulsar ACLs',
         availableAt: {
           'dekaf-desktop-free': {},
           'dekaf-desktop': {},
@@ -352,12 +387,10 @@ export const features: FeatureSet = [
         },
       },
       {
-        id: 'manage-pulsar-acls',
-        name: 'Manage Pulsar ACLs',
+        id: 'pulsar-instance-authentication',
+        name: 'Pulsar instance authentication and TLS',
         availableAt: {
-          'dekaf-desktop-free': {},
           'dekaf-desktop': {},
-          'dekaf-free': {},
           'dekaf-for-teams': {},
           'dekaf-enterprise': {},
         },

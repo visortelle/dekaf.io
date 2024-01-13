@@ -212,7 +212,7 @@ const PricingPage: React.FC = () => {
                   <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
                     Dekaf
                     <div style={{ fontSize: '0.75rem', opacity: '0.6', marginTop: '0.4rem' }}>
-                      Self-hosted solution for organizations of any size
+                      For organizations of any size
                     </div>
                   </div>
                 )
@@ -223,7 +223,7 @@ const PricingPage: React.FC = () => {
                   <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
                     Dekaf Desktop
                     <div style={{ fontSize: '0.75rem', opacity: '0.6', marginTop: '0.4rem' }}>
-                      Ideal for learning Pulsar and small projects
+                      Ideal for learning and POC
                     </div>
                   </div>
                 )
