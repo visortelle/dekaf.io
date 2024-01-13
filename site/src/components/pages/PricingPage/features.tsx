@@ -86,7 +86,7 @@ export const features: FeatureSet = [
       },
       {
         id: 'num-brokers-per-pulsar-instance',
-        name: 'Brokers per cluster',
+        name: 'Max brokers per cluster',
         description: (
           <>
             <p>
