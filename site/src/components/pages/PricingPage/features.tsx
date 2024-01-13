@@ -187,7 +187,7 @@ export const features: FeatureSet = [
       },
       {
         id: 'consume-multiple-targets',
-        name: 'Consume multiple targets',
+        name: 'Consume multiple topics',
         description: <>Each consumer session target may have it's own topic selector, filters, coloring rules, and projections.</>,
         availableAt: {
           'dekaf-desktop-free': {},
