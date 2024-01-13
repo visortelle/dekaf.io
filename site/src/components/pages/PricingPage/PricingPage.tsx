@@ -71,6 +71,8 @@ const discount = (
   </div>
 );
 
+const salesEmail = `mailto:sales@teal.tools?subject=${encodeURIComponent('[Dekaf Enterprise] Request Quote')}&body=${encodeURIComponent('Your Name:\nJob Title:\nCompany:\n\n----------\n\n<describe your use case here>')}`;
+
 export const productTiers: Record<ProductId, Partial<Record<ProductTierId, ProductTier>>> = {
   'dekaf': {
     'dekaf-free': {
@@ -108,12 +110,12 @@ export const productTiers: Record<ProductId, Partial<Record<ProductTierId, Produ
       monthlyPrice: {
         id: 'dekaf-enterprise-monthly',
         type: 'custom',
-        href: ''
+        href: salesEmail
       },
       yearlyPrice: {
         id: 'dekaf-enterprise-yearly',
         type: 'custom',
-        href: ''
+        href: salesEmail
       },
     }
   },

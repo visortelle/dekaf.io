@@ -32,11 +32,11 @@ export const features: FeatureSet = [
         ),
         availableAt: {
           'dekaf-desktop-free': {
-            extraLabel: <>Max 10 namespaces per tenant,<br /> max 10 tenants</>
+            extraLabel: <>Max 5&nbsp;tenants, 5&nbsp;namespaces per tenant, 5&nbsp;topics per namespace</>
           },
           'dekaf-desktop': {},
           'dekaf-free': {
-            extraLabel: <>Max 10 namespaces per tenant,<br /> max 10 tenants</>
+            extraLabel: <>Max 5&nbsp;tenants, 5&nbsp;namespaces per tenant, 5&nbsp;topics per namespace</>
           },
           'dekaf-for-teams': {},
           'dekaf-enterprise': {},
@@ -88,7 +88,7 @@ export const features: FeatureSet = [
       },
       {
         id: 'one-click-local-pulsar',
-        name: 'Local Pulsar instance in a few clicks',
+        name: 'Local managed Pulsar instance',
         availableAt: {
           'dekaf-desktop-free': {
             extraLabel: <>For MacOS and Linux</>
@@ -96,6 +96,15 @@ export const features: FeatureSet = [
           'dekaf-desktop': {
             extraLabel: <>For MacOS and Linux</>
           },
+          'dekaf-free': {
+            extraLabel: <>See <strong>Dekaf Desktop</strong> for this feature</>
+          },
+          'dekaf-for-teams': {
+            extraLabel: <>See <strong>Dekaf Desktop</strong> for this feature</>
+          },
+          'dekaf-enterprise': {
+            extraLabel: <>See <strong>Dekaf Desktop</strong> for this feature</>
+          }
         }
       },
       {
@@ -129,11 +138,11 @@ export const features: FeatureSet = [
         name: 'View topic messages',
         availableAt: {
           'dekaf-desktop-free': {
-            extraLabel: <>Session pauses each 500 consumed messages</>
+            extraLabel: <>Max 50 messages<br />Unlimited for local instances</>
           },
           'dekaf-desktop': {},
           'dekaf-free': {
-            extraLabel: <>Session pauses each 500 consumed messages</>
+            extraLabel: <>Max 50 messages</>
           },
           'dekaf-for-teams': {},
           'dekaf-enterprise': {},
@@ -198,7 +207,9 @@ export const features: FeatureSet = [
         name: 'Consume multiple targets',
         description: <>Each consumer session target may have it's own topic selector, filters, coloring rules, and projections.</>,
         availableAt: {
+          'dekaf-desktop-free': {},
           'dekaf-desktop': {},
+          'dekaf-free': {},
           'dekaf-for-teams': {},
           'dekaf-enterprise': {},
         }
@@ -344,7 +355,9 @@ export const features: FeatureSet = [
         id: 'manage-pulsar-acls',
         name: 'Manage Pulsar ACLs',
         availableAt: {
+          'dekaf-desktop-free': {},
           'dekaf-desktop': {},
+          'dekaf-free': {},
           'dekaf-for-teams': {},
           'dekaf-enterprise': {},
         },
