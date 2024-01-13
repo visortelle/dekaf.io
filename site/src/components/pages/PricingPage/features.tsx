@@ -355,7 +355,7 @@ export const features: FeatureSet = [
       },
       {
         id: 'share-library-items',
-        name: 'Share library items with others',
+        name: 'Share library items',
         description: (
           <>
             <p>
