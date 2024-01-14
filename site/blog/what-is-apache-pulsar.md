@@ -31,7 +31,7 @@ ASF is a nonprofit organization that curates and supports development of many op
 
 :::info
 
-Each project has its own governance, consisting of representatives of commercial companies interested in the development of this particular project and a voting system for making decisions.
+Each project has its own governance, consisting mostly employees of commercial companies that are interested in the development of this particular project and a voting system for making decisions.
 If you don’t start yawning 🥱 from reading legal documents, you can read more about the ASF structure and licensing rules on the ASF website.
 
 :::
