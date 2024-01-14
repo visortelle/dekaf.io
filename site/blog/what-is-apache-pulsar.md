@@ -85,7 +85,7 @@ Pulsar is used by <strong>Discord</strong>, <strong>Tencent</strong>, <strong>Ya
 
 In some aspects Pulsar is similar to Apache Kafka, but it implements more flexible messaging model, better horizontal scaling, and provides more features out of the box.
 
-If you found something unfamiliar, read our [Data Streaming for Newbies](./abc.md) post first.
+If you found something unfamiliar, read our [Data Streaming for Newbies](./coming-soon.md) post first.
 
 ### Quick Facts About Pulsar
 
@@ -111,16 +111,3 @@ Pulsar has **600+** open-source contributors.
 It's is written in Java, and has best support for JVM languages like Java, Scala, Clojure, Groovy, and others.
 
 Official clients include such platforms as C++, Go, Python, Node.js and .NET.
-
----
-
-Кто такие эти апачи и почему они всё делают?
-Что такое дата решафлинг?
-Что такое малти-тенанси?
-Что такое ресурс сепарэйшн?
-Что такое гео-репликейшн?
-Что такое тайред сторедж и почему он устал?
-Где находится это вайбрант и пэшэнэт комьюнити?
-Как понять что мне нужен пульсар?
-
- It's like assigning customers to cashiers in line at a grocery store.

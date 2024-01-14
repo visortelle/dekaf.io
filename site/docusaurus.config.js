@@ -22,6 +22,13 @@ const config = {
     locales: ['en'],
   },
 
+  scripts: [
+    {
+      src: '/js/crop-everything-at-page-except-content.js',
+      async: true
+    }
+  ],
+
   presets: [
     [
       'classic',
@@ -33,10 +40,12 @@ const config = {
         },
         blog: {
           showReadingTime: true,
-          // editUrl: '',
           blogTitle: 'Dekaf Blog',
           blogDescription: 'Blog about messaging, streaming, and Apache Pulsar',
           postsPerPage: 'ALL',
+          feedOptions: {
+            type: 'all'
+          }
         },
         theme: {
           customCss: [

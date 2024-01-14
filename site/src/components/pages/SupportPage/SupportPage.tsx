@@ -12,7 +12,7 @@ const SupportPage: React.FC<SupportPageProps> = (props) => {
           <h1>Get Help and Support</h1>
 
           <div className={s.Links}>
-            <a target="_blank" href="mailto:support@tealtools.zendesk.com">Raise a Ticket</a>
+            <a target="_blank" href="mailto:support@tealtools.zendesk.com">Submit a Ticket</a>
             <a target="_blank" href="https://github.com/tealtools/dekaf/discussions">Visit Community Forum</a>
           </div>
 
