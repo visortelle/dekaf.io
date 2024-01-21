@@ -2,7 +2,7 @@ import React from 'react';
 import Links from '../LinksBlock/LinksBlock';
 import s from './GreetingScreen.module.css';
 import Logo from '@site/src/components/ui/Logo/Logo';
-import dekafDemoPreviewImage from '@site/static/img/homepage/why-dekaf.png';
+import dekafDemoPreviewImage from '@site/static/img/homepage/dekaf-greeting.png';
 
 const HeadingsSection: React.FC = () => {
   return (
