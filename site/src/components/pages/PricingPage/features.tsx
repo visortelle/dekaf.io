@@ -262,6 +262,14 @@ export const features: FeatureSet = [
         },
         isPlanned: true
       },
+      {
+        id: 'custom-deserializers',
+        name: 'Custom deserializers',
+        availableAt: {
+          'dekaf-enterprise': {},
+        },
+        isPlanned: true
+      },
     ]
   },
   {
