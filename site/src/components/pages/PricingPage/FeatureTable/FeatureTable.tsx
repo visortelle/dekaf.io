@@ -122,7 +122,7 @@ const FeaturesTable: React.FC<FeatureTableProps> = (props) => {
       {props.features.map(featureGroup => {
         return (
           <div key={featureGroup.id} style={{ marginBottom: '3rem' }} className={s.FeatureGroup}>
-            <div className={s.Row} style={{ textAlign: 'left' }}>
+            <div className={`${s.Row} ${s.FeatureGroupName}`} style={{ textAlign: 'left' }}>
               <h3 style={{ marginBottom: '0' }}>{featureGroup.name}</h3>
             </div>
 
