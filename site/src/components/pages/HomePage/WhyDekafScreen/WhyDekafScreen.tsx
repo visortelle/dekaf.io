@@ -33,7 +33,7 @@ const WhyScreen: React.FC = () => {
             <div className={s.Question}>
               <h3>Makes support team much happier</h3>
               <p>
-                With Dekaf, it's easy to find and visualize data across multiple topics. Inspect how a sequence of events lead to an some problematic business event.
+                With Dekaf, it's easy to find data across multiple topics. Inspect how a sequence of events lead to an some problematic business event.
               </p>
             </div>
 

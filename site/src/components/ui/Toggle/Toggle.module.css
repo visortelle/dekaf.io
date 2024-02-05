@@ -28,3 +28,10 @@
   color: #fff;
   background-color: var(--color-black);
 }
+
+@media (max-width: 600px) {
+  .Toggle {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}

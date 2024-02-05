@@ -1,11 +1,11 @@
 .Screen {
-  background: #fff;
-  color: var(--text-color);
+  background: var(--text-color);
+  color: #fff;
   padding: 0 0 4rem 0;
 }
 
 .Content {
-  padding-top: 28rem;
+  padding: 4rem 0;
   max-width: var(--content-width);
   margin: 0 auto;
   display: flex;

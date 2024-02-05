@@ -12,8 +12,8 @@ const HomePage: React.FC = () => {
     <Layout>
       <main className={s.HomePage}>
         <GreetingScreen />
+        <FeaturesScreen />
         <WhyDekafScreen />
-        {/* <FeaturesScreen /> */}
         <LinksBlock />
       </main>
     </Layout>

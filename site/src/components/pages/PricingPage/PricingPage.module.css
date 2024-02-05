@@ -36,4 +36,8 @@
   .PricingPage {
     padding: 0 0.5rem;
   }
+
+  .ProductSelectionControls {
+    gap: 1.5rem;
+  }
 }
