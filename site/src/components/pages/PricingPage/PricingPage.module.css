@@ -1,4 +1,6 @@
-.PricingPage {}
+.PricingPage {
+  padding: 0 2rem;
+}
 
 .Content {
   width: 100%;
@@ -27,5 +29,11 @@
 @media (max-width: 1000px) {
   .PricingPage {
     padding: 0 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .PricingPage {
+    padding: 0 0.5rem;
   }
 }
