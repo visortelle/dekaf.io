@@ -9,12 +9,19 @@ const SupportPage: React.FC<SupportPageProps> = (props) => {
     <Layout>
       <div className={s.SupportPage}>
         <div className={s.Content}>
-          <h1>Get Help and Support</h1>
+          <h1>Get Help and Support 🛟</h1>
 
-          <div className={s.Links}>
-            <a target="_blank" href="mailto:support@tealtools.zendesk.com">Submit a Ticket</a>
-            <a target="_blank" href="https://github.com/tealtools/dekaf/discussions">Visit Community Forum</a>
-          </div>
+          <ul className={s.Links}>
+            <li>
+              <a target="_blank" href="mailto:support@tealtools.zendesk.com">Ask a question</a>
+            </li>
+            <li>
+              <a target="_blank" href="mailto:support@tealtools.zendesk.com">Submit a ticket</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://github.com/tealtools/dekaf/discussions">Visit community forum</a>
+            </li>
+          </ul>
 
         </div>
       </div>

@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import s from './FeatureBlock.module.css';
 
 export type Feature = {
   title: string;
-  description?: string;
+  description?: ReactElement;
   list?: string[];
   image: string;
   href: string;
-  direction: string;
+  direction: 'left' | 'right';
 }
 
 type FeatureBlockProps = {

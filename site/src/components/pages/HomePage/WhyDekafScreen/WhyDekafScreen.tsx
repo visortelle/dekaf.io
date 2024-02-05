@@ -1,17 +1,18 @@
 import React from 'react';
 import s from './WhyDekafScreen.module.css'
+import Heading from '@site/src/components/ui/Heading/Heading';
 
 const WhyScreen: React.FC = () => {
   return (
     <section className={s.Screen}>
       <div className={s.Content}>
         <div>
-          <h2>Why Dekaf?</h2>
+          <Heading level={2}>Why Dekaf?</Heading>
           <div className={s.Questions}>
             <div className={s.Question}>
               <h3>Optimizes developer productivity</h3>
               <p>
-                Produce positive business impact instead of losing time and mental load in the command line interface.
+                Enable rapid application development and a fast feedback loop for your developers.
               </p>
             </div>
 
@@ -23,7 +24,7 @@ const WhyScreen: React.FC = () => {
             </div>
 
             <div className={s.Question}>
-              <h3>Simplifies learning Pulsar</h3>
+              <h3>Simplifies learning Pulsar for developers</h3>
               <p>
                 <a href="/pricing/?productId=dekaf-desktop&buyerType=individual&billingPeriod=yearly">Dekaf Desktop</a> provides an easy way to start a local Pulsar instance in a few clicks.
                 The ability to experiment with Pulsar in a point-and-click manner is a great addition to taking a course.
@@ -38,16 +39,16 @@ const WhyScreen: React.FC = () => {
             </div>
 
             <div className={s.Question}>
-              <h3>Saves in disaster situations</h3>
+              <h3>Reduces troubleshooting time</h3>
               <p>
                 Having a tool that assists in fixing the problem when something goes wrong is invaluable for any profitable business.
               </p>
             </div>
 
             <div className={s.Question}>
-              <h3>Reduces onboarding time</h3>
+              <h3>Lower the entry barrier on Pulsar</h3>
               <p>
-                For new team members who are already familiar with Pulsar, it may be much easier to grasp how your system works by having the ability to easily experiment with it.
+                No need to be a Pulsar expert to do many useful actions. Dekaf helps Product Owners, Data Scientists, and Business Analysts to explore data in Pulsar.
               </p>
             </div>
           </div>
