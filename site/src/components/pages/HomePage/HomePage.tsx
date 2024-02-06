@@ -5,6 +5,7 @@ import GreetingScreen from './GreetingScreen/GreetingScreen';
 import s from './HomePage.module.css';
 import WhyDekafScreen from './WhyDekafScreen/WhyDekafScreen';
 import FeaturesScreen from './FeaturesScreen/FeaturesScreen';
+import FeedbackScreen from './FeedbackScreen/FeedbackScreen';
 
 const HomePage: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const HomePage: React.FC = () => {
         <GreetingScreen />
         <FeaturesScreen />
         <WhyDekafScreen />
+        <FeedbackScreen />
       </main>
     </Layout>
   );

@@ -63,11 +63,14 @@ const features: Feature[] = [
     direction: 'left',
   },
   {
-    title: 'Simplify collaboration on your Pulsar streams 🤝',
+    title: 'Simplify collaboration on your Pulsar resources 🤝',
     description: (
       <div>
         <p>
-          Attach markdown notes to Pulsar resources like tenants, namespaces and topics to provide context and quick documentation to other organization members.
+          Provide context and quick documentation by attaching markdown notes to Pulsar resources such as tenants, namespaces and topics.
+        </p>
+        <p>
+          Grant limited access to specific Pulsar resources to other members withing your organization (coming soon).
         </p>
         <p>
           Save message filters, consumer sessions, producer sessions, and other Dekaf objects to the shared library for quick access in frequently encountered scenarios.

@@ -8,7 +8,7 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 10rem 4rem;
   padding: 4rem 0;
-  padding-top: 28rem;
+  padding-top: 32rem;
 }

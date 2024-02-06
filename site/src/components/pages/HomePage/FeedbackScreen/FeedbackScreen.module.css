@@ -1,0 +1,10 @@
+.FeedbackScreen {
+  background-color: #fff;
+  color: var(--text-color);
+}
+
+.Content {
+  max-width: var(--content-width);
+  margin: auto;
+  padding: 4rem 0 8rem 0;
+}
