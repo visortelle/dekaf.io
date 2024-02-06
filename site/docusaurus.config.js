@@ -77,10 +77,8 @@ const config = {
         items: [
           { to: '/docs', label: 'Docs', position: 'left' },
           { to: '/blog', label: 'Blog', position: 'left' },
-          { to: '/pricing', label: 'Pricing', position: 'left' },
-
-          { type: 'search', position: 'right' }, 
           { to: '/support', label: 'Support', position: 'left' },
+          { to: '/pricing', label: 'Pricing', position: 'left' },
           { 
             to: '/get', 
             label: 'Get', 

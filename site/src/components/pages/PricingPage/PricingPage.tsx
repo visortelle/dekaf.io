@@ -7,7 +7,7 @@ import { useQueryParam, withDefault, StringParam } from 'use-query-params';
 import s from './PricingPage.module.css';
 import FeatureTable from './FeatureTable/FeatureTable';
 import { features } from './features';
-import Beta from '../../ui/Beta/Beta';
+import { billingPortalHref } from '../../links';
 
 export type Price = { id: string } & ({
   type: 'free',
@@ -203,6 +203,9 @@ const PricingPage: React.FC = () => {
     <main className={s.PricingPage}>
       <div className={s.Content}>
         <Heading level={2}>Subscription Options and Pricing</Heading>
+        <p>
+          <strong>Visit the <a target='_blank' href={billingPortalHref}>Billing Portal</a> to manage your existing subscription.</strong>
+        </p>
         <div className={s.ProductSelectionControls}>
           <Toggle<ProductId>
             options={[

@@ -1,6 +1,7 @@
 import React from 'react';
 import s from './SupportPage.module.css'
 import Layout from '../../ui/Layout/Layout';
+import { billingPortalHref } from '../../links';
 
 export type SupportPageProps = {};
 
@@ -19,7 +20,7 @@ const SupportPage: React.FC<SupportPageProps> = (props) => {
               <a target="_blank" href="https://github.com/tealtools/dekaf/discussions">👥 Visit community forum</a>
             </li>
             <li>
-              <a target="_blank" href="https://billing.stripe.com/p/login/aEU15N5g42A64GQ9AA">🧾 Open billing portal</a>
+              <a target="_blank" href={billingPortalHref}>🧾 Open billing portal</a>
             </li>
           </ul>
 
