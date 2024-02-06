@@ -27,13 +27,19 @@ const features: Feature[] = [
   },
   {
     title: 'Manage Pulsar resources with comfort 🛋️',
-    list: [
-      'Manage tenants, namespaces, topics, and subscriptions',
-      'View and configure namespace and topic policies',
-      'Manage namespace bundles',
-      'Enforce topic schema',
-      '...and more'
-    ],
+    description: (
+      <div>
+        <p>
+          Manage tenants, namespaces, topics, subscriptions, and other Pulsar resources.
+        </p>
+        <p>
+          View and configure namespace and topic policies without dealing with all the Pulsar API complexities.
+        </p>
+        <p>
+          Manage namespace bundles, upload topic schema, run topic compaction, create missing partitions, and more.
+        </p>
+      </div>
+    ),
     image: '/img/img_struct_main.png',
     href: '/thesis',
     direction: 'right',
