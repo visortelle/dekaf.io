@@ -13,13 +13,13 @@ const SupportPage: React.FC<SupportPageProps> = (props) => {
 
           <ul className={s.Links}>
             <li>
-              <a target="_blank" href="mailto:support@tealtools.zendesk.com">Ask a question</a>
+              <a target="_blank" href="mailto:support@tealtools.zendesk.com">🧑‍💻 Contact support</a>
             </li>
             <li>
-              <a target="_blank" href="mailto:support@tealtools.zendesk.com">Submit a ticket</a>
+              <a target="_blank" href="https://github.com/tealtools/dekaf/discussions">👥 Visit community forum</a>
             </li>
             <li>
-              <a target="_blank" href="https://github.com/tealtools/dekaf/discussions">Visit community forum</a>
+              <a target="_blank" href="https://billing.stripe.com/p/login/aEU15N5g42A64GQ9AA">🧾 Open billing portal</a>
             </li>
           </ul>
 

@@ -4,10 +4,10 @@ import FeatureBlock, { Feature } from './FeatureBlock/FeatureBlock';
 
 const features: Feature[] = [
   {
-    title: 'Explore your Pulsar data in a few clicks 🔭', 
+    title: 'Explore Pulsar data just in a few clicks 🔭', 
     list: [
+      'Apply user-friendly basic filters, or advanced JavaScript filters to quickly find the needle in the haystack',
       'Get messages from multiple related topics to get a complete picture of what happened',
-      'Use user-friendly basic filters, or advanced JavaScript filters to quickly find the needle in the haystack',
       'Use colorization rules, chart visualizations (coming soon), and field-to-column projections',
       'Export the data for further analysis in other tools',
       'Store filters, consumer sessions, and other configuration objects into library for the further reuse',
@@ -18,7 +18,6 @@ const features: Feature[] = [
   },
   {
     title: 'Manage Pulsar resources with comfort 🛋️',
-    description: <>Produce positive business impact instead of losing time and mental load in the command line interface.</>,
     list: [
       'Manage tenants, namespaces, topics, and subscriptions',
       'View and configure namespace and topic policies',
@@ -28,7 +27,7 @@ const features: Feature[] = [
     ],
     image: '/img/img_struct_main.png',
     href: '/thesis',
-    direction: 'left',
+    direction: 'right',
   }
 ];
 

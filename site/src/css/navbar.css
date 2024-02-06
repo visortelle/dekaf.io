@@ -135,6 +135,35 @@
   }
 }
 
+.navbar__action-button {
+  position: relative;
+  padding: 0.25rem 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.25rem;
+  font-size: 1rem;
+  font-weight: var(--font-weight-bold);
+  user-select: none;
+  transition: var(--transition-short);
+  border: none;
+  border: 1px solid var(--color-primary);
+  appearance: none;
+  font-family: inherit;
+  white-space: nowrap;
+  color: #fff;
+  background-color: var(--color-primary);
+}
+
+.navbar__action-button:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  user-select: none;
+  text-decoration: none;
+  color: #fff;
+  transition: var(--transition-short);
+}
+
 @media (max-width: 768px) {}
 
 @media (max-width: 480px) {}

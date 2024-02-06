@@ -75,19 +75,17 @@ const config = {
           src: 'img/logo.png',
         },
         items: [
-          /* Left------------------------------------------------------------ */
           { to: '/docs', label: 'Docs', position: 'left' },
           { to: '/blog', label: 'Blog', position: 'left' },
           { to: '/pricing', label: 'Pricing', position: 'left' },
-          { to: '/support', label: 'Support', position: 'left' },
 
-          /* Right----------------------------------------------------------- */
-          { type: 'search', position: 'right' },
-          {
-            to: 'https://billing.stripe.com/p/login/aEU15N5g42A64GQ9AA',
-            label: 'Billing Portal',
-            position: 'right',
-            className: 'accountLink',
+          { type: 'search', position: 'right' }, 
+          { to: '/support', label: 'Support', position: 'left' },
+          { 
+            to: '/get', 
+            label: 'Get', 
+            position: 'left',
+            className: `navbar__action-button`
           },
         ],
       },

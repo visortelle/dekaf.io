@@ -1,6 +1,5 @@
 import React from 'react';
 import Layout from '@site/src/components/ui/Layout/Layout';
-import LinksBlock from './LinksBlock/LinksBlock';
 import GreetingScreen from './GreetingScreen/GreetingScreen';
 
 import s from './HomePage.module.css';
@@ -14,7 +13,6 @@ const HomePage: React.FC = () => {
         <GreetingScreen />
         <FeaturesScreen />
         <WhyDekafScreen />
-        <LinksBlock />
       </main>
     </Layout>
   );
