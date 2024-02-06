@@ -45,3 +45,16 @@
 }
 
 .ListItem {}
+
+
+@media (max-width: 1000px) {
+  .ImageContainer {
+    display: none;
+  }
+
+  .FeatureBlock,
+  .FeatureBlock.FeatureBlockRtl {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+}

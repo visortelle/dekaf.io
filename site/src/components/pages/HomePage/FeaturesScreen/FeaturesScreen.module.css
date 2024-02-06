@@ -12,3 +12,16 @@
   padding: 4rem 0;
   padding-top: 32rem;
 }
+
+@media (max-width: 1200px) {
+  .Content {
+    padding-top: 28rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .Content {
+    padding-top: 40vw;
+    gap: 4rem 4rem;
+  }
+}

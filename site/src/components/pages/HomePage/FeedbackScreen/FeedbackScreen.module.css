@@ -8,3 +8,9 @@
   margin: auto;
   padding: 4rem 0 8rem 0;
 }
+
+@media (max-width: 1000px) {
+  .Content {
+    padding: 4rem 1rem;
+  }
+}

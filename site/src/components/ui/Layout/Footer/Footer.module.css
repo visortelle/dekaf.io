@@ -31,3 +31,9 @@
 .Link:hover {
   color: #fff;
 }
+
+@media (max-width: 1000px) {
+  .Footer {
+    padding: 0 1rem;
+  }  
+}
