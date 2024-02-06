@@ -6,20 +6,20 @@ const features: Feature[] = [
   {
     title: 'Explore Pulsar data just in a few clicks 🔭',
     description: (
-      <div>
-        <p>
+      <ul>
+        <li>
           Apply user-friendly basic filters, or advanced JavaScript filters to quickly find the needle in the haystack.
-        </p>
-        <p>
+        </li>
+        <li>
           Get messages from multiple related topics to get a complete picture of what happened.
-        </p>
-        <p>
+        </li>
+        <li>
           Use colorization rules, chart visualizations (coming soon), and field-to-column projections.
-        </p>
-        <p>
+        </li>
+        <li>
           Export the consumed data for further analysis in other tools.
-        </p>
-      </div>
+        </li>
+      </ul>
     ),
     image: '/img/img_struct_main.png',
     href: '/structure',
@@ -28,17 +28,17 @@ const features: Feature[] = [
   {
     title: 'Manage Pulsar resources with comfort 🛋️',
     description: (
-      <div>
-        <p>
+      <ul>
+        <li>
           Manage tenants, namespaces, topics, subscriptions, and other Pulsar resources.
-        </p>
-        <p>
+        </li>
+        <li>
           View and configure namespace and topic policies without dealing with all the Pulsar API complexities.
-        </p>
-        <p>
+        </li>
+        <li>
           Manage namespace bundles, upload topic schema, run topic compaction, create missing partitions, and more.
-        </p>
-      </div>
+        </li>
+      </ul>
     ),
     image: '/img/img_struct_main.png',
     href: '/thesis',
@@ -47,15 +47,15 @@ const features: Feature[] = [
   {
     title: 'Minimize the Pulsar learning curve 🎓',
     description: (
-      <div>
-        <p>
+      <ul>
+        <li>
           Apache Pulsar is a complex system that may be hard to grasp in a short time.
-        </p>
-        <p><a href="/pricing/?productId=dekaf-desktop">Dekaf Desktop</a> provides an easy way to try Pulsar in action without even touching the command line.</p>
-        <p>
+        </li>
+        <li><a href="/pricing/?productId=dekaf-desktop">Dekaf Desktop</a> provides an easy way to try Pulsar in action without even touching the command line.</li>
+        <li>
           Providing a visual representation of the Pulsar resources hierarchy, along with available information and actions for each Pulsar object, can significantly reduce the time and money needed to familiarize new team members with Pulsar.
-        </p>
-      </div>
+        </li>
+      </ul>
     ),
     list: [],
     image: '/img/img_struct_main.png',
@@ -65,17 +65,17 @@ const features: Feature[] = [
   {
     title: 'Simplify collaboration on your Pulsar resources 🤝',
     description: (
-      <div>
-        <p>
+      <ul>
+        <li>
           Provide context and quick documentation by attaching markdown notes to Pulsar resources such as tenants, namespaces and topics.
-        </p>
-        <p>
+        </li>
+        <li>
           Grant limited access to specific Pulsar resources to other members withing your organization (coming soon).
-        </p>
-        <p>
+        </li>
+        <li>
           Save message filters, consumer sessions, producer sessions, and other Dekaf objects to the shared library for quick access in frequently encountered scenarios.
-        </p>
-      </div>
+        </li>
+      </ul>
     ),
     image: '/img/img_struct_main.png',
     href: '/thesis',

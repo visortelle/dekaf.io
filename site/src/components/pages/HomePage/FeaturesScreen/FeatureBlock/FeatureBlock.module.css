@@ -26,6 +26,10 @@
   flex: 1 1 50%;
 }
 
+.FeatureInfo li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
 .FeatureTitle {
   font-size: 2rem;
 }
