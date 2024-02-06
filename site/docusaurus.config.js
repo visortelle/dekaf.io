@@ -106,8 +106,8 @@ const config = {
             title: 'Support',
             items: [
               {
-                label: 'Teal Tools Inc. on GitHub',
-                href: 'https://github.com/tealtools',
+                label: 'Teal Tools on LinkedIn',
+                href: 'https://www.linkedin.com/company/tealtools',
               },
             ],
           },

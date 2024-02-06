@@ -1,0 +1,33 @@
+.Footer {
+  background-color: var(--text-color);
+  color: #fff;
+  margin-top: auto;
+  border-top: 1px solid #fff;
+}
+
+.Content {
+  padding: 3rem 0 2rem 0;
+  max-width: var(--content-width);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.Columns {
+  display: flex;
+  gap: 4rem;
+}
+
+.Column {
+  display: flex;
+  flex-direction: column;
+}
+
+.Link {
+  color: #fff;
+}
+
+.Link:hover {
+  color: #fff;
+}

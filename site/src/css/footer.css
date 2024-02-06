@@ -1,5 +1,6 @@
-/* Infima style overrides for Footer */
 .footer {
+  background-color: var(--text-color);
+  color: #fff;
 }
 
 /* Responsive---------------------------------------------------------------- */
