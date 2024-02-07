@@ -54,7 +54,7 @@
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.27);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .Logo {
     left: 0;
   }

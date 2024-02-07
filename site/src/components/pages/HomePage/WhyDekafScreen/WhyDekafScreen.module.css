@@ -1,11 +1,10 @@
 .Screen {
   background: var(--text-color);
   color: #fff;
-  padding: 0 0 4rem 0;
+  padding: 8rem 0;
 }
 
 .Content {
-  padding: 4rem 0;
   max-width: var(--content-width);
   margin: 0 auto;
   display: flex;
@@ -16,11 +15,19 @@
 .Questions {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem 4rem;
-  margin-top: 4rem;
+  gap: 4rem 4rem;
+  margin-top: 2rem;
 }
 
-@media (max-width: 1000px) {
+.Question {
+  font-size: 1.25rem;
+}
+
+.Question h3 {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 1280px) {
   .Screen {
     padding-left: 1rem;
     padding-right: 1rem;

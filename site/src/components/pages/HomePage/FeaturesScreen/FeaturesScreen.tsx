@@ -4,7 +4,7 @@ import FeatureBlock, { Feature } from './FeatureBlock/FeatureBlock';
 
 const features: Feature[] = [
   {
-    title: 'Explore Pulsar data just in a few clicks 🔭',
+    title: 'Explore data just in a few clicks 🔭',
     description: (
       <ul>
         <li>
@@ -23,10 +23,10 @@ const features: Feature[] = [
     ),
     image: '/img/img_struct_main.png',
     href: '/structure',
-    direction: 'left',
+    direction: 'right',
   },
   {
-    title: 'Manage Pulsar resources with comfort 🛋️',
+    title: 'Manage Pulsar with comfort 🛋️',
     description: (
       <ul>
         <li>
@@ -37,6 +37,25 @@ const features: Feature[] = [
         </li>
         <li>
           Manage namespace bundles, upload topic schema, run topic compaction, create missing partitions, and more.
+        </li>
+      </ul>
+    ),
+    image: '/img/img_struct_main.png',
+    href: '/thesis',
+    direction: 'left',
+  },
+  {
+    title: 'Simplify collaboration on your data streams 🤝',
+    description: (
+      <ul>
+        <li>
+          Provide context and quick documentation by attaching markdown notes to Pulsar resources such as tenants, namespaces and topics.
+        </li>
+        <li>
+          Grant limited access to specific Pulsar resources to other members withing your organization (coming soon).
+        </li>
+        <li>
+          Save message filters, consumer sessions, producer sessions, and other Dekaf objects to the shared library for quick access in frequently encountered scenarios.
         </li>
       </ul>
     ),
@@ -61,25 +80,6 @@ const features: Feature[] = [
     image: '/img/img_struct_main.png',
     href: '/thesis',
     direction: 'left',
-  },
-  {
-    title: 'Simplify collaboration on your Pulsar resources 🤝',
-    description: (
-      <ul>
-        <li>
-          Provide context and quick documentation by attaching markdown notes to Pulsar resources such as tenants, namespaces and topics.
-        </li>
-        <li>
-          Grant limited access to specific Pulsar resources to other members withing your organization (coming soon).
-        </li>
-        <li>
-          Save message filters, consumer sessions, producer sessions, and other Dekaf objects to the shared library for quick access in frequently encountered scenarios.
-        </li>
-      </ul>
-    ),
-    image: '/img/img_struct_main.png',
-    href: '/thesis',
-    direction: 'right',
   }
 ];
 

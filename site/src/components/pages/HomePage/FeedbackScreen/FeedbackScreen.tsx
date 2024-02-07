@@ -7,18 +7,18 @@ const FeedbackScreen: React.FC<FeedbackScreenProps> = (props) => {
   return (
     <div className={s.FeedbackScreen}>
       <div className={s.Content}>
-        <div style={{ fontSize: '1.5rem', maxWidth: '38rem', fontWeight: 'var(--font-weight-bold)', marginBottom: '1rem' }}>
-          We're all ears! Share your feedback to help shape the future of Pulsar user experience:
+        <div style={{ fontSize: '2.5rem', maxWidth: '50rem', fontWeight: 'var(--font-weight-bold)', marginBottom: '1rem' }}>
+          We're all ears!
+          <div style={{ fontSize: '1.5rem', fontWeight: 'var(--font-weight-normal)' }}>
+            Share your feedback to help shape the future of Pulsar&nbsp;user&nbsp;experience:
+          </div>
         </div>
 
-        <ul>
-          <li>
-            <a href="#">Send your thoughts via email</a>
-          </li>
-          <li>
-            <a href="#">Share your ideas with others on the community forum</a>
-          </li>
-        </ul>
+        <div style={{ fontSize: '1.5rem' }}>
+          <a href="#">Send your thoughts via email</a>
+          <br />
+          <a href="#">Join the community forum</a>
+        </div>
       </div>
     </div>
   );
