@@ -21,5 +21,5 @@ You can find the feature comparison table at the [pricing page](/pricing).
 ## Further steps
 
 - Obtain your license at the [pricing page](/pricing)
-- Get Dekaf distribution and follow [installation instructions](/docs/install)
+- Get Dekaf distribution and follow [installation instructions](/docs/installation)
 - Follow the links at the [support page](/support) if you encountered any problem, have any questions or suggestions
