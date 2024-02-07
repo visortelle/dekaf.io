@@ -1,13 +1,3 @@
-.GetPage {
-  min-height: 100vh;
-}
-
-.Content {
-  margin: auto;
-  max-width: var(--content-width);
-  padding: 4rem 0;
-}
-
 .Distributions {
   display: flex;
   gap: 4rem;

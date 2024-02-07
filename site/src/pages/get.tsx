@@ -1,3 +1,3 @@
-import GetPage from '@site/src/components/pages/GetPage/GetPage';
+import GetPage from '@site/src/components/ui/DesktopDistributions/DesktopDistributions';
 
 export default GetPage;
