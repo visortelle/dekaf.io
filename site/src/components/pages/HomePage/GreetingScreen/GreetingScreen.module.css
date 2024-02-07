@@ -19,10 +19,11 @@
   align-items: center;
   text-align: center;
   position: relative;
+  font-size: 1.15rem;
 }
 
 .Header {
-  font-weight: 300;
+  font-weight: var(--font-weight-normal);
   margin-top: 2rem;
 }
 

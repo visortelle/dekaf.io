@@ -6,20 +6,30 @@
   font-weight: var(--font-weight-normal);
 }
 
+.menu__list-item {
+  margin-right: 0.5rem;
+}
+
 .menu__caret::before {
   content: '';
   background-size: 1.25rem 1.25rem;
 }
 
+.menu__list-item-collapsible--active .menu__caret::before {
+  filter: invert(100%) brightness(500%);
+}
+
 .menu__link--active {
-  color: var(--text-color);
+  color: inherit;
 }
 
 .menu__link--active:hover {
-  color: var(--text-color);
+  color: inherit;
+  transition: none;
 }
 
-.menu__link--active:not(.menu__link--sublist) {
+.menu__link--active:not(.menu__link--sublist),
+.menu__list-item-collapsible.menu__list-item-collapsible--active {
   background-color: var(--text-color);
   color: #fff;
 }
