@@ -56,6 +56,7 @@ const config: Config = {
         theme: {
           customCss: [
             require.resolve('./src/css/fonts.css'),
+            require.resolve('./src/css/docs.css'),
             require.resolve('./src/css/custom.css'),
             require.resolve('./src/css/navbar.css'),
             require.resolve('./src/css/footer.css'),

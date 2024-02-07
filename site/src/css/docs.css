@@ -1,0 +1,29 @@
+:root {
+  --ifm-menu-color: var(--text-color);
+}
+
+.menu {
+  font-weight: var(--font-weight-normal);
+}
+
+.menu__caret::before {
+  content: '';
+  background-size: 1.25rem 1.25rem;
+}
+
+.menu__link--active {
+  color: var(--text-color);
+}
+
+.menu__link--active:hover {
+  color: var(--text-color);
+}
+
+.menu__link--active:not(.menu__link--sublist) {
+  background-color: var(--text-color);
+  color: #fff;
+}
+
+.menu__link {
+  transition: none;
+}
