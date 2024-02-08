@@ -6,7 +6,7 @@ export type FooterProps = {};
 
 const Footer: React.FC<FooterProps> = (props) => {
   return (
-    <div className={s.Footer}>
+    <div className={`${s.Footer} footer`}>
       <div className={s.Content}>
         <div className={s.Columns}>
           <div className={s.Column}>
