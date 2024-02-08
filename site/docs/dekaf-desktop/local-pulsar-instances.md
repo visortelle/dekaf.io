@@ -7,6 +7,7 @@ import installThisVersionPng from "./img/local-pulsar-instances/install-this-ver
 import selectThisVersionPng from "./img/local-pulsar-instances/select-this-version.png"
 import createLocalPulsarInstanceDialogPng from "./img/local-pulsar-instances/create-local-pulsar-instance-dialog.png"
 import startAndConnectPng from "./img/local-pulsar-instances/start-and-connect.png"
+import dekafPng from "./img/local-pulsar-instances/dekaf.png"
 
 # Local Pulsar Instances
 
@@ -37,3 +38,7 @@ It's probably the most optimal way to start learning Pulsar without being overwh
 - Click the "Start and connect" button
 
 <img src={startAndConnectPng} height="600px" />
+
+- Await while Pulsar, demo application, and Dekaf are starting. After about a minute you'll see the Dekaf window.
+
+<img src={dekafPng} width="800px" />
