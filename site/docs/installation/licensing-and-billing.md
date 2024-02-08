@@ -5,19 +5,17 @@ sidebar_position: 1
 # Licensing and Billing
 
 Dekaf is a product family that contains two products:
-- **Dekaf** is a multi-user application that deployed as a Docker container withing your organization's network boundaries.
+- **Dekaf** is a multi-user application that deployed as a Docker container within your organization's network boundaries.
 - **Dekaf Desktop** is a single-user desktop application.
 
 ### Dekaf Editions
 
-**Dekaf** has the following editions:
+- **Dekaf Free** - edition with a limited feature set.
 
-- **Dekaf Free** edition with a limited feature set.
-
-- **Dekaf for Teams** subscription-based edition with clear pricing that fit for small to medium-size companies and individuals.
+- **Dekaf for Teams** - subscription-based edition with clear pricing that fits small to medium-size companies and individuals.
   You pay for each Pulsar instance up to 5 instances. After reaching this number of instances, we recommend you to [contact us](/support) and negotiate switching to the Enterprise plan.
 
-- **Dekaf Enterprise** edition for large companies with negotiable price.
+- **Dekaf Enterprise** - the most feature-rich edition with premium support for large companies with negotiable price.
 
 ### Dekaf Desktop Editions
 
@@ -34,7 +32,7 @@ That means you can continue to use **Dekaf Desktop** after the active yearly sub
 
 :::
 
-At the [pricing page](/pricing) you can find the feature comparison table and choose the proper edition for your needs.
+**At the [pricing page](/pricing) you can find the feature comparison table and choose the proper edition for your needs.**
 
 ## Obtaining the Product License
 
@@ -43,16 +41,16 @@ At the [pricing page](/pricing) you can find the feature comparison table and ch
 - Fill and submit the checkout form.
 
 :::info
-  We use [Stripe](https://stripe.com) for payment processing. [Contact us](/support) if by some reason Stripe doesn't work for you.
+  We use [Stripe](https://stripe.com) for payment processing. [Contact us](/support) if for some reason Stripe doesn't work for you.
 :::
 
 - We'll issue and send your **license ID** and **license token** to the email address you entered in the checkout form. 
 
 :::info
-At this moment the license issuing is a manual process and may take some time. [Send us](/support) your payment confirmation if you didn't get your license info in 2 hours.
+At the moment, the license issuing is a manual process and may take some time. [Send us](/support) your payment confirmation if you didn't get your license info in 2 hours.
 :::
 
-- After you've obtained your **license ID** and **license token**, follow the instruction:
+- After you've obtained your **license ID** and **license token**, follow the product-specific installation instructions:
 
   - [Dekaf instructions](./)
   - [Dekaf Desktop instructions](./)
