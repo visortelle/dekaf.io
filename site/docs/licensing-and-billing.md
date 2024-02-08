@@ -53,4 +53,4 @@ At the moment, the license issuing is a manual process and may take some time. [
 - After you've obtained your **license ID** and **license token**, follow the product-specific installation instructions:
 
   - [Dekaf instructions](./)
-  - [Dekaf Desktop instructions](./)
+  - [Dekaf Desktop instructions](../dekaf-desktop/overview)
