@@ -26,18 +26,33 @@ Dekaf is a product family that contains two products:
 - **Dekaf Desktop Free** - free version with limited feature set.
 - **Dekaf Desktop** - subscription-based edition where you pay per each user.
 
+:::info
+
+**If you pay for an annual subscription, you're getting perpetual fallback license**. 
+
+That means you can continue to use **Dekaf Desktop** after the active yearly subscription will be ended. The **Dekaf Desktop** version is locked to the latest version you've updated before your active yearly subscription has been ended.
+
+:::
+
 At the [pricing page](/pricing) you can find the feature comparison table and choose the proper edition for your needs.
 
 ## Obtaining the Product License
 
 - Visit the [pricing page](/pricing).
 - Select the product and click "Buy Now" button.
-- Fill and submit the checkout form. 
+- Fill and submit the checkout form.
 
 :::info
-  We use [Stripe](https://stripe.com) for payment processing. [Contact us](/support) if Stripe doesn't work for you.
+  We use [Stripe](https://stripe.com) for payment processing. [Contact us](/support) if by some reason Stripe doesn't work for you.
 :::
 
-## How License Works
+- We'll issue and send your **license ID** and **license token** to the email address you entered in the checkout form. 
 
-In subscription-based Docker container editions .
+:::info
+At this moment the license issuing is a manual process and may take some time. [Send us](/support) your payment confirmation if you didn't get your license info in 2 hours.
+:::
+
+- After you've obtained your **license ID** and **license token**, follow the instruction:
+
+  - [Dekaf instructions](./)
+  - [Dekaf Desktop instructions](./)
