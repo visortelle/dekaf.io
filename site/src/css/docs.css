@@ -37,3 +37,9 @@
 .menu__link {
   transition: none;
 }
+
+.theme-doc-markdown img {
+  box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.27);
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
