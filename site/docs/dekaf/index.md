@@ -1,8 +1,8 @@
 ---
-sidebar_position: 90
+sidebar_position: 3
 ---
 
-# Running Docker Container
+# Dekaf
 
 ## Get the Docker Image
 
