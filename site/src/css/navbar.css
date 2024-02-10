@@ -8,10 +8,21 @@
 
 /* Containers---------------------------------------------------------------- */
 .navbar {
-  justify-content: center;
   backdrop-filter: blur(23px);
   background: rgba(16, 16, 16, 0.85);
   color: #fff;
+}
+
+.navbar-sidebar--show {
+  backdrop-filter: none !important;
+}
+
+.navbar-sidebar__back {
+  color: var(--text-color);
+}
+
+.navbar-sidebar__brand {
+  background-color: var(--text-color);
 }
 
 .navbar__inner {

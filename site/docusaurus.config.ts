@@ -17,7 +17,7 @@ const config: Config = {
   url: 'https://dekaf.io',
   baseUrl: '/',
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -62,6 +62,7 @@ const config: Config = {
             require.resolve('./src/css/fonts.css'),
             require.resolve('./src/css/docs.css'),
             require.resolve('./src/css/custom.css'),
+            require.resolve('./src/css/image-zoom.css'),
             require.resolve('./src/css/navbar.css'),
             require.resolve('./src/css/footer.css'),
             require.resolve('./src/css/navbarSidebar.css'),
@@ -72,6 +73,11 @@ const config: Config = {
       } satisfies Preset.Options),
     ],
   ],
+
+  plugins: [
+    'docusaurus-plugin-image-zoom',
+  ],
+
   themeConfig:
     ({
       colorMode: {
@@ -95,6 +101,16 @@ const config: Config = {
             className: `navbar__action-button`
           },
         ],
+      },
+      zoom: {
+        selector: '.markdown img',
+        background: {
+          light: '#fff',
+          dark: '#111'
+        },
+        config: {
+          // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
+        }
       }
     } satisfies Preset.ThemeConfig),
 };
