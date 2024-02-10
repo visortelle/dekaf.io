@@ -1,12 +1,13 @@
 // @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
-
-// const lightCodeTheme = require('prism-react-renderer/themes/github');
-// const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+// `@type` JSDoc annotations allow editor autocompletion and type checking
+// (when paired with `@ts-check`).
+// There are various equivalent ways to declare your Docusaurus config.
+// See: https://docusaurus.io/docs/api/docusaurus-config
 
 import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
+/** @type {import('@docusaurus/types').Config} */
 const config: Config = {
   title: 'Dekaf | UI for Apache Pulsar',
   tagline:
@@ -15,10 +16,13 @@ const config: Config = {
 
   url: 'https://dekaf.io',
   baseUrl: '/',
-  trailingSlash: true,
-  onBrokenLinks: 'warn',
+
+  onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
+  // Even if you don't use internationalization, you can use this field to set
+  // useful metadata like html lang. For example, if your site is Chinese, you
+  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -68,7 +72,6 @@ const config: Config = {
       } satisfies Preset.Options),
     ],
   ],
-
   themeConfig:
     ({
       colorMode: {
@@ -92,22 +95,8 @@ const config: Config = {
             className: `navbar__action-button`
           },
         ],
-      },
-      docs: {
-
       }
-      // footer: {
-      // },
-      /* prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-      }, */
-      /* algolia: {
-        appId: 'abc',
-        apiKey: 'xyz',
-        indexName: 'abc',
-      } */
     } satisfies Preset.ThemeConfig),
 };
 
-module.exports = config;
+export default config;
