@@ -14,7 +14,7 @@ const SupportPage: React.FC<SupportPageProps> = (props) => {
 
           <ul className={s.Links}>
             <li>
-              <a target="_blank" href="mailto:support@tealtools.zendesk.com">🧑‍💻 Contact support</a>
+              <a target="_blank" href="mailto:support@teal.tools">🧑‍💻 Contact support</a>
             </li>
             <li>
               <a target="_blank" href="https://github.com/tealtools/dekaf/discussions">👥 Visit community forum</a>

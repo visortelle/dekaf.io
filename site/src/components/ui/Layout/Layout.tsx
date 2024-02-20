@@ -10,8 +10,9 @@ const Layout: React.FC<Props> = (props) => {
   return (
     <_Layout {...restProps} noFooter>
       <Head>
+        <></>
         {/* <!-- Start of tealtools Zendesk Widget script --> */}
-        <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=9594ecd9-292a-4d7f-9732-41583a519fa5"> </script>
+        {/* <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=9594ecd9-292a-4d7f-9732-41583a519fa5"> </script> */}
         {/* <!-- End of tealtools Zendesk Widget script --> */}
 
       </Head>
