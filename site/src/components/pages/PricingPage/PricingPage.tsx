@@ -87,7 +87,7 @@ export const productTiers: Record<ProductId, Partial<Record<ProductTierId, Produ
       monthlyPrice: {
         id: 'dekaf-for-teams-monthly',
         type: 'fixed',
-        value: <><strong>349$</strong> per Pulsar instance per month</>,
+        value: <><strong>$349</strong> per Pulsar instance per month</>,
         href: 'https://buy.stripe.com/cN2eYDd935H3f9m5kl'
       },
       yearlyPrice: {
@@ -95,7 +95,7 @@ export const productTiers: Record<ProductId, Partial<Record<ProductTierId, Produ
         type: 'fixed',
         value: <div style={{ lineHeight: '1' }}>
           <div>
-            <strong>3490$</strong> per year
+            <strong>$3490</strong> per year
             <br />
             <strong style={{ fontSize: '0.75rem' }}>per Pulsar instance</strong>
           </div>
@@ -141,11 +141,11 @@ export const productTiers: Record<ProductId, Partial<Record<ProductTierId, Produ
         id: 'dekaf-desktop-monthly',
         type: 'fixed-by-buyer-type',
         individual: {
-          value: <><strong>16.90$</strong> per month</>,
-          href: 'https://buy.stripe.com/7sI2bR6KFb1n9P2aEJ'
+          value: <><strong>$24.90</strong> per month</>,
+          href: 'https://buy.stripe.com/14k2bR0mh8TfaT6cMU'
         },
         organization: {
-          value: <><strong>59.90$</strong> per month</>,
+          value: <><strong>$59.90</strong> per month</>,
           href: 'https://buy.stripe.com/00gg2H5GB9Xj4uIcMP'
         },
       },
@@ -155,16 +155,16 @@ export const productTiers: Record<ProductId, Partial<Record<ProductTierId, Produ
         individual: {
           value: (
             <div>
-              <strong>169$</strong> per year
+              <strong>$249</strong> per year
               {discount}
             </div>
           ),
-          href: 'https://buy.stripe.com/28o2bR4Cx8Tf6CQ9AE'
+          href: 'https://buy.stripe.com/6oE03J8SN2uRd1efZ5'
         },
         organization: {
           value: (
             <div>
-              <strong>599$</strong> per year
+              <strong>$599</strong> per year
               {discount}
             </div>
           ),
