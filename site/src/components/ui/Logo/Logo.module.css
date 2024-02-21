@@ -20,6 +20,7 @@
 .TextDekaf {
   font-size: 4rem;
   font-weight: var(--font-weight-bold);
+  margin-bottom: -0.5rem;
 }
 
 .TextForPulsar {
@@ -32,6 +33,10 @@
   bottom: -0.5rem;
   right: 0;
   transform: translateY(100%);
+}
+
+.Beta:hover {
+  opacity: 0.8;
 }
 
 @keyframes gradient {

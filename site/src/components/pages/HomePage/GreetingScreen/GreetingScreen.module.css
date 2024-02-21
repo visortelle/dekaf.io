@@ -25,6 +25,7 @@
 .Header {
   font-weight: var(--font-weight-normal);
   margin-top: 2rem;
+  margin-bottom: 0;
 }
 
 .Logo {

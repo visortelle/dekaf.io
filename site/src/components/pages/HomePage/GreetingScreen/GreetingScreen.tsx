@@ -14,13 +14,11 @@ const HeadingsSection: React.FC = () => {
 
         <div className={s.Content}>
           <h1 className={s.Header}>
-            UI for Apache Pulsar
+            UI for Apache Pulsar™
           </h1>
 
           <p>
-            Our interface makes it easy for anybody to work&nbsp;with&nbsp;Pulsar.
-            <br />
-            Advanced messaging and streaming platform at&nbsp;your&nbsp;fingertips.
+            We make Pulsar accessible for everyone
           </p>
 
           <div className={s.Links}>

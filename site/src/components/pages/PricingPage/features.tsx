@@ -79,7 +79,9 @@ export const features: FeatureSet = [
         id: 'manage-topic-policies',
         name: 'Manage topic policies',
         availableAt: {
+          'dekaf-desktop-free': {},
           'dekaf-desktop': {},
+          'dekaf-free': {},
           'dekaf-for-teams': {},
           'dekaf-enterprise': {},
         }
@@ -177,12 +179,18 @@ export const features: FeatureSet = [
           'dekaf-desktop-free': {
             extraLabel: <>Max 100 messages</>
           },
-          'dekaf-desktop': {},
+          'dekaf-desktop': {
+            extraLabel: <>Unlimited messages</>
+          },
           'dekaf-free': {
             extraLabel: <>Max 100 messages</>
           },
-          'dekaf-for-teams': {},
-          'dekaf-enterprise': {},
+          'dekaf-for-teams': {
+            extraLabel: <>Unlimited messages</>
+          },
+          'dekaf-enterprise': {
+            extraLabel: <>Unlimited messages</>
+          },
         }
       },
       {
@@ -306,7 +314,8 @@ export const features: FeatureSet = [
           'dekaf-desktop': {},
           'dekaf-for-teams': {},
           'dekaf-enterprise': {},
-        }
+        },
+        isPlanned: true
       },
       {
         id: 'complex-producer-scenarios',

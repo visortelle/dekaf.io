@@ -24,6 +24,7 @@ export function formatPrice(price: Price, buyerType: BuyerType): React.ReactElem
       }
     };
     case "custom": return <span>Custom Pricing</span>;
+    case "none": return <></>;
     default: throw new Error('Unknown price');
   }
 }
@@ -42,6 +43,7 @@ export function renderPriceHref(price: Price, buyerType: BuyerType): React.React
     case "fixed": return <Button type="primary" text="Buy Now" href={href} target='_blank' />;
     case "fixed-by-buyer-type": return <Button type="primary" text="Buy Now" href={href} target='_blank' />;
     case "custom": return <Button type="primary" text="Request Quote" href={href} target='_blank' />;
+    case "none": return <></>;
     default: throw new Error('Unknown price');
   }
 }

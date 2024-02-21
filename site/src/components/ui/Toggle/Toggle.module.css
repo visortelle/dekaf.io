@@ -1,6 +1,5 @@
 .Toggle {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   padding: 0.25rem;
   width: max-content;
   border-radius: 1rem;
@@ -31,7 +30,7 @@
 
 @media (max-width: 600px) {
   .Toggle {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    flex-direction: column;
   }
 }
+
