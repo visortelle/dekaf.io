@@ -21,7 +21,7 @@ const features: Feature[] = [
         </li>
       </ul>
     ),
-    image: '/img/img_struct_main.png',
+    image: '/img/consume_messages_with_ease.png',
     href: '/structure',
     direction: 'right',
   },
@@ -40,7 +40,7 @@ const features: Feature[] = [
         </li>
       </ul>
     ),
-    image: '/img/img_struct_main.png',
+    image: '/img/manage_with_ease.png',
     href: '/thesis',
     direction: 'left',
   },
@@ -59,7 +59,7 @@ const features: Feature[] = [
         </li>
       </ul>
     ),
-    image: '/img/img_struct_main.png',
+    image: '/img/notes.png',
     href: '/thesis',
     direction: 'right',
   },
@@ -77,7 +77,7 @@ const features: Feature[] = [
       </ul>
     ),
     list: [],
-    image: '/img/img_struct_main.png',
+    image: '/img/learn.png',
     href: '/thesis',
     direction: 'left',
   }
