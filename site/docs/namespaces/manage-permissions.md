@@ -2,7 +2,7 @@
 sidebar_position: 15
 ---
 
-# Manage Access
+# Manage Permissions
 
 In Pulsar, you have the option to assign permissions to users at either the namespace or topic level.[^1]
 
