@@ -4,6 +4,8 @@ sidebar_position: 11
 
 # Namespaces
 
+## Overview
+
 In Apache Pulsar, namespace is a logical group of topics.
 
 The key features of namespaces are:
@@ -15,7 +17,7 @@ The key features of namespaces are:
 
 ## Organizing topics into namespaces
 
-The organization of topics within namespaces in Apache Pulsar depends on various factors, including the specific requirements and architecture of your application or system. Here are some common approaches to organizing topics within namespaces:
+The strategy for organizing topics within namespaces in Apache Pulsar depends on various factors, including the specific requirements and architecture of your system. Here are some common approaches to organizing topics within namespaces:
 
 - **By Service**: You can organize topics based on the services or components of your application. Each service may have its own namespace containing topics related to that service. This approach helps maintain a clear separation between different parts of your application and can simplify management and monitoring.
 - **By Team**: If there are multiple teams in your organization use Pulsar, you can organize topics based on the teams responsible for different parts of the system. Each team may have its own namespace containing topics related to their specific responsibilities. This approach facilitates collaboration and allows teams to manage their topics independently.

@@ -4,6 +4,8 @@ sidebar_position: 10
 
 # Tenants
 
+## Overview
+
 In Apache Pulsar, a tenant[^1] is a logical isolation unit within a Pulsar instance.
 It provides a way to group and segregate [namespaces](/docs/namespaces) among different users or groups of users.
 
