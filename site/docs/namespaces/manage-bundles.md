@@ -4,7 +4,7 @@ sidebar_position: 14
 
 # Manage Bundles
 
-Namespace bundle is a virtual group of namespace's topics that is assigned to specific brokers.[^1]
+Namespace bundle is a virtual group of namespace's topics that is assigned to a specific broker.[^1]
 
 :::tip
 
