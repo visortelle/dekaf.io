@@ -23,6 +23,3 @@ You can find the following items on the namespace overview page:
 - List of consumer sessions that are available for this namespace. See the [library documentation](/docs/library) for more info.
 - Markdown notes that are attached to this namespace.  See the [notes](/docs/library/notes) documentation for more info.
 - Namespace topic list in the tree view
-
-
-

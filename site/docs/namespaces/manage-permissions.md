@@ -12,13 +12,13 @@ This page describes managing permissions on the namespace level.
 
 If you don't manage Pulsar in your organization, feel free to skip this page.
 
-Otherwise, we recommend you to carefully read the Pulsar documentation chapters about it's security model.[^2]
+Otherwise, we recommend you to carefully read the Pulsar documentation chapters about it's security model first.[^2]
 
 :::
 
 ## View Namespace Permissions
 
-- On the namespace overview page, click the "Details" button
+- On the [namespace overview page](/docs/namespaces/namespace-overview), click the "Details" button
 - Click the "Access Control" tab
 - You'll see the list of roles and their permissions
 
@@ -51,5 +51,5 @@ Otherwise, we recommend you to carefully read the Pulsar documentation chapters 
 
 ![confirm revoke pulsar namespace permissions](./img/confirm-revoke-permissions.png)
 
-[^1]: [Managing permissions](https://pulsar.apache.org/docs/next/admin-api-permissions/) page in Pulsar official documentation
+[^1]: [Managing permissions](https://pulsar.apache.org/docs/next/admin-api-permissions/) page in the official Pulsar documentation
 [^2]: [Pulsar security overview](https://pulsar.apache.org/docs/next/security-overview/)
