@@ -9,7 +9,7 @@ import FeatureTable from './FeatureTable/FeatureTable';
 import { features } from './features';
 import { billingPortalHref } from '../../links';
 
-export type Price = { id: string } & ({
+export type Price = { id: string, isComingSoon?: boolean } & ({
   type: 'free',
   href: string
 } | {
@@ -29,9 +29,9 @@ export type Price = { id: string } & ({
 } | {
   type: 'custom',
   href: string
-}) | {
+} | {
   type: 'none'
-};
+});
 
 export type Feature = {
   id: string,
@@ -80,51 +80,51 @@ export const productTiers: Record<ProductId, Partial<Record<ProductTierId, Produ
     'dekaf-free': {
       id: 'dekaf-free',
       name: 'Dekaf Free',
-      monthlyPrice: { type: 'none' },
-      yearlyPrice: { type: 'none' }
+      monthlyPrice: { id: 'dekaf-free-monthly', type: 'none', isComingSoon: true },
+      yearlyPrice: { id: 'dekaf-free-yearly', type: 'none', isComingSoon: true }
       // monthlyPrice: { id: 'dekaf-free-monthly', type: 'free', href: '' },
       // yearlyPrice: { id: 'dekaf-free-yearly', type: 'free', href: '' },
     },
     'dekaf-for-teams': {
       id: 'dekaf-for-teams',
       name: 'Dekaf for Teams',
-      monthlyPrice: { type: 'none' },
-      yearlyPrice: { type: 'none' }
-      // monthlyPrice: {
-      //   id: 'dekaf-for-teams-monthly',
-      //   type: 'fixed',
-      //   value: <><strong>$349</strong> per Pulsar instance per month</>,
-      //   href: 'https://buy.stripe.com/cN2eYDd935H3f9m5kl'
-      // },
-      // yearlyPrice: {
-      //   id: 'dekaf-for-teams-yearly',
-      //   type: 'fixed',
-      //   value: <div style={{ lineHeight: '1' }}>
-      //     <div>
-      //       <strong>$3490</strong> per year
-      //       <br />
-      //       <strong style={{ fontSize: '0.75rem' }}>per Pulsar instance</strong>
-      //     </div>
-      //     {/* {discount} */}
-      //   </div>,
-      //   href: 'https://buy.stripe.com/bIYg2H0mh8Tfe5ifYY'
-      // },
+      monthlyPrice: {
+        id: 'dekaf-for-teams-monthly',
+        type: 'fixed',
+        value: <><strong>$349</strong> per Pulsar instance per month</>,
+        href: 'https://buy.stripe.com/cN2eYDd935H3f9m5kl',
+        isComingSoon: true
+      },
+      yearlyPrice: {
+        id: 'dekaf-for-teams-yearly',
+        type: 'fixed',
+        value: <div style={{ lineHeight: '1' }}>
+          <div>
+            <strong>$3490</strong> per year
+            <br />
+            <strong style={{ fontSize: '0.75rem' }}>per Pulsar instance</strong>
+          </div>
+          {/* {discount} */}
+        </div>,
+        href: 'https://buy.stripe.com/bIYg2H0mh8Tfe5ifYY',
+        isComingSoon: true
+      },
     },
     'dekaf-enterprise': {
       id: 'dekaf-enterprise',
       name: 'Dekaf Enterprise',
-      monthlyPrice: { type: 'none' },
-      yearlyPrice: { type: 'none' }
-      // monthlyPrice: {
-      //   id: 'dekaf-enterprise-monthly',
-      //   type: 'custom',
-      //   href: salesEmail
-      // },
-      // yearlyPrice: {
-      //   id: 'dekaf-enterprise-yearly',
-      //   type: 'custom',
-      //   href: salesEmail
-      // },
+      monthlyPrice: {
+        id: 'dekaf-enterprise-monthly',
+        type: 'custom',
+        href: salesEmail,
+        isComingSoon: true
+      },
+      yearlyPrice: {
+        id: 'dekaf-enterprise-yearly',
+        type: 'custom',
+        href: salesEmail,
+        isComingSoon: true
+      },
     }
   },
   'dekaf-desktop': {

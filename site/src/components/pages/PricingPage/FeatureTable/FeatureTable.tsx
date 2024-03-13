@@ -30,7 +30,7 @@ export function formatPrice(price: Price, buyerType: BuyerType): React.ReactElem
 }
 
 export function renderPriceHref(price: Price, buyerType: BuyerType): React.ReactElement {
-  let href = '';
+  let href: string | undefined = '';
   switch (price.type) {
     case 'free': href = price.href; break;
     case 'fixed': href = price.href; break;
@@ -115,7 +115,8 @@ const FeaturesTable: React.FC<FeatureTableProps> = (props) => {
 
           return (
             <div key={tier.id} style={{ display: 'grid', gridTemplateColumns: '1fr' }}>
-              {renderPriceHref(price, props.buyerType)}
+              {!price.isComingSoon && renderPriceHref(price, props.buyerType)}
+              {price.isComingSoon && <strong style={{ opacity: '0.5' }}>Coming later this year</strong>}
             </div>
           );
         })}

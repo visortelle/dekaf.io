@@ -8,6 +8,8 @@ sidebar_position: 11
 
 In Apache Pulsar, namespace is a logical group of topics.
 
+<img alt="apache pulsar resource hierarchy" src={require('../img/pulsar-resource-hierarchy.png').default} width="480px" />
+
 The key features of namespaces are:
 
 - **Grouping**: Namespaces allow users to create distinct sets of topics within a single [tenant](/docs/tenants).
