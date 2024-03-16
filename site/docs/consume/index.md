@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Consume Messages
 
-Dekaf allows you to consume and display Apache Pulsar topic data by using consumer sessions.
+Dekaf allows you to explore Apache Pulsar topic data by using **consumer sessions**.
 
 ## Features
 
@@ -18,7 +18,7 @@ Dekaf allows you to consume and display Apache Pulsar topic data by using consum
 - Start consuming at specific date-time, from specific message id, or from latest `n` messages
 - Export loaded messages
 - Save consumer sessions in library for further reuse
-- Have quick access to consumer sessions saved on a topic, namespace, or tenant level
+- Quick access to consumer sessions saved in context of a topic, namespace, or tenant
 
 ## Limitations
 
