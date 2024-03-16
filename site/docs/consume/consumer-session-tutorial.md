@@ -179,6 +179,25 @@ Let's say we want to filter items only with `inventory_item_received.cost` field
 
 - Click the **▶** button to start the consumer session and ensure that you observe messages you expect
 
+## Projections
+
+The cells in the **Value** column look the same for all messages, that makes this column meaningless in our case.
+
+We'd like to see the `brand` and `cost` field values in the table, and be able to sort by them.
+
+**Projections** may help us! They map an arbitrary field to a table column.
+
+- Click the **Add Projection** button to add a new projection
+- Specify the **Label**, **Column width**, and the **Target Field**
+- Add another projection for the second field
+
+![we added projections](./img/we-added-projections.png)
+
+- Click the **▶** button to start the consumer session and ensure that you see two new columns in the table
+- Click the column header to sort messages by this column values
+
+![projection-columns](./img/projection-columns.png)
+
 ## Messages Table
 
 Each consumed message represents a row in the table.
@@ -203,4 +222,3 @@ Table has the following columns:
 - **Ordering Key**: An optional key the is used to ensure that messages with the same ordering key are delivered to consumers in the order they were published.
 - **Redelivery Count**: A message may be redelivered to consumer in cases when it was negatively acknowledged by the consumer, or wasn't acknowledged during a timeout.
 - **🧪 Session Context State 🧪**: You can apply aggregations like calculating a sum an average value to consumed messages. Use `setState()` and `getState()` functions in **JavaScript** filters. ⚠️ This is an **experimental** Dekaf feature.
-
