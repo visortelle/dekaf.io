@@ -95,9 +95,11 @@ We'll use basic filters in this tutorial. Please refer the [Message Filter docum
 
 - Click the "Add Filter" button to add a new message filter
 
-![add-message-filter](./img/add-message-filter.png)
+![add message filter](./img/add-message-filter.png)
 
-- Ensure that the **basic** filter type is chosen
+- Hover the cursor on the filter to display or switch it's type. Ensure that the **basic** filter type is chosen.
+
+<img alt="filter type" src={require('./img/filter-type.png').default} width="480px" />
 
 - Decide by which field you want to filter messages in your Pulsar topic
 
@@ -197,6 +199,24 @@ We'd like to see the `brand` and `cost` field values in the table, and be able t
 - Click the column header to sort messages by this column values
 
 ![projection-columns](./img/projection-columns.png)
+
+## Coloring Rules
+
+Let's colorize different brands in different colors.
+
+- Click the "Add Coloring Rule" button
+- Click the color squares and pick foreground and background color you want to use
+- Click the "Add Filter" button within the coloring rule
+- Set the sub. field to `inventory_item_received.product.brand`
+- Select the `equals string` operation and set it to `Tesla`
+- Click the **▶** button to start the consumer session and ensure that rows with brand `Tesla` are colored
+- Repeat the same steps for other brands
+
+Let's colorize inventory items with suspicious item price with red color.
+
+We're going to use JavaScript filters here. You can skip this step if you aren't familiar with JavaScript or any other programming languages.
+
+- First let's calculate the "Single Item Price" as a new table column
 
 ## Messages Table
 
