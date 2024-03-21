@@ -209,16 +209,22 @@ Let's colorize different brands in different colors.
 - Click the "Add Filter" button within the coloring rule
 - Set the sub. field to `inventory_item_received.product.brand`
 - Select the `equals string` operation and set it to `Tesla`
-- Click the **▶** button to start the consumer session and ensure that rows with brand `Tesla` are colored
+
+![add coloring rule](./img/add-coloring-rule.png)
+
 - Repeat the same steps for other brands
+- Click the **▶** button to start the consumer session and ensure that rows are colored
 
-Let's colorize inventory items with suspicious item price with red color.
+![colorized messages](./img/colorized-messages.png)
 
-We're going to use JavaScript filters here. You can skip this step if you aren't familiar with JavaScript or any other programming languages.
+## Other Features
 
-- First let's calculate the "Single Item Price" as a new table column
+We'll cover these topics in further documentation updates.
 
-## Messages Table
+- You can save and load consumer session configurations
+- You can consumer multiple topics in a single consumer session by adding a new **Consumer Session Target**
+
+## Messages Table Reference
 
 Each consumed message represents a row in the table.
 

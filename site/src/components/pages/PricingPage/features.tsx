@@ -31,13 +31,9 @@ export const features: FeatureSet = [
           </>
         ),
         availableAt: {
-          'dekaf-desktop-free': {
-            extraLabel: <>Max 5&nbsp;tenants, 5&nbsp;namespaces per tenant, 5&nbsp;topics per namespace</>
-          },
+          'dekaf-desktop-free': {},
           'dekaf-desktop': {},
-          'dekaf-free': {
-            extraLabel: <>Max 5&nbsp;tenants, 5&nbsp;namespaces per tenant, 5&nbsp;topics per namespace</>
-          },
+          'dekaf-free': {},
           'dekaf-for-teams': {},
           'dekaf-enterprise': {},
         }
@@ -177,13 +173,13 @@ export const features: FeatureSet = [
         name: 'View topic messages',
         availableAt: {
           'dekaf-desktop-free': {
-            extraLabel: <>Max 100 messages</>
+            extraLabel: <>Max 500 messages</>
           },
           'dekaf-desktop': {
             extraLabel: <>Unlimited messages</>
           },
           'dekaf-free': {
-            extraLabel: <>Max 100 messages</>
+            extraLabel: <>Max 500 messages</>
           },
           'dekaf-for-teams': {
             extraLabel: <>Unlimited messages</>
