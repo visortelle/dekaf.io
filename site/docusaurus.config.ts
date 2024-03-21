@@ -95,7 +95,7 @@ const config: Config = {
           { to: '/support', label: 'Support', position: 'left' },
           { to: '/pricing', label: 'Pricing', position: 'left' },
           {
-            to: '/get',
+            to: 'https://github.com/tealtools/dekaf',
             label: 'Get Dekaf',
             position: 'left',
             className: `navbar__action-button`
