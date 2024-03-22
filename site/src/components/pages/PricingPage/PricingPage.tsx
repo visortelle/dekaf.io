@@ -1,4 +1,4 @@
-import React, { ReactElement, useState } from 'react';
+import React, { ReactElement } from 'react';
 import Layout from '@site/src/components/ui/Layout/Layout';
 import Heading from '../../ui/Heading/Heading';
 import Toggle from '../../ui/Toggle/Toggle';
@@ -197,7 +197,7 @@ export type PricingPeriod = 'monthly' | 'yearly';
 export type BuyerType = 'organization' | 'individual';
 
 const PricingPage: React.FC = () => {
-  const [productId, setProductId] = useQueryParam<ProductId>('productId', withDefault(StringParam as any, 'dekaf-desktop'), { updateType: 'replaceIn' });
+  const [productId, setProductId] = useQueryParam<ProductId>('productId', withDefault(StringParam as any, 'dekaf'), { updateType: 'replaceIn' });
   const [billingPeriod, setBillingPeriod] = useQueryParam<PricingPeriod>('billingPeriod', withDefault(StringParam as any, 'yearly'), { updateType: 'replaceIn' });
   const [buyerType, setBuyerType] = useQueryParam<BuyerType>('buyerType', withDefault(StringParam as any, 'organization'), { updateType: 'replaceIn' });
 
