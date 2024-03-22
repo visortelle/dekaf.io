@@ -17,6 +17,7 @@
 .Columns {
   display: flex;
   gap: 4rem;
+  flex-wrap: wrap;
 }
 
 .Column {
@@ -35,5 +36,5 @@
 @media (max-width: 1000px) {
   .Footer {
     padding: 0 1rem;
-  }  
+  }
 }
