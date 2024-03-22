@@ -31,13 +31,9 @@ export const features: FeatureSet = [
           </>
         ),
         availableAt: {
-          'dekaf-desktop-free': {
-            extraLabel: <span>Up to 3 brokers</span>
-          },
+          'dekaf-desktop-free': {},
           'dekaf-desktop': {},
-          'dekaf-free': {
-            extraLabel: <span>Up to 3 brokers</span>
-          },
+          'dekaf-free': {},
           'dekaf-for-teams': {},
           'dekaf-enterprise': {},
         }

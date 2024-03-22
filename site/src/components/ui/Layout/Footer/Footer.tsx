@@ -28,7 +28,15 @@ const Footer: React.FC<FooterProps> = (props) => {
           </div>
         </div>
 
-        <div>© 2024 Teal Tools, Inc. All Rights Reserved.</div>
+        <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', columnGap: '4rem' }}>
+          <div>© 2024 Teal Tools, Inc. All Rights Reserved.</div>
+
+          <div style={{ display: 'inline-flex', gap: '1.5rem' }}>
+            <a className={s.Link} href="/privacy-policy">Privacy Policy</a>
+            <a className={s.Link} href="/eula">EULA</a>
+            <a className={s.Link} href="/terms-of-use">Terms of Use</a>
+          </div>
+        </div>
       </div>
     </div>
   );
