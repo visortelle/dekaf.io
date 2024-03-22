@@ -31,9 +31,13 @@ export const features: FeatureSet = [
           </>
         ),
         availableAt: {
-          'dekaf-desktop-free': {},
+          'dekaf-desktop-free': {
+            extraLabel: <span>Up to 3 brokers</span>
+          },
           'dekaf-desktop': {},
-          'dekaf-free': {},
+          'dekaf-free': {
+            extraLabel: <span>Up to 3 brokers</span>
+          },
           'dekaf-for-teams': {},
           'dekaf-enterprise': {},
         }
@@ -172,21 +176,11 @@ export const features: FeatureSet = [
         id: 'view-topic-messages',
         name: 'View topic messages',
         availableAt: {
-          'dekaf-desktop-free': {
-            extraLabel: <>Max 500 messages</>
-          },
-          'dekaf-desktop': {
-            extraLabel: <>Unlimited messages</>
-          },
-          'dekaf-free': {
-            extraLabel: <>Max 500 messages</>
-          },
-          'dekaf-for-teams': {
-            extraLabel: <>Unlimited messages</>
-          },
-          'dekaf-enterprise': {
-            extraLabel: <>Unlimited messages</>
-          },
+          'dekaf-desktop-free': {},
+          'dekaf-desktop': {},
+          'dekaf-free': {},
+          'dekaf-for-teams': {},
+          'dekaf-enterprise': {},
         }
       },
       {
@@ -336,14 +330,14 @@ export const features: FeatureSet = [
         description: <>Save and reuse items like Consumer Sessions, Message Filters, Producer Scenarios.</>,
         availableAt: {
           'dekaf-desktop-free': {
-            extraLabel: <>Max 20 items</>
+            extraLabel: <>Max 100 items</>
           },
           'dekaf-desktop': {},
           'dekaf-free': {
-            extraLabel: <>Max 50 items</>
+            extraLabel: <>Max 100 items</>
           },
           'dekaf-for-teams': {
-            extraLabel: <>Max 300 items</>
+            extraLabel: <>Unlimited items</>
           },
           'dekaf-enterprise': {
             extraLabel: <>Unlimited items</>
@@ -415,7 +409,7 @@ export const features: FeatureSet = [
         name: 'Fine-grained access control',
         availableAt: {
           'dekaf-free': {
-            extraLabel: <>Max 5 users</>
+            extraLabel: <>Max 1 user</>
           },
           'dekaf-for-teams': {
             extraLabel: <>Max 15 users</>
@@ -506,7 +500,7 @@ export const features: FeatureSet = [
       },
       {
         id: 'bug-fixes-prioritization',
-        name: 'Bug-fixes prioritization',
+        name: 'Features and bug-fix prioritization',
         availableAt: {
           'dekaf-enterprise': {},
         }

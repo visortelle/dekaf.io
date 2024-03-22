@@ -80,10 +80,8 @@ export const productTiers: Record<ProductId, Partial<Record<ProductTierId, Produ
     'dekaf-free': {
       id: 'dekaf-free',
       name: 'Dekaf Free',
-      monthlyPrice: { id: 'dekaf-free-monthly', type: 'none', isComingSoon: true },
-      yearlyPrice: { id: 'dekaf-free-yearly', type: 'none', isComingSoon: true }
-      // monthlyPrice: { id: 'dekaf-free-monthly', type: 'free', href: '' },
-      // yearlyPrice: { id: 'dekaf-free-yearly', type: 'free', href: '' },
+      monthlyPrice: { id: 'dekaf-free-monthly', type: 'free', href: '' },
+      yearlyPrice: { id: 'dekaf-free-yearly', type: 'free', href: '' },
     },
     'dekaf-for-teams': {
       id: 'dekaf-for-teams',
@@ -91,23 +89,21 @@ export const productTiers: Record<ProductId, Partial<Record<ProductTierId, Produ
       monthlyPrice: {
         id: 'dekaf-for-teams-monthly',
         type: 'fixed',
-        value: <><strong>$349</strong> per Pulsar instance per month</>,
-        href: 'https://buy.stripe.com/cN2eYDd935H3f9m5kl',
-        isComingSoon: true
+        value: <><strong>$259</strong> per Pulsar instance per month</>,
+        href: 'https://buy.stripe.com/7sI3fV3yt6L77GUcMW',
       },
       yearlyPrice: {
         id: 'dekaf-for-teams-yearly',
         type: 'fixed',
         value: <div style={{ lineHeight: '1' }}>
           <div>
-            <strong>$3490</strong> per year
+            <strong>$2490</strong> per year
             <br />
             <strong style={{ fontSize: '0.75rem' }}>per Pulsar instance</strong>
           </div>
           {/* {discount} */}
         </div>,
-        href: 'https://buy.stripe.com/bIYg2H0mh8Tfe5ifYY',
-        isComingSoon: true
+        href: 'https://buy.stripe.com/4gwdUz3yt7Pbd1e4gp',
       },
     },
     'dekaf-enterprise': {
@@ -117,13 +113,11 @@ export const productTiers: Record<ProductId, Partial<Record<ProductTierId, Produ
         id: 'dekaf-enterprise-monthly',
         type: 'custom',
         href: salesEmail,
-        isComingSoon: true
       },
       yearlyPrice: {
         id: 'dekaf-enterprise-yearly',
         type: 'custom',
         href: salesEmail,
-        isComingSoon: true
       },
     }
   },
@@ -218,6 +212,14 @@ const PricingPage: React.FC = () => {
           <Toggle<ProductId>
             options={[
               {
+                value: 'dekaf',
+                label: (
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
+                    Dekaf
+                  </div>
+                )
+              },
+              {
                 value: 'dekaf-desktop',
                 label: (
                   <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
@@ -227,18 +229,7 @@ const PricingPage: React.FC = () => {
                     </div> */}
                   </div>
                 )
-              },
-              {
-                value: 'dekaf',
-                label: (
-                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
-                    Dekaf
-                    <div style={{ fontSize: '0.75rem', marginTop: '0.4rem', fontWeight: 'var(--font-weight-bold)' }}>
-                      Coming later this year
-                    </div>
-                  </div>
-                )
-              },
+              }
             ]}
             value={productId}
             onChange={setProductId}
