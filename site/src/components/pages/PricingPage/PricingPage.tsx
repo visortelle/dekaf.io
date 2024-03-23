@@ -209,31 +209,6 @@ const PricingPage: React.FC = () => {
           <strong>Visit the <a target='_blank' href={billingPortalHref}>Billing Portal</a> to manage your existing subscription.</strong>
         </p>
         <div className={s.ProductSelectionControls}>
-          <Toggle<ProductId>
-            options={[
-              {
-                value: 'dekaf',
-                label: (
-                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
-                    Dekaf
-                  </div>
-                )
-              },
-              {
-                value: 'dekaf-desktop',
-                label: (
-                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
-                    Dekaf Desktop
-                    {/* <div style={{ fontSize: '0.75rem', opacity: '0.6', marginTop: '0.4rem' }}>
-                      Ideal for learning and POC
-                    </div> */}
-                  </div>
-                )
-              }
-            ]}
-            value={productId}
-            onChange={setProductId}
-          />
           {productId === 'dekaf-desktop' && <Toggle<BuyerType>
             options={[
               { value: 'organization', label: <>For Organizations</> },

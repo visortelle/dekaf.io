@@ -97,13 +97,13 @@ export const features: FeatureSet = [
         ),
         availableAt: {
           'dekaf-desktop-free': {
-            extraLabel: <>3</>
+            extraLabel: <>Up to 3 brokers<br />1 cluster per instance</>
           },
           'dekaf-desktop': {
             extraLabel: <>Unlimited</>
           },
           'dekaf-free': {
-            extraLabel: <>3</>
+            extraLabel: <>Up to 3 brokers<br />1 cluster per instance</>
           },
           'dekaf-for-teams': {
             extraLabel: <>Unlimited</>
@@ -138,7 +138,9 @@ export const features: FeatureSet = [
         id: 'manage-io',
         name: 'Manage sinks and sources',
         availableAt: {
+          'dekaf-desktop-free': {},
           'dekaf-desktop': {},
+          'dekaf-free': {},
           'dekaf-for-teams': {},
           'dekaf-enterprise': {}
         },
@@ -148,7 +150,9 @@ export const features: FeatureSet = [
         id: 'manage-pulsar-functions',
         name: 'Manage Pulsar functions',
         availableAt: {
+          'dekaf-desktop-free': {},
           'dekaf-desktop': {},
+          'dekaf-free': {},
           'dekaf-for-teams': {},
           'dekaf-enterprise': {}
         },
@@ -172,9 +176,13 @@ export const features: FeatureSet = [
         id: 'view-topic-messages',
         name: 'View topic messages',
         availableAt: {
-          'dekaf-desktop-free': {},
+          'dekaf-desktop-free': {
+            extraLabel: <>Up to 5,000 processed messages per consumer session</>
+          },
           'dekaf-desktop': {},
-          'dekaf-free': {},
+          'dekaf-free': {
+            extraLabel: <>Up to 5,000 processed messages<br />per session</>
+          },
           'dekaf-for-teams': {},
           'dekaf-enterprise': {},
         }
