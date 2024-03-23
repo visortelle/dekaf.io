@@ -89,7 +89,14 @@ export const productTiers: Record<ProductId, Partial<Record<ProductTierId, Produ
       monthlyPrice: {
         id: 'dekaf-for-teams-monthly',
         type: 'fixed',
-        value: <><strong>$249</strong> per Pulsar instance per month</>,
+        value: <div style={{ lineHeight: '1' }}>
+          <div>
+            <strong>$249</strong> per month
+            <br />
+            <strong style={{ fontSize: '0.75rem' }}>per Pulsar instance</strong>
+          </div>
+          {/* {discount} */}
+        </div>,
         href: 'https://buy.stripe.com/7sI3fV3yt6L77GUcMW',
       },
       yearlyPrice: {
