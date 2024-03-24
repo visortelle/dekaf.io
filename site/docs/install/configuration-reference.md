@@ -25,13 +25,6 @@ The `config.yaml` have priority over environment variables.
 |licenseId                          |`33a8cc38-5062-4f30-91d6-31b0797ebfg0`                    | License ID.                                                                                                                                                                                                                                                                                                    |
 |licenseToken                       |`prod-f6339ce7067c062724ca5e2bb2d36690b3637aed1c5f93e`                    | License token.                                                                                                                                                                                                                                                                                                 |
 
-### Running Dekaf behind reverse-proxy
-
-|Field                           |Example                      |Description                                                                                                                                                                                                                                                                                                                                                               |
-|---                                |---                          |---                                                                                                                                                                                                                                                                                                                                                                       |
-|basePath                           | `/dekaf`                    |When running the application behind a reverse-proxy, it may be useful to specify a base path.                                                                                                                                                                                                               |
-|publicBaseUrl                      | `https://dev.my.org/dekaf`  |When running the application behind a reverse-proxy, you need to provide a public URL to let the application know how to render links and making redirects correctly.                                                                                                                 |
-
 ### Pulsar Instance
 
 |Field                           |Example                       |Description                                                                                                                                                                                                                                                                                                                                                               |
@@ -41,7 +34,7 @@ The `config.yaml` have priority over environment variables.
 |pulsarWebUrl                          |`http://localhost:8080`                    | Pulsar web service URL.                                                                                                                                                                                                                                                                                                    |
 |pulsarBrokerUrl                          |`pulsar://localhost:6650`                    | Pulsar service URL.                                                                                                                                                                                                                                                                                                    |
 |pulsarListenerName                     |`external`                                     | [Advertised listener](https://pulsar.apache.org/docs/next/concepts-multiple-advertised-listeners/) name. |
-|defaultPulsarAuth||Default authentication credentials for all users. Not recommended to use it in multi-user production environment.|
+|defaultPulsarAuth||Default authentication credentials for all users serialized as JSON. Not recommended to use it in multi-user production environments.|
 
 ### Dekaf &lt;-&gt; Pulsar Instance TLS
 
@@ -62,3 +55,34 @@ The `config.yaml` have priority over environment variables.
 |pulsarTlsTrustStorePassword|The store password for the trust store file.|
 |pulsarTlsCiphers|A list of cipher suites. This is a named combination of authentication, encryption, MAC and key exchange algorithm used to negotiate the security settings for a network connection using TLS or SSL network protocol. By default all the available cipher suites are supported.|
 |pulsarTlsProtocols|The SSL protocol used to generate the SSLContext. Default setting is TLS, which is fine for most cases. Allowed values in recent JVMs are TLS, TLSv1.3, TLSv1.2 and TLSv1.1.|
+
+### Running Dekaf behind reverse-proxy
+
+|Field                           |Example                      |Description                                                                                                                                                                                                                                                                                                                                                               |
+|---                                |---                          |---                                                                                                                                                                                                                                                                                                                                                                       |
+|basePath                           | `/dekaf`                    |When running the application behind a reverse-proxy, it may be useful to specify a base path.                                                                                                                                                                                                               |
+|publicBaseUrl                      | `https://dev.my.org/dekaf`  |When running the application behind a reverse-proxy, you need to provide a public URL to let the application know how to render links and making redirects correctly.                                                                                                                 |
+
+### Dekaf &lt;-&gt; Web TLS
+
+:::warning
+
+Don't forget to set the `publicBaseUrl` to the public URL of the application, otherwise, the application won't work properly.
+
+Also set the appropriate cookie settings.
+
+:::
+
+|Field                           |Description                                                                                                                                                                                                                                                                                                                                                               |
+|---                                |---                                                                                                                                                                                                                                                                                                                                                                       |
+|protocol                       | `http` or `https`                                                                                                                                                                                                                                                                                                                                                      |
+|tlsKeyFilePath               |Path to the TLS key file.                                                                                                                                                                                                                                                                                      |
+|tlsCertificateFilePath       |Path to the TLS certificate file.                                                                                                                                                                                                                                                                              |
+
+
+### Cookies
+
+|Field                           |Description                                                                                                                                                                                                                                                                                                                                                               |
+|---                                |---                                                                                                                                                                                                                                                                                                                                                                       |
+|cookieSecure                       | `true` or `false`. Set it to `true` if you use the `https` protocol.                                                                                                                                                                                                                                                                                                                                                      |
+|cookieSameSite               | `true` or `false`. Set it to `true` if you use the `https` protocol.                                                                                                                                                                                                                                                                                      |
