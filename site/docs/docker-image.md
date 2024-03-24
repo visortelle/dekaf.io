@@ -1,10 +1,8 @@
 ---
-sidebar_position: 2
+sidebar_position: 99
 ---
 
-# Install
-
-## Obtain Docker Image
+# Docker Image
 
 Dekaf runs as a single [Docker container](https://docs.docker.com/guides/walkthroughs/what-is-a-container/).
 
@@ -36,7 +34,7 @@ docker run \
   -e DEKAF_PULSAR_BROKER_URL="pulsar://0.0.0.0:6650" \
   -e DEKAF_PULSAR_WEB_URL="http://0.0.0.0:8085" \
   -p 8090:8090 \
-  tealtools/dekaf:0.1.16-beta.9
+  tealtools/dekaf:latest
 ```
 
 This command will run **Dekaf Free** edition connected to your Apache Pulsar instance.

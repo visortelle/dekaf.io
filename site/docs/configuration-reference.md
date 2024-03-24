@@ -1,3 +1,7 @@
+---
+sidebar_position: 5
+---
+
 # Configuration Reference
 
 By default, Dekaf reads the `config.yaml` file in the current working directory.
