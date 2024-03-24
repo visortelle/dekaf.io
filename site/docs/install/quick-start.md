@@ -11,7 +11,7 @@ sidebar_position: 1
 
 ```
 wget https://raw.githubusercontent.com/tealtools/dekaf/main/docker-compose.yaml
-docker-compose pull && docker-compose up
+docker compose pull && docker compose up
 ```
 
 - Open [http://localhost:8090](http://localhost:8090)
