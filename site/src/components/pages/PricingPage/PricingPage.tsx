@@ -211,7 +211,7 @@ const PricingPage: React.FC = () => {
   return (
     <main className={s.PricingPage}>
       <div className={s.Content}>
-        <Heading level={2}>Subscription Options and Pricing</Heading>
+        <Heading level={2}>Features and Pricing</Heading>
         <p>
           <strong>Visit the <a target='_blank' href={billingPortalHref}>Billing Portal</a> to manage your existing subscription.</strong>
         </p>
