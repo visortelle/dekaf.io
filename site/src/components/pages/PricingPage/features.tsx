@@ -106,34 +106,34 @@ export const features: FeatureSet = [
             extraLabel: <>Up to 3 brokers<br />1 cluster per instance</>
           },
           'dekaf-for-teams': {
-            extraLabel: <>Unlimited</>
+            extraLabel: <>Up to 9 brokers<br />1 cluster per instance</>
           },
           'dekaf-enterprise': {
-            extraLabel: <>Unlimited</>
+            extraLabel: <>Unlimited brokers<br />Unlimited clusters per instance</>
           },
         }
       },
-      {
-        id: 'one-click-local-pulsar',
-        name: 'Local managed Pulsar instance',
-        availableAt: {
-          'dekaf-desktop-free': {
-            extraLabel: <>For MacOS and Linux</>
-          },
-          'dekaf-desktop': {
-            extraLabel: <>For MacOS and Linux</>
-          },
-          'dekaf-free': {
-            extraLabel: <>See <strong>Dekaf Desktop</strong> for this feature</>
-          },
-          'dekaf-for-teams': {
-            extraLabel: <>See <strong>Dekaf Desktop</strong> for this feature</>
-          },
-          'dekaf-enterprise': {
-            extraLabel: <>See <strong>Dekaf Desktop</strong> for this feature</>
-          }
-        }
-      },
+      // {
+      //   id: 'one-click-local-pulsar',
+      //   name: 'Local managed Pulsar instance',
+      //   availableAt: {
+      //     'dekaf-desktop-free': {
+      //       extraLabel: <>For MacOS and Linux</>
+      //     },
+      //     'dekaf-desktop': {
+      //       extraLabel: <>For MacOS and Linux</>
+      //     },
+      //     'dekaf-free': {
+      //       extraLabel: <>See <strong>Dekaf Desktop</strong> for this feature</>
+      //     },
+      //     'dekaf-for-teams': {
+      //       extraLabel: <>See <strong>Dekaf Desktop</strong> for this feature</>
+      //     },
+      //     'dekaf-enterprise': {
+      //       extraLabel: <>See <strong>Dekaf Desktop</strong> for this feature</>
+      //     }
+      //   }
+      // },
       {
         id: 'manage-io',
         name: 'Manage sinks and sources',
@@ -330,7 +330,7 @@ export const features: FeatureSet = [
     features: [
       {
         id: 'manage-library-items',
-        name: 'Save items for further reuse',
+        name: 'Save and reuse consumer sessions and other items',
         description: <>Save and reuse items like Consumer Sessions, Message Filters, Producer Scenarios.</>,
         availableAt: {
           'dekaf-desktop-free': {
@@ -365,23 +365,7 @@ export const features: FeatureSet = [
           'dekaf-for-teams': {},
           'dekaf-enterprise': {},
         }
-      },
-      {
-        id: 'share-library-items',
-        name: 'Share library items',
-        description: (
-          <>
-            <p>
-              Share library items with your team-mates.
-            </p>
-          </>
-        ),
-        availableAt: {
-          'dekaf-free': {},
-          'dekaf-for-teams': {},
-          'dekaf-enterprise': {},
-        }
-      },
+      }
     ]
   },
   {
@@ -495,7 +479,7 @@ export const features: FeatureSet = [
         name: '24/7 dedicated support',
         availableAt: {
           'dekaf-for-teams': {
-            extraLabel: <>2 hours response time</>
+            extraLabel: <>4 hours response time</>
           },
           'dekaf-enterprise': {
             extraLabel: <>30 minutes response time</>
