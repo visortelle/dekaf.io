@@ -9,7 +9,6 @@ sidebar_position: 3
 - **Dekaf Free** - edition with a limited feature set.
 
 - **Dekaf for Teams** - subscription-based edition with clear pricing that fits small to medium-size companies and individuals.
-  You pay for each Pulsar instance up to 5 instances. After reaching this number of instances, we recommend you to [contact us](/support) and negotiate switching to the Enterprise plan.
 
 - **Dekaf Enterprise** - the most feature-rich edition with premium support for large companies with negotiable price.
 
@@ -32,7 +31,6 @@ At the moment, the license issuing is a manual process and may take some time. [
 :::
 
 - After you've obtained your **license ID** and **license token**, follow the [installation instructions](/docs/install).
-
 
 ## Offline Licenses
 
