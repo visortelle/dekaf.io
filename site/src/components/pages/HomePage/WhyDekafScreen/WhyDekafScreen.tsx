@@ -24,14 +24,6 @@ const WhyScreen: React.FC = () => {
             </div>
 
             <div className={s.Question}>
-              <h3>Simplifies learning Pulsar for developers</h3>
-              <p>
-                <a href="/pricing/?productId=dekaf-desktop&buyerType=individual&billingPeriod=yearly">Dekaf Desktop</a> provides an easy way to start a local Pulsar instance in a few clicks.
-                The ability to experiment with Pulsar in a point-and-click manner is a great addition to taking a course.
-              </p>
-            </div>
-
-            <div className={s.Question}>
               <h3>Makes support team much happier</h3>
               <p>
                 With Dekaf, it's easy to find data across multiple topics. Inspect how a sequence of events lead to an some problematic business event.
@@ -46,7 +38,7 @@ const WhyScreen: React.FC = () => {
             </div>
 
             <div className={s.Question}>
-              <h3>Lower the entry barrier on Pulsar</h3>
+              <h3>Lowers the entry barrier on Pulsar</h3>
               <p>
                 No need to be a Pulsar expert to do many useful actions. Dekaf helps Product Owners, Data Scientists, and Business Analysts to explore data in Pulsar.
               </p>
