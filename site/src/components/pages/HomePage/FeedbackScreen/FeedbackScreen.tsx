@@ -15,9 +15,9 @@ const FeedbackScreen: React.FC<FeedbackScreenProps> = (props) => {
         </div>
 
         <div style={{ fontSize: '1.5rem' }}>
-          <a href="#">Send your thoughts via email</a>
+          <a href="mailto:contact@teal.tools">Send your thoughts via email</a>
           <br />
-          <a href="#">Join the community forum</a>
+          <a href="https://github.com/tealtools/dekaf/discussions">Join the community forum</a>
         </div>
       </div>
     </div>
