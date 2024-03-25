@@ -80,6 +80,7 @@ const config: Config = {
 
   themeConfig:
     ({
+      image: 'img/social-preview.png',
       colorMode: {
         disableSwitch: true,
       },
