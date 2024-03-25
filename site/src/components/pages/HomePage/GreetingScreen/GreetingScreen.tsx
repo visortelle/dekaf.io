@@ -18,7 +18,7 @@ const HeadingsSection: React.FC = () => {
           </h1>
 
           <p>
-            We make Pulsar accessible for everyone
+            Manage your data streams with less stress
           </p>
 
           <div className={s.Links}>
