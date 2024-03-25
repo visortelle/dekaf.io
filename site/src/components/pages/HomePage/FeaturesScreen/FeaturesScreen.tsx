@@ -4,6 +4,25 @@ import FeatureBlock, { Feature } from './FeatureBlock/FeatureBlock';
 
 const features: Feature[] = [
   {
+    title: 'Manage Pulsar with comfort 🛋️',
+    description: (
+      <ul>
+        <li>
+          Manage tenants, namespaces, topics, subscriptions, and other Pulsar resources.
+        </li>
+        <li>
+          View and configure namespace and topic policies without dealing with all the Pulsar API complexities.
+        </li>
+        <li>
+          Manage namespace bundles, upload topic schema, run topic compaction, create missing partitions, and more.
+        </li>
+      </ul>
+    ),
+    image: '/img/manage_with_ease.png',
+    href: '/thesis',
+    direction: 'right',
+  },
+  {
     title: 'Explore data just in a few clicks 🔭',
     description: (
       <div>
@@ -26,25 +45,6 @@ const features: Feature[] = [
     ),
     image: '/img/consume_messages_with_ease.png',
     href: '/structure',
-    direction: 'right',
-  },
-  {
-    title: 'Manage Pulsar with comfort 🛋️',
-    description: (
-      <ul>
-        <li>
-          Manage tenants, namespaces, topics, subscriptions, and other Pulsar resources.
-        </li>
-        <li>
-          View and configure namespace and topic policies without dealing with all the Pulsar API complexities.
-        </li>
-        <li>
-          Manage namespace bundles, upload topic schema, run topic compaction, create missing partitions, and more.
-        </li>
-      </ul>
-    ),
-    image: '/img/manage_with_ease.png',
-    href: '/thesis',
     direction: 'left',
   },
   {
