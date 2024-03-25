@@ -6,20 +6,23 @@ const features: Feature[] = [
   {
     title: 'Explore data just in a few clicks 🔭',
     description: (
-      <ul>
-        <li>
-          Apply user-friendly basic filters, or advanced JavaScript filters to quickly find the needle in the haystack.
-        </li>
-        <li>
-          Get messages from multiple related topics to get a complete picture of what happened.
-        </li>
-        <li>
-          Use colorization rules, chart visualizations (coming soon), and field-to-column projections.
-        </li>
-        <li>
-          Export the consumed data for further analysis in other tools.
-        </li>
-      </ul>
+      <div>
+        <ul>
+          <li>
+            Apply user-friendly basic filters, or advanced JavaScript filters to quickly find the needle in the haystack.
+          </li>
+          <li>
+            Get messages from multiple related topics to get a complete picture of what happened.
+          </li>
+          <li>
+            Use colorization rules, chart visualizations (coming soon), and field-to-column projections.
+          </li>
+          <li>
+            Export the consumed data for further analysis in other tools.
+          </li>
+        </ul>
+        <a href="/docs/consume/consumer-session-tutorial">📘 Read the tutorial</a>
+      </div>
     ),
     image: '/img/consume_messages_with_ease.png',
     href: '/structure',
