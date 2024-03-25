@@ -70,7 +70,7 @@ const features: Feature[] = [
         <li>
           Apache Pulsar is a complex system that may be hard to grasp in a short time.
         </li>
-        <li><a href="/pricing/?productId=dekaf-desktop">Dekaf Desktop</a> provides an easy way to try Pulsar in action without even touching the command line.</li>
+        {/* <li><a href="/pricing/?productId=dekaf-desktop">Dekaf Desktop</a> provides an easy way to try Pulsar in action without even touching the command line.</li> */}
         <li>
           Providing a visual representation of the Pulsar resources hierarchy, along with available information and actions for each Pulsar object, can significantly reduce the time and money needed to familiarize new team members with Pulsar.
         </li>
