@@ -6,7 +6,7 @@ const LinksBlock: React.FC = () => {
   return (
     <div className={s.linksBlock}>
       <div className={s.linksButtonContainer}>
-        <a href="https://github.com/tealtools/dekaf">
+        <a href="/docs/quick-start">
           <Button type="primary" text='Start Free' onClick={() => { }} />
         </a>
         <a href="https://github.com/tealtools/dekaf/discussions">

@@ -15,5 +15,5 @@ tags: [dekaf]
 
 Hi there! We are Teal Tools, a team of developers who are passionate about Apache Pulsar. We are excited to share with you a preview of our new UI for Apache Pulsar.
 
-- Follow [installation instructions](https://github.com/tealtools/dekaf)
+- Follow [installation instructions](/docs/quick-start)
 - Let us know what you think
