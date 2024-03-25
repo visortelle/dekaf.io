@@ -18,7 +18,7 @@ const HeadingsSection: React.FC = () => {
           </h1>
 
           <p>
-            Manage your data streams with less stress
+            Manage your data streams with no stress ☕️
           </p>
 
           <div className={s.Links}>
