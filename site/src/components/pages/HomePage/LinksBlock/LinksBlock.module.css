@@ -13,3 +13,7 @@
   gap: 4rem;
   grid-template-columns: 1fr 1fr;
 }
+
+.linksButtonContainer a:hover {
+  text-decoration: none;
+}
