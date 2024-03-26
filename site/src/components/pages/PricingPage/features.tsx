@@ -177,11 +177,11 @@ export const features: FeatureSet = [
         name: 'View topic messages',
         availableAt: {
           'dekaf-desktop-free': {
-            extraLabel: <>Up to 5,000 processed messages per consumer session</>
+            extraLabel: <>Up to 50,000 processed messages per consumer session</>
           },
           'dekaf-desktop': {},
           'dekaf-free': {
-            extraLabel: <>Up to 5,000 processed messages<br />per session</>
+            extraLabel: <>Up to 50,000 processed messages<br />per session</>
           },
           'dekaf-for-teams': {},
           'dekaf-enterprise': {},
