@@ -11,7 +11,8 @@
 .linksButtonContainer {
   display: grid;
   gap: 4rem;
-  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr; */
+  grid-template-columns: 1fr;
 }
 
 .linksButtonContainer a:hover {
