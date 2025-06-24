@@ -100,7 +100,7 @@ export const productTiers: Record<ProductId, Partial<Record<ProductTierId, Produ
           </div>
           {/* {discount} */}
         </div>,
-        href: 'https://buy.stripe.com/7sI3fV3yt6L77GUcMW',
+        href: 'https://buy.stripe.com/4gMeVddIPgqm3ml2T5gUM00',
       },
       yearlyPrice: {
         id: 'dekaf-for-teams-yearly',
@@ -113,7 +113,7 @@ export const productTiers: Record<ProductId, Partial<Record<ProductTierId, Produ
           </div>
           {/* {discount} */}
         </div>,
-        href: 'https://buy.stripe.com/4gwdUz3yt7Pbd1e4gp',
+        href: 'https://buy.stripe.com/5kQ5kD8oveie4qpbpBgUM01',
       },
     },
     'dekaf-enterprise': {
