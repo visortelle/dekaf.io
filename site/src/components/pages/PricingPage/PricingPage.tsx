@@ -76,7 +76,8 @@ export type ProductTierId = DekafProductTierId | DekafDesktopProductTierId;
 //   </div>
 // );
 
-const salesEmail = `mailto:sales@teal.tools?subject=${encodeURIComponent('[Dekaf Enterprise] Request Quote')}&body=${encodeURIComponent('Your Name:\nJob Title:\nCompany:\n\n----------\n\n<describe your use case here>')}`;
+// const salesEmail = `mailto:sales@teal.tools?subject=${encodeURIComponent('[Dekaf Enterprise] Request Quote')}&body=${encodeURIComponent('Your Name:\nJob Title:\nCompany:\n\n----------\n\n<describe your use case here>')}`;
+const salesEmail = `https://www.linkedin.com/in/kiryl-valkovich`;
 
 export const productTiers: Record<ProductId, Partial<Record<ProductTierId, ProductTier>>> = {
   'dekaf': {
