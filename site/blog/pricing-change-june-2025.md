@@ -15,6 +15,6 @@ To help ensure the long-term sustainability of the project, we are making some i
 
 - Discontinuing free tier. **All free tier installations will stop working on the July 5, 2025**
 - Price drop from **$249** per instance per month to **$129** per instance per month
-- Price drop from **$2490** per instance per year to **$990** per instance per month
+- Price drop from **$2490** per instance per year to **$990** per instance per year
 
 Thanks for using Dekaf! We are excited to continue building the best management tool for Apache Pulsar.
