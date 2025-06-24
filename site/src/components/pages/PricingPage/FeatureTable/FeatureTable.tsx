@@ -54,7 +54,7 @@ const FeaturesTable: React.FC<FeatureTableProps> = (props) => {
   switch (props.productId) {
     case 'dekaf': {
       currentProductTiers = [
-        productTiers['dekaf']['dekaf-free']!,
+        // productTiers['dekaf']['dekaf-free']!,
         productTiers['dekaf']['dekaf-for-teams']!,
         productTiers['dekaf']['dekaf-enterprise']!
       ]

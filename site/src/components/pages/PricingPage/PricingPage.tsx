@@ -59,7 +59,10 @@ export type Product = {
   tiers: Partial<Record<ProductTierId, ProductTier>>
 };
 
-export type DekafProductTierId = 'dekaf-free' | 'dekaf-for-teams' | 'dekaf-enterprise';
+export type DekafProductTierId =
+// 'dekaf-free'
+| 'dekaf-for-teams'
+| 'dekaf-enterprise';
 
 export type DekafDesktopProductTierId = 'dekaf-desktop-free' | 'dekaf-desktop';
 
@@ -77,21 +80,21 @@ const salesEmail = `mailto:sales@teal.tools?subject=${encodeURIComponent('[Dekaf
 
 export const productTiers: Record<ProductId, Partial<Record<ProductTierId, ProductTier>>> = {
   'dekaf': {
-    'dekaf-free': {
-      id: 'dekaf-free',
-      name: 'Dekaf Free',
-      monthlyPrice: { id: 'dekaf-free-monthly', type: 'free', href: '' },
-      yearlyPrice: { id: 'dekaf-free-yearly', type: 'free', href: '' },
-    },
+    // 'dekaf-free': {
+    //   id: 'dekaf-free',
+    //   name: 'Dekaf Free',
+    //   monthlyPrice: { id: 'dekaf-free-monthly', type: 'free', href: '' },
+    //   yearlyPrice: { id: 'dekaf-free-yearly', type: 'free', href: '' },
+    // },
     'dekaf-for-teams': {
       id: 'dekaf-for-teams',
-      name: 'Dekaf for Teams',
+      name: 'Dekaf',
       monthlyPrice: {
         id: 'dekaf-for-teams-monthly',
         type: 'fixed',
         value: <div style={{ lineHeight: '1' }}>
           <div>
-            <strong>$249</strong> per month
+            <strong>$119</strong> per month
             <br />
             <strong style={{ fontSize: '0.75rem' }}>per Pulsar instance</strong>
           </div>
@@ -104,7 +107,7 @@ export const productTiers: Record<ProductId, Partial<Record<ProductTierId, Produ
         type: 'fixed',
         value: <div style={{ lineHeight: '1' }}>
           <div>
-            <strong>$2490</strong> per year
+            <strong>$990</strong> per year
             <br />
             <strong style={{ fontSize: '0.75rem' }}>per Pulsar instance</strong>
           </div>
@@ -205,7 +208,7 @@ export type BuyerType = 'organization' | 'individual';
 
 const PricingPage: React.FC = () => {
   const [productId, setProductId] = useQueryParam<ProductId>('productId', withDefault(StringParam as any, 'dekaf'), { updateType: 'replaceIn' });
-  const [billingPeriod, setBillingPeriod] = useQueryParam<PricingPeriod>('billingPeriod', withDefault(StringParam as any, 'yearly'), { updateType: 'replaceIn' });
+  const [billingPeriod, setBillingPeriod] = useQueryParam<PricingPeriod>('billingPeriod', withDefault(StringParam as any, 'monthly'), { updateType: 'replaceIn' });
   const [buyerType, setBuyerType] = useQueryParam<BuyerType>('buyerType', withDefault(StringParam as any, 'organization'), { updateType: 'replaceIn' });
 
   return (
@@ -226,8 +229,8 @@ const PricingPage: React.FC = () => {
           />}
           <Toggle<PricingPeriod>
             options={[
-              { value: 'yearly', label: <>Yearly billing&nbsp;&nbsp;<span style={{ opacity: '0.6' }}>save 2 months</span></> },
               { value: 'monthly', label: <>Monthly billing</> },
+              { value: 'yearly', label: <>Yearly billing&nbsp;&nbsp;<span style={{ opacity: '0.6' }}>save 2 months</span></> },
             ]}
             value={billingPeriod}
             onChange={setBillingPeriod}

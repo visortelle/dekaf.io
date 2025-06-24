@@ -33,7 +33,7 @@ export const features: FeatureSet = [
         availableAt: {
           'dekaf-desktop-free': {},
           'dekaf-desktop': {},
-          'dekaf-free': {},
+          // 'dekaf-free': {},
           'dekaf-for-teams': {},
           'dekaf-enterprise': {},
         }
@@ -44,7 +44,7 @@ export const features: FeatureSet = [
         availableAt: {
           'dekaf-desktop-free': {},
           'dekaf-desktop': {},
-          'dekaf-free': {},
+          // 'dekaf-free': {},
           'dekaf-for-teams': {},
           'dekaf-enterprise': {},
         }
@@ -55,7 +55,7 @@ export const features: FeatureSet = [
         availableAt: {
           'dekaf-desktop-free': {},
           'dekaf-desktop': {},
-          'dekaf-free': {},
+          // 'dekaf-free': {},
           'dekaf-for-teams': {},
           'dekaf-enterprise': {},
         }
@@ -66,7 +66,7 @@ export const features: FeatureSet = [
         availableAt: {
           'dekaf-desktop-free': {},
           'dekaf-desktop': {},
-          'dekaf-free': {},
+          // 'dekaf-free': {},
           'dekaf-for-teams': {},
           'dekaf-enterprise': {},
         }
@@ -77,7 +77,7 @@ export const features: FeatureSet = [
         availableAt: {
           'dekaf-desktop-free': {},
           'dekaf-desktop': {},
-          'dekaf-free': {},
+          // 'dekaf-free': {},
           'dekaf-for-teams': {},
           'dekaf-enterprise': {},
         }
@@ -102,9 +102,9 @@ export const features: FeatureSet = [
           'dekaf-desktop': {
             extraLabel: <>Unlimited</>
           },
-          'dekaf-free': {
-            extraLabel: <>Up to 3 brokers<br />1 cluster per instance</>
-          },
+          // 'dekaf-free': {
+          //   extraLabel: <>Up to 3 brokers<br />1 cluster per instance</>
+          // },
           'dekaf-for-teams': {
             extraLabel: <>Up to 9 brokers<br />1 cluster per instance</>
           },
@@ -140,7 +140,7 @@ export const features: FeatureSet = [
         availableAt: {
           'dekaf-desktop-free': {},
           'dekaf-desktop': {},
-          'dekaf-free': {},
+          // 'dekaf-free': {},
           'dekaf-for-teams': {},
           'dekaf-enterprise': {}
         },
@@ -152,7 +152,7 @@ export const features: FeatureSet = [
         availableAt: {
           'dekaf-desktop-free': {},
           'dekaf-desktop': {},
-          'dekaf-free': {},
+          // 'dekaf-free': {},
           'dekaf-for-teams': {},
           'dekaf-enterprise': {}
         },
@@ -180,9 +180,9 @@ export const features: FeatureSet = [
             extraLabel: <>Up to 50,000 processed messages per consumer session</>
           },
           'dekaf-desktop': {},
-          'dekaf-free': {
-            extraLabel: <>Up to 50,000 processed messages<br />per session</>
-          },
+          // 'dekaf-free': {
+          //   extraLabel: <>Up to 50,000 processed messages<br />per session</>
+          // },
           'dekaf-for-teams': {},
           'dekaf-enterprise': {},
         }
@@ -194,7 +194,7 @@ export const features: FeatureSet = [
         availableAt: {
           'dekaf-desktop-free': {},
           'dekaf-desktop': {},
-          'dekaf-free': {},
+          // 'dekaf-free': {},
           'dekaf-for-teams': {},
           'dekaf-enterprise': {},
         }
@@ -205,7 +205,7 @@ export const features: FeatureSet = [
         availableAt: {
           'dekaf-desktop-free': {},
           'dekaf-desktop': {},
-          'dekaf-free': {},
+          // 'dekaf-free': {},
           'dekaf-for-teams': {},
           'dekaf-enterprise': {},
         }
@@ -216,7 +216,7 @@ export const features: FeatureSet = [
         availableAt: {
           'dekaf-desktop-free': {},
           'dekaf-desktop': {},
-          'dekaf-free': {},
+          // 'dekaf-free': {},
           'dekaf-for-teams': {},
           'dekaf-enterprise': {},
         }
@@ -227,7 +227,7 @@ export const features: FeatureSet = [
         availableAt: {
           'dekaf-desktop-free': {},
           'dekaf-desktop': {},
-          'dekaf-free': {},
+          // 'dekaf-free': {},
           'dekaf-for-teams': {},
           'dekaf-enterprise': {},
         }
@@ -239,7 +239,7 @@ export const features: FeatureSet = [
         availableAt: {
           'dekaf-desktop-free': {},
           'dekaf-desktop': {},
-          'dekaf-free': {},
+          // 'dekaf-free': {},
           'dekaf-for-teams': {},
           'dekaf-enterprise': {},
         }
@@ -257,7 +257,7 @@ export const features: FeatureSet = [
         id: 'data-visualization',
         name: 'Data visualization widgets',
         availableAt: {
-          'dekaf-free': {},
+          // 'dekaf-free': {},
           'dekaf-desktop': {},
           'dekaf-for-teams': {},
           'dekaf-enterprise': {},
@@ -284,7 +284,7 @@ export const features: FeatureSet = [
         availableAt: {
           'dekaf-desktop-free': {},
           'dekaf-desktop': {},
-          'dekaf-free': {},
+          // 'dekaf-free': {},
           'dekaf-for-teams': {},
           'dekaf-enterprise': {},
         }
@@ -378,7 +378,7 @@ export const features: FeatureSet = [
         availableAt: {
           'dekaf-desktop-free': {},
           'dekaf-desktop': {},
-          'dekaf-free': {},
+          // 'dekaf-free': {},
           'dekaf-for-teams': {},
           'dekaf-enterprise': {},
         },
@@ -396,9 +396,9 @@ export const features: FeatureSet = [
         id: 'access-control',
         name: 'Fine-grained access control',
         availableAt: {
-          'dekaf-free': {
-            extraLabel: <>Max 1 user</>
-          },
+          // 'dekaf-free': {
+          //   extraLabel: <>Max 1 user</>
+          // },
           'dekaf-for-teams': {
             extraLabel: <>Max 15 users</>
           },
@@ -469,7 +469,7 @@ export const features: FeatureSet = [
         availableAt: {
           'dekaf-desktop': {},
           'dekaf-desktop-free': {},
-          'dekaf-free': {},
+          // 'dekaf-free': {},
           'dekaf-for-teams': {},
           'dekaf-enterprise': {},
         }
@@ -479,7 +479,7 @@ export const features: FeatureSet = [
         name: '24/7 dedicated support',
         availableAt: {
           'dekaf-for-teams': {
-            extraLabel: <>4 hours response time</>
+            extraLabel: <>6 hours response time</>
           },
           'dekaf-enterprise': {
             extraLabel: <>30 minutes response time</>
