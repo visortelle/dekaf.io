@@ -19,4 +19,4 @@ To help ensure the long-term sustainability of the project, we are making some i
 
 Thanks for using Dekaf! We are excited to continue building the best management tool for Apache Pulsar.
 
-In case of any questions, contact me at [mailto:kiryl.valkovich@proton.me](kiryl.valkovich@proton.me)
+In case of any questions, contact me at [kiryl.valkovich@proton.me](mailto:kiryl.valkovich@proton.me)
