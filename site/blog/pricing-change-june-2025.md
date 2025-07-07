@@ -20,3 +20,5 @@ To help ensure the long-term sustainability of the project, we are making some i
 Thanks for using Dekaf! We are excited to continue building the best management tool for Apache Pulsar.
 
 In case of any questions, contact me at [kiryl.valkovich@proton.me](mailto:kiryl.valkovich@proton.me)
+
+<a className="navbar__action-button" href="https://www.dekaf.io/pricing" style={{ marginBottom: '2rem'}}>Open pricing page</a>
