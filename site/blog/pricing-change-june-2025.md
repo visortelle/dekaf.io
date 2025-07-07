@@ -18,3 +18,5 @@ To help ensure the long-term sustainability of the project, we are making some i
 - Price drop from **$2490** per instance per year to **$990** per instance per year
 
 Thanks for using Dekaf! We are excited to continue building the best management tool for Apache Pulsar.
+
+In case of any questions, contact me at [mailto:kiryl.valkovich@proton.me](kiryl.valkovich@proton.me)

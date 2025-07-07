@@ -29,7 +29,7 @@ const Footer: React.FC<FooterProps> = (props) => {
         </div>
 
         <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', columnGap: '4rem' }}>
-          <div>© 2024 Teal Tools, Inc. All Rights Reserved.</div>
+          <div>© 2025 Teal Tools, Sp.z.o.o. All Rights Reserved.</div>
 
           <div style={{ display: 'inline-flex', gap: '1.5rem' }}>
             <a className={s.Link} href="/privacy-policy">Privacy Policy</a>
