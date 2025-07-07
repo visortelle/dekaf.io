@@ -1,5 +1,5 @@
 ---
-title: Pricing changes June 2025
+title: Pricing changes July 2025
 description: To help ensure the long-term sustainability of the project, we are making some important changes to our pricing model.
 slug: pricing-changes-june-2025
 authors:
