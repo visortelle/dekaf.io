@@ -17,9 +17,9 @@ const Layout: React.FC<Props> = (props) => {
 
       </Head>
       <QueryParamProvider adapter={ReactRouter5Adapter}>
-        <a style={{ padding: '1rem', display: 'block', textAlign: 'center', backgroundColor: '#fe6e6e', color: '#fff', fontWeight: 'bold' }} href="/blog/pricing-changes-june-2025">
+        {/* <a style={{ padding: '1rem', display: 'block', textAlign: 'center', backgroundColor: '#fe6e6e', color: '#fff', fontWeight: 'bold' }} href="/blog/pricing-changes-june-2025">
           Pricing changes are coming July 5, 2025. Free tier will be discontinued.
-        </a>
+        </a> */}
         {props.children}
       </QueryParamProvider>
 
